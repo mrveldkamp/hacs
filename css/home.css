@@ -93,6 +93,27 @@ main a:hover {
   color: #FB9C1B;
 }
 
+main img#yt-img {
+  vertical-align: middle;
+}
+
+main a#yt-link {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: black;
+  text-decoration: none;
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 2px 10px;
+  margin-top: 0.8rem;
+}
+
+main a#yt-link:hover {
+  background: #09457e;
+  color: white;
+  border: 1px solid #333;
+}
+
 /* Media Queries */
 @media (min-width: 700px) {
   main {
