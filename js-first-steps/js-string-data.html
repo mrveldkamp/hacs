@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>HACS</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway|Economica" rel="stylesheet">
+
+  <link href="../css/page.css" rel="stylesheet" type="text/css" />
+  <link href="../css/prism.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <a href="../index.html">
+      <img src="../img/ainlay-logo.png" width="32">
+      Harry Ainlay Computing Science
+    </a>
+  </header>
+
+  <main class="wrapper">
+    <h1>
+      JavaScript String Data
+      <a id="yt-link" href="#">
+        <img id="yt-img" src="../img/yt_icon_rgb.png" alt="YouTube Icon" width="24">
+        Topic Explanation
+      </a>
+    </h1>
+
+    <hr>
+
+    <h2>String Data Type</h2>
+    <p>A common type of data that programs work with is the <strong>String</strong> data type.</p>
+    <p>A String is a squence of characters used to represent text. Strings are enclosed by matching double or single
+      quotes.</p>
+    <p>
+      <pre><code class="lang-js">
+"doubled-quoted String data"
+'single-quoted String data'
+"Hello World"
+'green'
+"42"
+      </code></pre>
+    </p>
+    <hr>
+
+    <h2>String Concatenation</h2>
+    <p>The operation of joining strings together is called <strong>concatenation</strong>.</p>
+    <p>In JavaScript, concatenation is done with the <code class="lang-js">+</code> operator.</p>
+    <p>
+      <pre><code class="lang-js">
+console.log("Hello" + "World"); // Output=> "HelloWorld"
+console.log("Hi" + " There!"); // Output=> "Hi There!"
+      </code></pre>
+    </p>
+    <hr>
+
+    <h2>String Properties & Methods</h2>
+    <p>There are some useful properties and methods that work on String data.</p>
+
+    <h4>Length Property</h4>
+    <p>The <code class="lang-js">length</code> property of a string will return the number of characters in a string.
+    </p>
+    <p>
+      <pre><code class="lang-js">
+console.log("hello".length); // Output=> 5
+console.log("Hi There".length); // Output=> 8
+      </code></pre>
+    </p>
+
+    <h4>toLowerCase() / toUpperCase() Methods</h4>
+    <p>The <code class="lang-js"> toLowerCase()</code> and <code class="lang-js">toUpperCase()</code> methods will
+      convert a string to either all lowercase or all uppercase letters.</p>
+    <p>
+      <pre><code class="lang-js">
+console.log("Algorithm".toLowerCase()); // Output=> "algorithm"
+console.log("JavaScript".toUpperCase()); // Output=> "JAVASCRIPT"
+      </code></pre>
+    </p>
+    <hr>
+
+
+  </main>
+
+  <script src="../js/prism.js"></script>
+</body>
+
+</html>

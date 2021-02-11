@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>HACS</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway|Economica" rel="stylesheet">
+
+  <link href="../css/page.css" rel="stylesheet" type="text/css" />
+  <link href="../css/prism.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <a href="../index.html">
+      <img src="../img/ainlay-logo.png" width="32">
+      Harry Ainlay Computing Science
+    </a>
+  </header>
+
+  <main class="wrapper">
+    <h1>
+      Introduction to JavaScript
+      <a id="yt-link" href="#">
+        <img id="yt-img" src="../img/yt_icon_rgb.png" alt="YouTube Icon" width="24">
+        Topic Explanation
+      </a>
+    </h1>
+
+    <hr>
+
+    <p>
+      <img class="img-fluid" src="img/programming-definition.png" alt="Programming Definition">
+    </p>
+    <p>Programming involves using a programming language to instruct a computer to complete a task.</p>
+    <p>JavaScript is a programming language that may be used to build web applications.</p>
+    <hr>
+
+    <h2>JavaScript How To</h2>
+    <p>The recommended way to run JavaScript code is to load an <strong>external JavaScript file</strong> into your html
+      document using a <code class="lang-html">&lt;script&gt;</code> element.</p>
+
+    <h3>Step 1: Create an External JavaScript File</h3>
+    <p>Create an external JavaScript file by making a file with a .js extension <em>(It is common to name this file
+        "script.js" or "main.js")</em> This document is where you will write your JavaScript code.</p>
+    <p>The first javaScript command we will use is the <code class="lang-js">alert()</code> function. The <code
+        class="lang-js">alert()</code> function instructs the browser to display a provided message in an alert-box.</p>
+
+    <h4>script.js</h4>
+    <p>
+      <pre><code class="lang-js">
+alert("Hello World!");
+alert("Welcome to JavaScript.");  
+      </code></pre>
+    </p>
+
+    <h3>Step 2: Run JavaScript in HTML document</h3>
+    <p>Put a <code class="lang-html">&lt;script&gt;</code> element as the last element in the html body. This will run
+      the JavaScript code specificed in the script's src attribute.</p>
+
+    <h4>index.html</h4>
+    <p>
+      <pre><code class="lang-html">
+&lt;body&gt;
+  &lt;h1&gt;JavaScript Intro&lt;/h1&gt;
+
+  &lt;!-- Run External JavaScript File --&gt;
+  &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+      </code></pre>
+    </p>
+    <hr>
+  </main>
+
+  <script src="../js/prism.js"></script>
+</body>
+
+</html>

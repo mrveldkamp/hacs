@@ -98,6 +98,7 @@ main img#yt-img {
 }
 
 main a#yt-link {
+  font-family: "Open Sans", sans-serif;
   display: inline-block;
   font-size: 0.8rem;
   color: black;
