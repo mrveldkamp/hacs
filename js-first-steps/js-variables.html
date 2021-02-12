@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>HACS</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway|Economica" rel="stylesheet">
+
+  <link href="../css/page.css" rel="stylesheet" type="text/css" />
+  <link href="../css/prism.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <a href="../index.html">
+      <img src="../img/ainlay-logo.png" width="32">
+      Harry Ainlay Computing Science
+    </a>
+  </header>
+
+  <main class="wrapper">
+    <h1>
+      JavaScript Variables
+      <a id="yt-link" href="#">
+        <img id="yt-img" src="../img/yt_icon_rgb.png" alt="YouTube Icon" width="24">
+        Topic Explanation
+      </a>
+    </h1>
+
+    <hr>
+
+    <h2>Storing Data with Variables</h2>
+    <p>Variables are used to store and manage program data.</p>
+    <p>A variable is a "named storage container" for data.</p>
+    <p>To create a variable use the <code class="lang-js">let</code> keyword.</p>
+    <p>
+      <pre><code class="lang-js">
+// Declare a Variable: tell JS to make a storage container called age
+let age;
+      </code></pre>
+    </p>
+
+    <p>Use the assignment operator, <code class="lang-js">=</code>, to put data into the variable.</p>
+    <p>
+      <pre><code class="lang-js">
+// Assign data to a Variable: put data into age container
+age = 15;
+      </code></pre>
+    </p>
+
+    <p>The number 15 is now saved into the memory area associated with the variable named age.</p>
+    <p>Use the variable name to access the data stored in memory.</p>
+    <p>
+      <pre><code class="lang-js">
+// Use Variable: log the contents of the age variable to the console
+console.log(age); // Output => 15
+console.log(age + 1); // Output => 16
+      </code></pre>
+    </p>
+
+    <p>An existing variable may be reassigned to store different data.</p>
+    <p>
+      <pre><code class="lang-js">
+// Reassign Variable: put new data into container
+age = 18;
+console.log(age); // Output => 18
+      </code></pre>
+    </p>
+    <p>To be concise, we can combine the variable declaration and assignment into a single line.</p>
+    <p>
+      <pre><code class="lang-js">
+let age = 15;
+      </code></pre>
+    </p>
+    <hr>
+
+    <h2>Naming Variables</h2>
+    <p>Take note of some rules and conventions to follow when naming a variable:</p>
+    <ul>
+      <li>Begin variable names with a lower-case letter</li>
+      <li>Only use letters (a-z, A-Z), numbers (0-9) and underscores (_)</li>
+      <li>Use camel casing for multi-word variables (eg.
+        my<strong>C</strong>amel<strong>C</strong>ase<strong>V</strong>ariable)</li>
+      <li>Make variable names intuitive: describe what they store</li>
+      <li>Avoid using JavaScript reserved words (eg. <code class="lang-js">let</code>, <code
+          class="lang-js">alert</code>, <code class="lang-js">console</code>, ...)</li>
+    </ul>
+    <hr>
+  </main>
+
+  <script src="../js/prism.js"></script>
+</body>
+
+</html>
