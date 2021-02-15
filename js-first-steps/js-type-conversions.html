@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>HACS</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway|Economica" rel="stylesheet">
+
+  <link href="../css/page.css" rel="stylesheet" type="text/css" />
+  <link href="../css/prism.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <a href="../index.html">
+      <img src="../img/ainlay-logo.png" width="32">
+      Harry Ainlay Computing Science
+    </a>
+  </header>
+
+  <main class="wrapper">
+    <h1>
+      JavaScript Type Conversions
+      <a id="yt-link" href="#">
+        <img id="yt-img" src="../img/yt_icon_rgb.png" alt="YouTube Icon" width="24">
+        Topic Explanation
+      </a>
+    </h1>
+
+    <hr>
+
+    <h2>Automatic Conversions</h2>
+    <p>JavaScript will automatically convert values when performing mathematical operations on mixed data: Numbers and
+      Strings.</p>
+    <p>For most mathematical operations JavaScript will automatically convert any String data to Number data.</p>
+
+    <p>In the example below, multiplication or division of a Number by a String doesn't make sense so JavaScript will
+      automatically
+      convert the String to a Number.
+    </p>
+    <pre><code class="lang-js">
+console.log(5 * "3"); // Output => 15
+
+console.log("80" / 10); // Output => 8
+    </code></pre>
+
+    <p>Addition is different. Since the addition of a Number by a Number is valid and the addition of a String by a
+      String is valid, JavaScript needs to decide whether to perform Number addition or String addition.</p>
+    <p>The default behaviour of JavaScript when adding a Number to a String is to convert the Number to a String and
+      then add (concatenate) the Strings.</p>
+    <pre><code class="lang-js">
+console.log(60 + "40"); // Output=> "6040"
+    </code></pre>
+    <hr>
+
+    <h2>Number to String</h2>
+    <p>It is possible to explicitly convert a Number to a String using the <code class="lang-js">String()</code>
+      function.</p>
+    <pre><code class="lang-js">
+String(23); // Convert the Number 23 to the String "23"
+String(5.2); // Convert the Number 5.2 to the String "5.2"
+    </code></pre>
+    <hr>
+
+    <h2>String to Number</h2>
+    <p>It is possible to explicitly convert a String to a Number using the <code class="lang-js">Number()</code>
+      function.</p>
+    <pre><code class="lang-js">
+  Number("23"); // Convert the String "23" to the Number 23
+  Number("5.2"); // Convert the String "5.2" to the Number 5.2
+    </code></pre>
+
+    <p>If the String cannot be converted to a Number, the result is <code class="lang-js">NaN</code>: Not a Number.</p>
+    <pre><code class="lang-js">
+  Number("twenty"); // Cannot convert, result is NaN
+  Number("123n"); // Cannot convert, result is NaN
+    </code></pre>
+
+    <p>A concise way to convert a String to a Number is to use the unary plus operator: <code class="lang-js">+</code>
+    </p>
+    <pre><code class="lang-js">
+  +"23"; // Convert the String "23" to the Number 23
+  +"5.2"; // Convert the String "5.2" to the Number 5.2
+    </code></pre>
+    <hr>
+
+
+
+
+    <!-- CYU -->
+    <!-- Predict the output of the follow:
+    4 + 5 + "px"
+    "$" + 4 + 5 -->
+  </main>
+
+  <script src="../js/prism.js"></script>
+</body>
+
+</html>
