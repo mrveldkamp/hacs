@@ -30,21 +30,72 @@
 
     <hr>
 
-    <h2></h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quae deserunt itaque laudantium quam aspernatur
-      ratione! Saepe non eum amet sed dolorum. Id, ratione qui.</p>
-    <p>
-      <pre><code class="lang-js">
-let test = "hello";  
-      </code></pre>
-    </p>
+    <h2>Modify and Assign</h2>
+    <p>It is common to apply an operator to a variable and store the new result in that same variable.</p>
+    <pre><code class="lang-js">
+// Declare & Assign
+let n = 1;
 
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam praesentium quasi in rerum voluptatibus adipisci,
-      illum labore minus nihil, porro sunt nostrum delectus quia iure voluptate laudantium repellendus mollitia. Aliquam
-      voluptas nesciunt soluta cumque laboriosam nemo recusandae quam, sed molestias temporibus possimus, est impedit
-      quos consequuntur facilis cum facere? Explicabo corporis ex obcaecati voluptatem facere placeat quisquam quibusdam
-      possimus tempora corrupti quia ut vero dignissimos debitis in beatae consequatur reiciendis, magnam perspiciatis
-    </p>
+// Increase n by 5
+n = n + 5;
+
+// Decrease n by 3
+n = n - 3;
+
+// Multiply n by 2
+n = n * 2;
+
+// Divide n by 3
+n = n / 3;
+
+// Declare & Assign
+let greeting = "Hi";
+
+// Append "!" to greeting
+greeting = greeting + "!";  
+    </code></pre>
+    <hr>
+
+    <h2>Shorthand Operators</h2>
+    <p>Shorthand operators exist to concisely accomplish the same "modify and assign" tasks as above.</p>
+    <pre><code class="lang-js">
+// Declare & Assign
+let n = 1;
+
+// Increase n by 5
+n += 5; // Same as n = n + 5;
+
+// Decrease n by 3
+n -= 3; // Same as n = n - 3;
+
+// Multiply n by 2
+n *= 2; // Same as n = n * 2;
+
+// Divide n by 3
+n /= 3; // Same as n = n / 3;
+
+let greeting = "Hi";
+
+// Append "!" to greeting
+greeting += "!"; // Same as greeting = greeting + "!";
+    </code></pre>
+    <hr>
+
+    <h2>Increment and Decrement</h2>
+    <p>There are special operators for increasing or decreasing a variable by one.</p>
+    <pre><code class="lang-js">
+// Declare & Assign
+let counter = 1;
+
+// INCREMENT: increase variable by 1
+counter++; // Same as counter = counter + 1 or counter += 1
+console.log(counter); // Output => 2
+
+// DECREMENT: decrease variable by 1
+counter--; // Same as counter = counter - 1 or counter -= 1
+console.log(counter); // Output => 1
+    </code></pre>
+    <hr>
   </main>
 
   <script src="../js/prism.js"></script>

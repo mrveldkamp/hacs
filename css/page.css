@@ -86,9 +86,17 @@ main ul {
   width: 100%;
 }
 
+.img-fluid-max {
+  width: 100%;
+}
+
 /* Media Queries */
 @media (min-width: 768px) {
   main h1 {
     flex-direction: row;
+  }
+
+  .img-fluid-max {
+    width: 60%;
   }
 }
