@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>HACS</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway|Economica" rel="stylesheet">
+
+  <link href="../css/page.css" rel="stylesheet" type="text/css" />
+  <link href="../css/prism.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <a href="../index.html">
+      <img src="../img/ainlay-logo.png" width="32">
+      Harry Ainlay Computing Science
+    </a>
+  </header>
+
+  <main class="wrapper">
+    <h1>
+      innerHTML
+      <a id="yt-link" href="#">
+        <img id="yt-img" src="../img/yt_icon_rgb.png" alt="YouTube Icon" width="24">
+        Topic Explanation
+      </a>
+    </h1>
+
+    <hr>
+
+    <p>JavaScript is able to set the content of an HTML element with the <code class="lang-js">innerHTML</code>
+      property.</p>
+    <p>The <code class="lang-js">innerHTML</code> of an element is the content between the element's opening and closing
+      tags.</p>
+
+    <h4>index.html</h4>
+    <pre><code class="lang-html">
+&lt;body&gt;
+&lt;h1 id="heading"&gt;This is a Heading&lt;/h1&gt;
+&lt;p id="para"&gt;This is a paragraph.&lt;/p&gt;
+&lt;p&gt;&lt;button id="btn"&gt;Click Me&lt;/button&gt;&lt;/p&gt;
+  
+&lt;!-- Run External JavaScript File --&gt;
+&lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+    </code></pre>
+
+    <h4>script.js</h4>
+    <p>The code below will change the content of the heading and paragraph elements when the button element is clicked.
+    </p>
+    <pre><code class="lang-js">
+// Variables to store references to HTML elements
+let btnEl = document.getElementById("btn");
+let headingEl = document.getElementById("heading");
+let paraEl = document.getElementById("para");
+
+// Run changeContent function when button is clicked 
+btnEl.addEventListener("click", changeContent);
+
+// Use innerHTML to change content of heading and paragraph
+function changeContent() {
+  headingEl.innerHTML = "New Heading";
+  paraEl.innerHTML = "New &lt;em&gt;Awesome&lt;/em&gt; Paragraph.";
+}
+    </code></pre>
+    <hr>
+
+  </main>
+
+  <script src="../js/prism.js"></script>
+</body>
+
+</html>

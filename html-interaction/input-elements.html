@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>HACS</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway|Economica" rel="stylesheet">
+
+  <link href="../css/page.css" rel="stylesheet" type="text/css" />
+  <link href="../css/prism.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <a href="../index.html">
+      <img src="../img/ainlay-logo.png" width="32">
+      Harry Ainlay Computing Science
+    </a>
+  </header>
+
+  <main class="wrapper">
+    <h1>
+      &lt;input&gt; Elements
+      <a id="yt-link" href="#">
+        <img id="yt-img" src="../img/yt_icon_rgb.png" alt="YouTube Icon" width="24">
+        Topic Explanation
+      </a>
+    </h1>
+
+    <hr>
+    <p>An <code class="lang-html">&lt;input&gt;</code> element will display as an input-box on a web page: <input>.</p>
+    <p>An <code class="lang-html">&lt;input&gt;</code> element is a self-closing element: it only has an opening tag and
+      no closing tag.</p>
+    <p>An <code class="lang-html">&lt;input&gt;</code> element may have id and value attributes.</p>
+    <ul>
+      <li><strong>id attribute</strong>: use getElementById() to get a reference to the element.</li>
+      <li><strong>value attribute</strong>: use to initialize the value of the input element.</li>
+    </ul>
+    <h4>index.html</h4>
+    <pre><code class="lang-html">
+&lt;p&gt;Enter your name: &lt;input id="name-in"&gt;&lt;/p&gt;
+&lt;p&gt;Enter the time of day: &lt;input id="time-in" value="Morning"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;button id="btn"&gt;Submit&lt;/button&gt;&lt;/p&gt;
+    </code></pre>
+
+    <hr>
+    <p>Enter your name: <input id="name-in"></p>
+    <p>Enter the time of day: <input id="time-in" value="Morning"></p>
+    <p><button id="btn">Submit</button></p>
+    <hr>
+
+    <p>Use JavaScript to select an <code class="lang-html">&lt;input&gt;</code> element by id and then use its
+      <strong>value property</strong> to get
+      the contents of the input-box.</p>
+    <h4>script.js</h4>
+    <pre><code class="lang-js">
+// HTML variables
+let btnEl = document.getElementById("btn");
+let nameInEl = document.getElementById("name-in");
+let timeOfDayEl = document.getElementById("time-in");
+
+// Add Event Listener to button element
+btnEl.addEventListener("click", encourage);
+
+function encourage() {
+  // Input 
+  let name = nameInEl.value;
+  let timeOfDay = timeOfDayEl.value;
+
+  // Output
+  alert("Hello " + name);
+  alert("Have a great " + timeOfDay + "!");
+}
+    </code></pre>
+
+    <p>Take Note:</p>
+    <ul>
+      <li>be sure to use an event listener to give the user time to type something into the input element!</li>
+      <li>the value of the input element is always a String data type. Convert to a Number data type if required.</li>
+    </ul>
+    <hr>
+
+
+
+  </main>
+
+  <script>
+    // HTML variables
+    let btnEl = document.getElementById("btn");
+    let nameInEl = document.getElementById("name-in");
+    let timeOfDayEl = document.getElementById("time-in");
+
+    // Add Event Listener to button element
+    btnEl.addEventListener("click", encourage);
+
+    function encourage() {
+      // Input 
+      let name = nameInEl.value;
+      let timeOfDay = timeOfDayEl.value;
+
+      // Output
+      alert("Hello " + name);
+      alert("Have a great " + timeOfDay + "!");
+    }
+  </script>
+  <script src="../js/prism.js"></script>
+</body>
+
+</html>
