@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>HACS</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway|Economica" rel="stylesheet">
+
+  <link href="../css/page.css" rel="stylesheet" type="text/css" />
+  <link href="../css/prism.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <a href="../index.html">
+      <img src="../img/ainlay-logo.png" width="32">
+      Harry Ainlay Computing Science
+    </a>
+  </header>
+
+  <main>
+    <h1>
+      JavaScript Boolean Expressions
+      <a id="yt-link" href="#">
+        <img id="yt-img" src="../img/yt_icon_rgb.png" alt="YouTube Icon" width="24">
+        Topic Explanation
+      </a>
+    </h1>
+
+    <hr>
+
+    <h2>Boolean Data Type</h2>
+    <p>JavaScript has a <strong>Boolean Data Type</strong> that can be one of two possible values: <strong>true</strong>
+      or <strong>false</strong>.</p>
+    <pre><code class="lang-js">
+let validInput = true;
+let found = false;
+    </code></pre>
+    <hr>
+
+    <h2>Boolean Expressions</h2>
+    <p>Mathemetical expression evaluate to a Number data type...</p>
+    <p>Boolean expressions evaluate to a Boolean data type...</p>
+    <p><strong>Boolean Expressions</strong> are expressions that evaluate to <strong>true</strong> or
+      <strong>false</strong>.</p>
+    <pre><code class="lang-js">
+let age = 15;
+console.log(age < 18); // Output=> true
+console.log(age < 10); // Output=> false
+    </code></pre>
+    <p>Mathematical expressions are made with mathematical operators...</p>
+    <p>Boolean expressions are made with <strong>comparison and logical operators</strong>...</p>
+    <hr>
+
+    <h2>Comparison Operators</h2>
+    <p>Comparison operators are used to build boolean expressions:</p>
+    <ul>
+      <li>Equal To: <code class="lang-js">===</code></li>
+      <li>Not Equal To: <code class="lang-js">!==</code></li>
+      <li>Greater Than: <code class="lang-js">&gt;</code></li>
+      <li>Greater Than or Equal To: <code class="lang-js">&gt;=</code></li>
+      <li>Less Than: <code class="lang-js">&lt;</code></li>
+      <li>Less Than or Equal To: <code class="lang-js">&lt;=</code></li>
+    </ul>
+
+    <h4>Examples of Comparison Operators</h4>
+    <pre><code class="lang-js">
+let age = 15;
+
+// Equal To (===)
+console.log(age === 15); // Output=> true
+console.log(age === 18); // Output=> false
+
+// Not Equal To (!==)
+console.log(age !== 15); // Output=> false
+console.log(age !== 13); // Output=> true
+
+// Greater Than (>)
+console.log(age > 15); // Output=> false
+console.log(age > 10); // Output=> true
+
+// Greater Than or Equal To (>=)
+console.log(age >= 15); // Output=> true
+console.log(age >= 17); // Output=> false
+
+// Less Than (<)
+console.log(age < 20); // Output=> true
+console.log(age < 15); // Output=> false
+
+// Less Than or Equal To (<=)
+console.log(age <= 20); // Output=> true
+console.log(age <= 15); // Output=> true
+    </code></pre>
+    <hr>
+
+    <h2>Logical Operators</h2>
+    <p>Logical Operators allow you to build more complex boolean expressions by connecting simple boolean expressions:
+    </p>
+    <ul>
+      <li>Logical And: <code class="lang-js">&&</code></li>
+      <li>Logical Or: <code class="lang-js">||</code></li>
+      <li>Logical Not: <code class="lang-js">!</code></li>
+    </ul>
+
+    <h4>Examples of Logical Operators</h4>
+    <pre><code class="lang-js">
+let age = 15;
+
+// And (&&) is true if all connected boolean expressions are true
+console.log(age > 10 && age < 20); // Output=> true
+console.log(age > 10 && age < 14); // Output=> false
+
+// Or (||) is true if at least one of the connected boolean expressions is true
+console.log(age < 10 || age > 20); // Output=> false
+console.log(age < 10 || age > 13); // Output=> true
+console.log(age > 10 || age < 18); // Output=> true
+
+// Not (!) changes true to false and false to true
+let found = true;
+console.log(!found); // Output=> false
+
+found = false;
+console.log(!found); // Output=> true
+    </code></pre>
+    <hr>
+
+  </main>
+
+  <script src="../js/prism.js"></script>
+</body>
+
+</html>

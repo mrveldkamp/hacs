@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>HACS</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway|Economica" rel="stylesheet">
+
+  <link href="../css/page.css" rel="stylesheet" type="text/css" />
+  <link href="../css/prism.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <a href="../index.html">
+      <img src="../img/ainlay-logo.png" width="32">
+      Harry Ainlay Computing Science
+    </a>
+  </header>
+
+  <main>
+    <h1>
+      JavaScript If Statements
+      <a id="yt-link" href="#">
+        <img id="yt-img" src="../img/yt_icon_rgb.png" alt="YouTube Icon" width="24">
+        Topic Explanation
+      </a>
+    </h1>
+
+    <hr>
+
+    <h2>Selection Control Structure</h2>
+    <p><strong>If statements</strong> are a type of selection control structure. They allow you to control / select what
+      code to execute.</p>
+    <hr>
+
+    <h2>Binary Selection</h2>
+    <p>Select one of two paths...</p>
+    <pre><code class='lang-js'>
+if (boolean_expression) {
+  console.log('boolean_expression is true');
+} else {
+  console.log('boolean_expression is false');
+}
+    </code></pre>
+    <p>
+      <img class="img-fluid-max" src="img/if-binary-diagram.PNG" alt="Binary Selection">
+    </p>
+    <hr>
+
+    <h2>Unary Selection</h2>
+    <p>Select path or not...</p>
+    <pre><code class='lang-js'>
+if (boolean_expression) {
+  console.log('boolean_expression is true');
+} 
+    </code></pre>
+    <p>
+      <img class="img-fluid-max" src="img/if-unary-diagram.PNG" alt="Unary Selection">
+    </p>
+    <hr>
+
+    <h2>Chained Selection</h2>
+    <p>Select one of multiple paths...</p>
+    <pre><code class='lang-js'>
+if (boolean_expression_1) {
+  console.log('boolean_expression_1 is true');
+} else if (boolean_expression_2) {
+  console.log('boolean_expression_2 is true');
+} else if (boolean_expression_3) {
+  console.log('boolean_expression_3 is true');
+} else {
+  console.log('All boolean_expressions are false');
+}
+
+// Note: insert as many else if conditions as needed.
+    </code></pre>
+    <p>
+      <img class="img-fluid-max" src="img/if-chained-diagram.PNG" alt="Chained Selection">
+    </p>
+    <hr>
+
+    <h2>Chained Selection without Else</h2>
+    <p>Select one or none of multiple paths...</p>
+    <pre><code class='lang-js'>
+if (boolean_expression_1) {
+  console.log('boolean_expression_1 is true');
+} else if (boolean_expression_2) {
+  console.log('boolean_expression_2 is true');
+} else if (boolean_expression_3) {
+  console.log('boolean_expression_3 is true');
+} 
+
+// Note: insert as many else if conditions as needed.
+    </code></pre>
+    <p>
+      <img class="img-fluid-max" src="img/if-chained-no-else-diagram.PNG" alt="Chained No Else Selection">
+    </p>
+    <hr>
+
+    <h2>Nested If Statements</h2>
+    <p>If statements may be nested inside of other if statements.</p>
+    <pre><code class='lang-js'>
+// Outer Binary If Statement
+if (boolean_expression_1) {
+  // Inner Binary If Statement
+  if (boolean_expression_2) {
+    console.log('1 true, 2 true');
+  } else {
+    console.log('1 true, 2 false');
+  }
+} else {
+  // Inner Chained If Statement
+  if (boolean_expression_3) {
+    console.log('1 false, 3 true');
+  } else if (boolean_expression_4) {
+    console.log('1 false, 3 false, 4 true');
+  } else {
+    console.log('1 false, 3 false, 4 false');
+  }
+}
+    </code></pre>
+    <hr>
+
+  </main>
+
+  <script src="../js/prism.js"></script>
+</body>
+
+</html>

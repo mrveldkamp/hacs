@@ -21,7 +21,7 @@
 
   <main>
     <h1>
-      Topic Title
+      JavaScript For Loops
       <a id="yt-link" href="#">
         <img id="yt-img" src="../img/yt_icon_rgb.png" alt="YouTube Icon" width="24">
         Topic Explanation
@@ -30,9 +30,32 @@
 
     <hr>
 
-    <h2>Title</h2>
+    <p>The code inside of a for loop will repeatedly execute as long as the condition is true.</p>
+    <pre><code class="lang-js">
+for (init; condition; update) {
+  // Code block 
+  // to be 
+  // executed...
+}
+    </code></pre>
+    <p>The flow of control of a for loop is as follows:</p>
+    <ol>
+      <li>execute init statement</li>
+      <li>if condition is true:</li>
+      <ol type="a">
+        <li>execute loop body</li>
+        <li>execute update</li>
+        <li>go to step 2</li>
+      </ol>
+    </ol>
 
-
+    <h4>Example: Log the numbers 1 to 100 to the console...</h4>
+    <pre><code class="lang-js">
+for (let num = 1; num <= 100; num++) {
+  console.log(num);
+}
+    </code></pre>
+    <hr>
   </main>
 
   <script src="../js/prism.js"></script>
