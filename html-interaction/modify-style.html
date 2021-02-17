@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>HACS</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway|Economica" rel="stylesheet">
+
+  <link href="../css/page.css" rel="stylesheet" type="text/css" />
+  <link href="../css/prism.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <a href="../index.html">
+      <img src="../img/ainlay-logo.png" width="32">
+      Harry Ainlay Computing Science
+    </a>
+  </header>
+
+  <main class="wrapper">
+    <h1>
+      Modify Style
+      <a id="yt-link" href="#">
+        <img id="yt-img" src="../img/yt_icon_rgb.png" alt="YouTube Icon" width="24">
+        Topic Explanation
+      </a>
+    </h1>
+
+    <hr>
+
+    <p>JavaScript may be used to select an element and modify its style.</p>
+    <p>Modify an element with the <code class="lang-js">style</code> property.</p>
+    <p>CSS properties with hyphens need to be changed to camelCasing.<br>
+      <em>(eg. font-size -> fontSize, font-family -> fontFamily)</em>
+    </p>
+
+    <h4>index.html</h4>
+    <pre><code class="lang-html">
+&lt;body&gt;
+&lt;h1 id="heading"&gt;This is a Heading&lt;/h1&gt;
+&lt;p id="para"&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;!-- Run External JavaScript File --&gt;
+&lt;script src="main.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+    </code></pre>
+
+    <h4>main.js</h4>
+    <pre><code class="lang-js">
+// Variables to store reference to HTML Elements
+let headingEl = document.getElementById("heading");
+let paragraphEl = document.getElementById("para");
+
+// Change style of heading and paragraph elements
+headingEl.style.color = "blue";
+headingEl.style.fontFamily = "Verdana";
+paragraphEl.style.fontSize = "18px";
+paragraphEl.style.textAlign = "center";
+    </code></pre>
+    <hr>
+
+  </main>
+
+  <script src="../js/prism.js"></script>
+</body>
+
+</html>
