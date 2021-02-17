@@ -86,6 +86,7 @@ main .li-div {
 main a {
   text-decoration: none;
   color: rgb(40, 40, 200);
+  font-size: 0.9rem;
 }
 
 main a:hover {
@@ -102,19 +103,19 @@ main a#yt-link {
   font-family: "Open Sans", sans-serif;
   display: inline-block;
   font-size: 0.8rem;
-  background: #09457e;
-  color: white;
   border: 1px solid #333;
+  color: #09457e;
   text-decoration: none;
+  border: 1px solid red;
   border-radius: 5px;
   padding: 2px 10px;
   margin-top: 0.8rem;
 }
 
 main a#yt-link:hover {
-  background: white;
-  color: #09457e;
-  border: 1px solid red;
+  background: #09457e;
+  border: 1px solid grey;
+  color: white;
 }
 
 /* Media Queries */
