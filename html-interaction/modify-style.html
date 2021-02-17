@@ -41,6 +41,7 @@
 &lt;body&gt;
 &lt;h1 id="heading"&gt;This is a Heading&lt;/h1&gt;
 &lt;p id="para"&gt;This is a paragraph.&lt;/p&gt;
+&lt;p&gt;&lt;button id="btn"&gt;Click Me&lt;/button&gt;&lt;/p&gt;
 
 &lt;!-- Run External JavaScript File --&gt;
 &lt;script src="main.js"&gt;&lt;/script&gt;
@@ -50,17 +51,22 @@
     <h4>main.js</h4>
     <pre><code class="lang-js">
 // Variables to store reference to HTML Elements
+let btnEl = document.getElementById("btn");
 let headingEl = document.getElementById("heading");
 let paragraphEl = document.getElementById("para");
 
-// Change style of heading and paragraph elements
-headingEl.style.color = "blue";
-headingEl.style.fontFamily = "Verdana";
-paragraphEl.style.fontSize = "18px";
-paragraphEl.style.textAlign = "center";
-    </code></pre>
-    <hr>
+// Run modifyStyle function when button is clicked 
+btnEl.addEventListener("click", modifyStyle);
 
+function modifyStyle() {
+  // Use the style property to modify element styles
+  headingEl.style.color = "red";
+  headingEl.style.fontFamily = "Comic Sans MS";
+  paragraphEl.style.textDecoration = "underline";
+  paragraphEl.style.textAlign = "center";
+}
+  </code></pre>
+    <hr>
   </main>
 
   <script src="../js/prism.js"></script>
