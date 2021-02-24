@@ -5,28 +5,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>HACS</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway|Economica" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/5da9f5ff62.js" crossorigin="anonymous"></script>
 
-  <link href="../css/page.css" rel="stylesheet" type="text/css" />
-  <link href="../css/prism.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" type="image/png" href="/img/ainlay-logo-blue-white.png">
+  <link href="/css/home.css" rel="stylesheet" type="text/css" />
+  <link href="/css/page.css" rel="stylesheet" type="text/css" />
+  <link href="/css/prism.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <header>
-    <a href="../index.html">
-      <img src="../img/ainlay-logo.png" width="32">
-      Harry Ainlay Computing Science
-    </a>
-  </header>
+  <nav></nav>
 
-  <main class="wrapper">
-    <h1>
-      Introduction to JavaScript
+  <main>
+    <div class="title">
+      <h1>Introduction to JavaScript</h1>
       <a id="yt-link" href="#">
-        <img id="yt-img" src="../img/yt_icon_rgb.png" alt="YouTube Icon" width="24">
+        <i class="fab fa-youtube fa-lg"></i>
         Topic Explanation
       </a>
-    </h1>
+    </div>
 
     <hr>
 
@@ -35,9 +32,10 @@
     </p>
     <p>Programming involves using a programming language to instruct a computer to complete a task.</p>
     <p>JavaScript is a programming language that may be used to build web applications.</p>
-    <hr>
 
     <h2>JavaScript How To</h2>
+    <hr>
+
     <p>The recommended way to run JavaScript code is to load an <strong>external JavaScript file</strong> into your html
       document using a <code class="lang-html">&lt;script&gt;</code> element.</p>
 
@@ -70,10 +68,15 @@ alert("Welcome to JavaScript.");
 &lt;/body&gt;
       </code></pre>
     </p>
-    <hr>
   </main>
 
-  <script src="../js/prism.js"></script>
+  <!-- Load Nav -->
+  <script src="/js/load-nav.js"></script>
+  <script>
+    loadFileIntoEl("/includes/nav.html", "nav");
+  </script>
+
+  <script src="/js/prism.js"></script>
 </body>
 
 </html>
