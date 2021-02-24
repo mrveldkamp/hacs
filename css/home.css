@@ -34,6 +34,8 @@ nav a {
 
 nav a#logo {
   color: white;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
 }
 
 nav a#js-ref {
@@ -62,7 +64,7 @@ header h1 {
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   letter-spacing: 3px;
-  font-size: 3rem;
+  font-size: 2.3rem;
   margin-bottom: 1.25rem;
 }
 
@@ -85,14 +87,15 @@ section {
   max-width: 800px;
   margin: auto;
   background: white;
-  padding: 20px 50px;
+  padding: 10px 20px 50px;
   border-radius: 15px;
   margin-bottom: 35px;
   color: #333;
+  counter-reset: a;
 }
 
 section h2 {
-  margin-bottom: 1rem;
+  margin: 1.5rem 0 1rem;
   color: #444;
 }
 
@@ -107,60 +110,26 @@ section a.item {
   padding: 10px 20px;
   text-decoration: none;
   color: #333;
-  font-size: 1.15rem;
+  font-size: 1rem;
 }
 
 section a.item:hover {
-  background: #356DA2;
+  background: #C29500;
   color: white;
-
 }
 
 section i {
   margin-right: 10px;
 }
 
-
-
-
-
-
-main {
-  background: white;
-  max-width: 900px;
-  margin: auto;
-  padding: 5px 20px 25px;
-  border-radius: 15px;
-  counter-reset: a;
-}
-
-main h2 {
-  font-family: "Economica", sans-serif;
-  color: #7e3409;
-  letter-spacing: 0.5px;
-  font-variant: small-caps;
-  font-weight: 300;
-  font-size: 2rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0.25rem;
-}
-
-main hr {
-  margin-bottom: 1rem;
-}
-
-main p {
-  margin-bottom: 1rem;
-}
-
-main ol {
+section ol {
   counter-increment: a;
   counter-reset: b;
   list-style: none;
   columns: 1;
 }
 
-main .li-div::before {
+section .li-div::before {
   position: absolute;
   top: 4px;
   left: 0;
@@ -171,64 +140,37 @@ main .li-div::before {
   content: counter(a) "."counter(b) " ";
 }
 
-main .li-div {
+section .li-div {
   position: relative;
   padding-left: 38px;
   margin-bottom: 2px;
 }
 
-main a {
+section a {
   text-decoration: none;
-  color: rgb(40, 40, 200);
-  font-size: 0.9rem;
+  color: #09457E;
 }
 
-main a:hover {
+section a:hover {
   text-decoration: underline;
-  color: #FB9C1B;
-}
-
-main img#yt-img {
-  vertical-align: middle;
-  margin-right: 3px;
-}
-
-main a#yt-link {
-  font-family: "Open Sans", sans-serif;
-  display: inline-block;
-  font-size: 0.8rem;
-  border: 1px solid #333;
-  color: #09457e;
-  text-decoration: none;
-  border: 1px solid red;
-  border-radius: 5px;
-  padding: 2px 10px;
-  margin-top: 0.8rem;
-}
-
-main a#yt-link:hover {
-  background: #09457e;
-  border: 1px solid grey;
-  color: white;
+  color: #C29500;
 }
 
 /* Media Queries */
-@media (min-width: 700px) {
-  main {
-    padding: 5px 35px 25px;
+@media (min-width: 600px) {
+  header h1 {
+    font-size: 3rem;
   }
 
-  main ol {
+  section {
+    padding: 10px 50px 50px;
+  }
+
+  section a.item {
+    font-size: 1.15rem;
+  }
+
+  section ol {
     columns: 2;
-  }
-}
-
-@media (min-width: 900px) {
-  main {
-    padding: 5px 50px 25px;
-  }
-
-  main ol {
-    columns: 3;
   }
 }
