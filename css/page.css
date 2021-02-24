@@ -45,7 +45,6 @@ main hr {
 }
 
 main h2 {
-  color: #333;
   letter-spacing: 0.5px;
   font-variant: small-caps;
   margin: 1rem 0;
@@ -56,11 +55,15 @@ main h4 {
   margin: 1rem 0;
 }
 
-
+main ul,
+main ol {
+  padding-left: 40px;
+}
 
 main p,
 main ul {
   line-height: 1.75rem;
+  margin: 1rem 0;
 }
 
 .img-fluid {
@@ -72,8 +75,6 @@ main ul {
 }
 
 /* Media Queries */
-@media (min-width: 700px) {}
-
 @media (min-width: 768px) {
   main {
     padding: 5px 50px 25px;
