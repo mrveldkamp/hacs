@@ -7,8 +7,8 @@
   <title>HACS</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway|Economica" rel="stylesheet">
 
-  <link href="../css/page.css" rel="stylesheet" type="text/css" />
-  <link href="../css/prism.css" rel="stylesheet" type="text/css" />
+  <link href="/css/page.css" rel="stylesheet" type="text/css" />
+  <link href="/css/prism.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -60,7 +60,13 @@ alert("World"); // A comment after a statement
     <hr>
   </main>
 
-  <script src="../js/prism.js"></script>
+  <!-- Load Nav -->
+  <script src="/js/load-nav.js"></script>
+  <script>
+    loadFileIntoEl("/includes/nav.html", "nav");
+  </script>
+
+  <script src="/js/prism.js"></script>
 </body>
 
 </html>
