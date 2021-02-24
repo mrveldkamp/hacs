@@ -13,21 +13,13 @@
 </head>
 
 <body>
-  <nav>
-    <div class="wrapper">
-      <a id="logo" href="../index.html">
-        <img src="../img/ainlay-logo.png" width="32">
-        HACS
-      </a>
-      <a id="js-ref" href="../js-reference.html">JS Reference</a>
-    </div>
-  </nav>
+  <nav></nav>
 
   <main>
     <div class="title">
       <h1>Introduction to JavaScript</h1>
       <a id="yt-link" href="#">
-        <i class="far fa-play-circle fa-lg"></i>
+        <i class="fab fa-youtube fa-lg"></i>
         Topic Explanation
       </a>
     </div>
@@ -39,9 +31,10 @@
     </p>
     <p>Programming involves using a programming language to instruct a computer to complete a task.</p>
     <p>JavaScript is a programming language that may be used to build web applications.</p>
-    <hr>
 
     <h2>JavaScript How To</h2>
+    <hr>
+
     <p>The recommended way to run JavaScript code is to load an <strong>external JavaScript file</strong> into your html
       document using a <code class="lang-html">&lt;script&gt;</code> element.</p>
 
@@ -74,8 +67,13 @@ alert("Welcome to JavaScript.");
 &lt;/body&gt;
       </code></pre>
     </p>
-    <hr>
   </main>
+
+  <!-- Load Nav -->
+  <script src="/js/load-nav.js"></script>
+  <script>
+    loadFileIntoEl("/includes/nav.html", "nav");
+  </script>
 
   <script src="../js/prism.js"></script>
 </body>

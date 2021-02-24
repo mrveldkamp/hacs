@@ -37,8 +37,7 @@ main a#yt-link {
 }
 
 main a#yt-link:hover {
-  background: white;
-  color: #C29500;
+  background: #9E7900;
 }
 
 main hr {
@@ -73,13 +72,13 @@ main ul {
 }
 
 /* Media Queries */
-@media (min-width: 700px) {
-  main {
-    padding: 5px 35px 25px;
-  }
-}
+@media (min-width: 700px) {}
 
 @media (min-width: 768px) {
+  main {
+    padding: 5px 50px 25px;
+  }
+
   main div.title {
     flex-direction: row;
     align-items: center;
@@ -91,11 +90,5 @@ main ul {
 
   .img-fluid-max {
     width: 60%;
-  }
-}
-
-@media (min-width: 900px) {
-  main {
-    padding: 5px 50px 25px;
   }
 }
