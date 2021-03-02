@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>HACS</title>
+  <script src="https://kit.fontawesome.com/5da9f5ff62.js" crossorigin="anonymous"></script>
+
+  <link rel="shortcut icon" type="image/png" href="../img/ainlay-logo-blue-white.png">
+  <link href="../css/home.css" rel="stylesheet" type="text/css" />
+  <link href="../css/page.css" rel="stylesheet" type="text/css" />
+  <link href="../css/prism.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <nav></nav>
+
+  <main>
+    <div class="title">
+      <h1>Hello World</h1>
+      <a id="yt-link" href="#" target="_blank">
+        <i class="fab fa-youtube fa-lg"></i>
+        Video Lesson
+      </a>
+    </div>
+
+    <hr>
+
+    <p class="description">The classic "Hello World" program: an introduction to JavaScript.</p>
+    <p class="concept-list">What is JavaScript? | JS How To | &lt;script&gt; | alert() | Comments</p>
+
+    <h2>What is JavaScript?</h2>
+    <hr>
+
+    <p>JavaScript is a programming language.</p>
+
+    <p>
+      <img class="img-fluid" src="img/programming-definition.png" alt="Programming Definition">
+    </p>
+    <p>Programming involves using a programming language to instruct a computer to complete a task.</p>
+    <p>JavaScript is a programming language that may be used to build web applications.</p>
+
+    <h2>JavaScript How To</h2>
+    <hr>
+
+    <p>The recommended way to run JavaScript code is to load an <strong>external JavaScript file</strong> into your html
+      document using a <code class="lang-html">&lt;script&gt;</code> element.</p>
+
+    <h3>Step 1: Create an External JavaScript File</h3>
+    <p>Create an external JavaScript file by making a file with a .js extension <em>(It is common to name this file
+        "script.js" or "main.js")</em> This document is where you will write your JavaScript code.</p>
+    <p>The first javaScript command we will use is the <code class="lang-js">alert()</code> function. The <code
+        class="lang-js">alert()</code> function instructs the browser to display a provided message in an alert-box.</p>
+
+    <h4>script.js</h4>
+    <p>
+      <pre><code class="lang-js">
+alert("Hello World!");
+alert("Welcome to JavaScript.");  
+      </code></pre>
+    </p>
+
+    <h3>Step 2: Run JavaScript in HTML document</h3>
+    <p>Put a <code class="lang-html">&lt;script&gt;</code> element as the last element in the html body. This will run
+      the JavaScript code specificed in the script's src attribute.</p>
+
+    <h4>index.html</h4>
+    <p>
+      <pre><code class="lang-html">
+&lt;body&gt;
+  &lt;h1&gt;JavaScript Intro&lt;/h1&gt;
+
+  &lt;!-- Run External JavaScript File --&gt;
+  &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+      </code></pre>
+    </p>
+
+    <h2>JS Comments</h2>
+    <hr>
+    <p>Comments are ignored when a script is run.</p>
+    <p>Single-line comments start with two forward slash characters (<code class="lang-js">//</code>).</p>
+    <p>A comment may be a full line or follow a statement.</p>
+    <p>
+      <pre><code class="lang-js">
+// A full line comment
+alert("Hello");
+
+alert("World"); // A comment after a statement
+
+// The alert below is ignored because it is commented
+// alert("I am being ignored.");
+      </code></pre>
+    </p>
+    <p>In most editors, a line of code can be commented by pressing <code class="lang-js">Ctrl + /</code>. Comment
+      multiple lines of code by selecting the code and then pressing <code class="lang-js">Ctrl + /</code>.</p>
+    <hr>
+
+    <h2>Why Comments?</h2>
+    <p>Comments are often used to:</p>
+    <ul>
+      <li>highlight the overall architecture of your code (titles, headings, ...)</li>
+      <li>describe important solutions that aren't obvious</li>
+      <li>temporarily disable a part of the code</li>
+    </ul>
+    <p>Comments will help others understand your code and will help you maintain your code when you come back to it
+      later.</p>
+    <hr>
+
+    <h2>Summary</h2>
+    <ul>
+      <li>fdsafdsa</li>
+      <li>fdsafdsa</li>
+    </ul>
+
+    <div class="box">
+      <h2><i class="far fa-check-square"></i> Check Your Understanding</h2>
+    </div>
+  </main>
+
+  <!-- Load Nav -->
+  <script src="../js/load-nav.js"></script>
+  <script>
+    loadFileIntoEl("../includes/nav.html", "nav");
+  </script>
+
+  <script src="../js/prism.js"></script>
+</body>
+
+</html>
