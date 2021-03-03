@@ -17,17 +17,10 @@
   <nav></nav>
 
   <main>
-    <div class="title">
-      <h1>JS Type Conversions</h1>
-      <a id="yt-link" href="#">
-        <i class="fab fa-youtube fa-lg"></i>
-        Topic Explanation
-      </a>
-    </div>
-
+    <h1>JS Type Conversions</h1>
     <hr>
 
-    <h2>Automatic Conversions</h2>
+    <h2><i class="far fa-bookmark topic-heading"></i> Automatic Conversions</h2>
     <p>JavaScript will automatically convert values when performing mathematical operations on mixed data: Numbers and
       Strings.</p>
     <p>For most mathematical operations JavaScript will automatically convert any String data to Number data.</p>
@@ -51,7 +44,7 @@ console.log(60 + "40"); // Output=> "6040"
     </code></pre>
     <hr>
 
-    <h2>Number to String</h2>
+    <h2><i class="far fa-bookmark topic-heading"></i> Number to String</h2>
     <p>It is possible to explicitly convert a Number to a String using the <code class="lang-js">String()</code>
       function.</p>
     <pre><code class="lang-js">
@@ -60,7 +53,7 @@ String(5.2); // Convert the Number 5.2 to the String "5.2"
     </code></pre>
     <hr>
 
-    <h2>String to Number</h2>
+    <h2><i class="far fa-bookmark topic-heading"></i> String to Number</h2>
     <p>It is possible to explicitly convert a String to a Number using the <code class="lang-js">Number()</code>
       function.</p>
     <pre><code class="lang-js">
@@ -83,7 +76,24 @@ String(5.2); // Convert the Number 5.2 to the String "5.2"
     </code></pre>
     <hr>
 
+    <h2><i class="far fa-list-alt summary"></i> Summary</h2>
+    <ul>
+      <li>JavaScript will automatically convert data types in certain situations.</li>
+      <li>Use the <code class="lang-js">String()</code> function to explicitly convert a Number to a String.</li>
+      <li>Use the <code class="lang-js">Number()</code> function or the unary plus operator (<code
+          class="lang-js">+</code>) to explicitly convert a String to a Number.</li>
+      <li>If there is a problem converting a String to a Number the result will be <code class="lang-js">NaN</code>
+        <em>(Not a Number)</em></li>
+    </ul>
+    <hr>
 
+    <h2><i class="far fa-check-square check"></i> Check Your Understanding</h2>
+    <p>Try to do the following task(s) to check your understanding. Ask for help if needed.</p>
+    <ul>
+      <li>Predict the output of: <code class="lang-js">4 + 5 + "px"</code> <em>(Check answer in console)</em></li>
+      <li>Predict the output of: <code class="lang-js">"$" + 4 + 5</code> <em>(Check answer in console)</em></li>
+    </ul>
+    <hr>
 
 
     <!-- CYU -->
