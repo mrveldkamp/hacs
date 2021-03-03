@@ -17,16 +17,11 @@
   <nav></nav>
 
   <main>
-    <div class="title">
-      <h1>JS For Loops</h1>
-      <a id="yt-link" href="#">
-        <i class="fab fa-youtube fa-lg"></i>
-        Topic Explanation
-      </a>
-    </div>
-
+    <h1>JS For Loops</h1>
     <hr>
+    <p>A for loop is a type of <strong>repetition control structure.</strong></p>
 
+    <h2><i class="far fa-bookmark topic-heading"></i> For Loop Basics</h2>
     <p>The code inside of a for loop will repeatedly execute as long as the condition is true.</p>
     <pre><code class="lang-js">
 for (init; condition; update) {
@@ -35,16 +30,19 @@ for (init; condition; update) {
   // executed...
 }
     </code></pre>
-    <p>The flow of control of a for loop is as follows:</p>
-    <ol>
-      <li>execute init statement</li>
-      <li>if condition is true:</li>
-      <ol type="a">
-        <li>execute loop body</li>
-        <li>execute update</li>
-        <li>go to step 2</li>
+
+    <div class="attention-box">
+      <h4><i class="fas fa-exclamation-triangle attention"></i> For Loop - Flow of Control</h4>
+      <ol>
+        <li>execute init statement</li>
+        <li>if condition is true:</li>
+        <ol type="a">
+          <li>execute loop body</li>
+          <li>execute update</li>
+          <li>go to step 2</li>
+        </ol>
       </ol>
-    </ol>
+    </div>
 
     <h4>Example: Log the numbers 1 to 100 to the console...</h4>
     <pre><code class="lang-js">
@@ -52,6 +50,12 @@ for (let num = 1; num <= 100; num++) {
   console.log(num);
 }
     </code></pre>
+    <hr>
+
+    <h2><i class="far fa-list-alt summary"></i> Summary</h2>
+    <ul>
+      <li>A for loop is a concise way to repeat code.</li>
+    </ul>
     <hr>
   </main>
 
