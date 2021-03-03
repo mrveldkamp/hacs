@@ -17,15 +17,10 @@
   <nav></nav>
 
   <main>
-    <div class="title">
-      <h1>&lt;input&gt; Elements</h1>
-      <a id="yt-link" href="#">
-        <i class="fab fa-youtube fa-lg"></i>
-        Topic Explanation
-      </a>
-    </div>
-
+    <h1>&lt;input&gt; Elements</h1>
     <hr>
+
+    <h2><i class="far fa-bookmark topic-heading"></i> HTML &lt;input&gt; Element</h2>
     <p>An <code class="lang-html">&lt;input&gt;</code> element will display as an input-box on a web page: <input>.</p>
     <p>An <code class="lang-html">&lt;input&gt;</code> element is a self-closing element: it only has an opening tag and
       no closing tag.</p>
@@ -42,11 +37,13 @@
     </code></pre>
 
     <hr>
+    <h4>Output of index.html</h4>
     <p>Enter your name: <input id="name-in"></p>
     <p>Enter the time of day: <input id="time-in" value="Morning"></p>
     <p><button id="btn">Submit</button></p>
     <hr>
 
+    <h2><i class="far fa-bookmark topic-heading"></i> Get Value of &lt;input&gt; Element</h2>
     <p>Use JavaScript to select an <code class="lang-html">&lt;input&gt;</code> element by id and then use its
       <strong>value property</strong> to get
       the contents of the input-box.</p>
@@ -71,15 +68,21 @@ function encourage() {
 }
     </code></pre>
 
-    <p>Take Note:</p>
-    <ul>
-      <li>be sure to use an event listener to give the user time to type something into the input element!</li>
-      <li>the value of the input element is always a String data type. Convert to a Number data type if required.</li>
-    </ul>
+    <div class="attention-box">
+      <h4><i class="fas fa-exclamation-triangle attention"></i> Attention</h4>
+      <ul>
+        <li>be sure to use an event listener to give the user time to type something into the input element!</li>
+        <li>the value of the input element is always a String data type. Convert to a Number data type if required.</li>
+      </ul>
+    </div>
     <hr>
 
-
-
+    <h2><i class="far fa-list-alt summary"></i> Summary</h2>
+    <ul>
+      <li>JavaScript can get the value of &lt;input&gt; elements.</li>
+      <li>The value of an &lt;input&gt; element is always a String.</li>
+    </ul>
+    <hr>
   </main>
 
   <script>

@@ -29,7 +29,7 @@ main h4 {
 
 main ul,
 main ol {
-  padding-left: 40px;
+  padding-left: 25px;
 }
 
 main p,
@@ -56,6 +56,16 @@ main ul {
 
 .check {
   color: #286600;
+}
+
+.attention {
+  color: #F5BD08;
+}
+
+.attention-box {
+  border: 1px solid #BBB;
+  border-radius: 5px;
+  padding: 0 20px 15px;
 }
 
 /* Media Queries */

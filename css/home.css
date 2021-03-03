@@ -157,6 +157,10 @@ section a:hover {
   color: #C29500;
 }
 
+.topic-heading {
+  color: #C29500;
+}
+
 /* Media Queries */
 @media (min-width: 768px) {
   header h1 {
