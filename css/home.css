@@ -39,6 +39,18 @@ nav a#logo {
   letter-spacing: 2px;
 }
 
+nav a.nav-link {
+  color: white;
+  margin-left: 0.8rem;
+  font-size: 1.1rem;
+  letter-spacing: 1.1px;
+}
+
+nav a.active {
+  color: #F5BD08;
+}
+
+/* 
 nav a#js-ref {
   color: #F5BD08;
   border: 1px solid #F5BD08;
@@ -49,7 +61,7 @@ nav a#js-ref {
 nav a#js-ref:hover {
   color: #FACF44;
   border: 1px solid #FACF44;
-}
+} */
 
 nav img {
   vertical-align: middle;
@@ -58,7 +70,7 @@ nav img {
 /* Header */
 header {
   text-align: center;
-  padding: 50px 0;
+  padding: 25px 0 50px;
 }
 
 header h1 {
@@ -97,6 +109,11 @@ section {
 
 section h2 {
   margin: 1.5rem 0 1rem;
+  color: #444;
+}
+
+section h4 {
+  margin-top: 20px;
   color: #444;
 }
 
@@ -155,6 +172,20 @@ section a {
 section a:hover {
   text-decoration: underline;
   color: #C29500;
+}
+
+section a.btn {
+  display: inline-block;
+  background: #C29500;
+  color: white;
+  border: 1px solid #C29500;
+  text-decoration: none;
+  border-radius: 50px;
+  padding: 5px 10px;
+}
+
+section a.btn:hover {
+  background: #9E7900;
 }
 
 .topic-heading {
