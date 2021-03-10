@@ -25,9 +25,8 @@ main i {
 
 main a#yt-link {
   display: inline-block;
-  background: #C29500;
+  background: #9E3300;
   color: white;
-  border: 1px solid #C29500;
   text-decoration: none;
   border-radius: 50px;
   padding: 5px 10px;
@@ -36,7 +35,7 @@ main a#yt-link {
 }
 
 main a#yt-link:hover {
-  background: #9E7900;
+  background: #742600;
 }
 
 main hr {
@@ -57,12 +56,13 @@ main p.concept-list {
 main h2 {
   letter-spacing: 0.5px;
   font-variant: small-caps;
-  margin: 2rem 0 0.25rem;
+  margin: 2rem 0 1.5rem;
 }
 
 main h3,
 main h4 {
   margin: 1rem 0;
+  font-variant: small-caps;
 }
 
 main ul,
@@ -104,6 +104,7 @@ main ul {
   border: 1px solid #BBB;
   border-radius: 5px;
   padding: 0 20px 15px;
+  background: #FFD;
 }
 
 /* Media Queries */

@@ -176,16 +176,15 @@ section a:hover {
 
 section a.btn {
   display: inline-block;
-  background: #C29500;
+  background: #9E3300;
   color: white;
-  border: 1px solid #C29500;
   text-decoration: none;
   border-radius: 50px;
   padding: 5px 10px;
 }
 
 section a.btn:hover {
-  background: #9E7900;
+  background: #742600;
 }
 
 .topic-heading {
