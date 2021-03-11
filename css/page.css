@@ -76,6 +76,20 @@ main ul {
   margin: 1rem 0;
 }
 
+main a.btn {
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #9E3300;
+  border-radius: 25px;
+  padding: 0 15px;
+  color: #9E3300;
+}
+
+main a.btn:hover {
+  background: #9E3300;
+  color: white;
+}
+
 .w-100 {
   width: 100%;
 }
@@ -89,6 +103,10 @@ main ul {
 }
 
 .w-40 {
+  width: 100%;
+}
+
+.w-20 {
   width: 100%;
 }
 
@@ -156,5 +174,9 @@ main ul {
 
   .w-40 {
     width: 40%;
+  }
+
+  .w-20 {
+    width: 20%;
   }
 }
