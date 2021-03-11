@@ -176,8 +176,9 @@ section a:hover {
 
 section a.btn {
   display: inline-block;
-  background: #9E3300;
-  color: white;
+  /* background: #9E3300; */
+  /* color: white; */
+  border: 1px solid #9E3300;
   text-decoration: none;
   border-radius: 50px;
   padding: 5px 10px;
