@@ -153,7 +153,6 @@ section .li-div::before {
   left: 0;
   font-family: Consolas, Lucida Console, Menlo, Monaco, monospace;
   font-size: 0.75rem;
-  /* line-height: 16px; */
   counter-increment: b;
   content: counter(a) "."counter(b) " ";
 }
