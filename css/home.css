@@ -5,16 +5,19 @@
 }
 
 body {
-  background: url("../img/Harry-Ainlay_background-1600x700.png") no-repeat center fixed;
+  background: url('../img/Harry-Ainlay_background-1600x700.png') no-repeat
+    center fixed;
   background-size: cover;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   padding: 0 20px;
   margin-bottom: 200px;
 }
 
 /* NAV */
 nav {
-  background: url("../img/Harry-Ainlay_background-1600x700.png") no-repeat center fixed;
+  background: url('../img/Harry-Ainlay_background-1600x700.png') no-repeat
+    center fixed;
   background-size: cover;
   position: sticky;
   top: 0;
@@ -47,7 +50,7 @@ nav a.nav-link {
 }
 
 nav a.active {
-  color: #F5BD08;
+  color: #f5bd08;
 }
 
 /* 
@@ -75,7 +78,8 @@ header {
 
 header h1 {
   color: white;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   letter-spacing: 3px;
   font-size: 2.3rem;
   margin-bottom: 1.25rem;
@@ -83,13 +87,14 @@ header h1 {
 
 header p.lead {
   color: white;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   letter-spacing: 1.15px;
   margin-bottom: 1.25rem;
 }
 
 header p.motto {
-  color: #F5BD08;
+  color: #f5bd08;
   letter-spacing: 1.1px;
   font-variant: small-caps;
   font-size: 1.25rem;
@@ -123,7 +128,7 @@ section p.descr {
 
 section a.item {
   display: block;
-  border: 1px solid #CCC;
+  border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px 20px;
   text-decoration: none;
@@ -132,7 +137,7 @@ section a.item {
 }
 
 section a.item:hover {
-  background: #C29500;
+  background: #c29500;
   color: white;
 }
 
@@ -149,12 +154,13 @@ section ol {
 
 section .li-div::before {
   position: absolute;
-  top: 4px;
+  top: 3px;
   left: 0;
   font-family: Consolas, Lucida Console, Menlo, Monaco, monospace;
   font-size: 0.75rem;
+  line-height: 1rem;
   counter-increment: b;
-  content: counter(a) "."counter(b) " ";
+  content: counter(a) '.' counter(b) ' ';
 }
 
 section .li-div {
@@ -170,14 +176,14 @@ section a {
 
 section a:hover {
   text-decoration: underline;
-  color: #C29500;
+  color: #c29500;
 }
 
 section a.btn {
   display: inline-block;
   /* background: #9E3300; */
   /* color: white; */
-  border: 1px solid #9E3300;
+  border: 1px solid #9e3300;
   text-decoration: none;
   border-radius: 50px;
   padding: 5px 10px;
@@ -188,7 +194,7 @@ section a.btn:hover {
 }
 
 .topic-heading {
-  color: #C29500;
+  color: #c29500;
 }
 
 /* Media Queries */
