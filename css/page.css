@@ -1,8 +1,8 @@
 main {
   background: white;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 20px auto 100px;
-  padding: 5px 20px 25px;
+  padding: 20px 20px 50px;
   border-radius: 15px;
   color: #444;
 }
@@ -76,6 +76,22 @@ main ul {
   margin: 1rem 0;
 }
 
+.w-100 {
+  width: 100%;
+}
+
+.w-80 {
+  width: 100%;
+}
+
+.w-60 {
+  width: 100%;
+}
+
+.w-40 {
+  width: 100%;
+}
+
 .img-fluid {
   width: 100%;
 }
@@ -110,7 +126,7 @@ main ul {
 /* Media Queries */
 @media (min-width: 768px) {
   main {
-    padding: 5px 75px 25px;
+    padding: 20px 75px 25px;
   }
 
   main div.title {
@@ -124,5 +140,21 @@ main ul {
 
   .img-fluid-max {
     width: 60%;
+  }
+
+  .w-100 {
+    width: 100%;
+  }
+
+  .w-80 {
+    width: 80%;
+  }
+
+  .w-60 {
+    width: 60%;
+  }
+
+  .w-40 {
+    width: 40%;
   }
 }

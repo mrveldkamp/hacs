@@ -33,7 +33,7 @@
     <h2><i class="far fa-bookmark topic-heading"></i> HTML <code class="lang-html">&lt;canvas&gt;</code> Element</h2>
     <p>An HTML <code class="lang-html">&lt;canvas&gt;</code> element may be added to your web page.</p>
     <p>The <code class="lang-html">&lt;canvas&gt;</code> element may be styled with css like any other element.</p>
-    <p><img src="img/canvas.png" alt="Canvas Image" class="img-fluid"></p>
+    <p><img src="img/canvas.png" alt="Canvas Image" class="w-80"></p>
 
     <hr>
 
@@ -43,7 +43,7 @@
     <p>The x-axis increases as you go right from the origin.</p>
     <p>The y-axis increases as you go down from the origin.</p>
     <p>
-      <img src="img/canvas-coords.png" alt="Canvas Coordinates" class="img-fluid">
+      <img src="img/canvas-coords.png" alt="Canvas Coordinates" class="w-80">
     </p>
     <hr>
 
@@ -57,12 +57,13 @@ let ctx = cnv.getContext("2d");
 cnv.width = 600;
 cnv.height = 400;
     </code></pre>
-    <p>The graphics context (ctx) is what is used to control what is drawn on the canvas.</p>
+    <p>The graphics context (ctx) is used to control what is drawn on the canvas.</p>
 
     <hr>
 
     <h2><i class="far fa-bookmark topic-heading"></i> Drawing Properties</h2>
-    <p>The graphics context has various properties that may control things such as the line thickness or color of what
+    <p>The graphics context has various properties that may control things such as the line thickness or the color of
+      what
       is drawn.</p>
     <p>Color properties may use any valid CSS colors.</p>
     <pre><code class="lang-js">
@@ -93,7 +94,7 @@ ctx.fillStyle = "blue";
 ctx.fillRect(50, 50, 100, 60);
     </code></pre>
     <p>
-      <img src="img/filled-rect.PNG" alt="Filled Rectangle" class="img-fluid-max">
+      <img src="img/filled-rect.PNG" alt="Filled Rectangle" class="w-40">
     </p>
     <hr>
 
@@ -114,7 +115,7 @@ ctx.lineWidth = 4;
 ctx.strokeRect(50, 50, 100, 60);
     </code></pre>
     <p>
-      <img src="img/stroke-rect.PNG" alt="Outlined Rectangle" class="img-fluid-max">
+      <img src="img/stroke-rect.PNG" alt="Outlined Rectangle" class="w-40">
     </p>
     <hr>
 
@@ -134,7 +135,7 @@ ctx.fillStyle = "green";
 ctx.fillText("Canvas Text", 50, 100);    
     </code></pre>
     <p>
-      <img src="img/filled-text.PNG" alt="Filled Text" class="img-fluid-max">
+      <img src="img/filled-text.PNG" alt="Filled Text" class="w-40">
     </p>
     <hr>
 
@@ -155,7 +156,7 @@ ctx.strokeStyle = "green";
 ctx.strokeText("Canvas Text", 50, 100);    
     </code></pre>
     <p>
-      <img src="img/stroke-text.PNG" alt="Outlined Text" class="img-fluid-max">
+      <img src="img/stroke-text.PNG" alt="Outlined Text" class="w-40">
     </p>
     <hr>
 
@@ -171,7 +172,7 @@ ctx.lineTo(200, 100); // Go to (x2, y2)
 ctx.stroke(); // Draw path
     </code></pre>
     <p>
-      <img src="img/draw-line.PNG" alt="Draw Line" class="img-fluid-max">
+      <img src="img/draw-line.PNG" alt="Draw Line" class="w-40">
     </p>
     <hr>
 
@@ -187,7 +188,7 @@ ctx.lineTo(150, 150); // Go to (x3, y3)
 ctx.fill(); // Fill shape
     </code></pre>
     <p>
-      <img src="img/filled-triangle.PNG" alt="Filled Triangle" class="img-fluid-max">
+      <img src="img/filled-triangle.PNG" alt="Filled Triangle" class="w-40">
     </p>
     <hr>
 
@@ -205,7 +206,7 @@ ctx.closePath(); // Go back to start
 ctx.stroke(); // Draw path
     </code></pre>
     <p>
-      <img src="img/stroke-triangle.PNG" alt="Outlined Triangle" class="img-fluid-max">
+      <img src="img/stroke-triangle.PNG" alt="Outlined Triangle" class="w-40">
     </p>
 
     <div class="attention-box">
@@ -233,7 +234,7 @@ ctx.arc(150, 150, 100, 0, 2 * Math.PI);
 ctx.fill();
     </code></pre>
     <p>
-      <img src="img/filled-circle.PNG" alt="Filled Circle" class="img-fluid-max">
+      <img src="img/filled-circle.PNG" alt="Filled Circle" class="w-40">
     </p>
     <hr>
 
@@ -248,14 +249,15 @@ ctx.arc(150, 150, 100, 0, 2 * Math.PI);
 ctx.stroke();
     </code></pre>
     <p>
-      <img src="img/stroke-circle.PNG" alt="Outlined Circle" class="img-fluid-max">
+      <img src="img/stroke-circle.PNG" alt="Outlined Circle" class="w-40">
     </p>
     <hr>
 
     <h2><i class="far fa-list-alt summary"></i> Summary</h2>
     <ul>
       <li>HTML has a <code class="lang-js">&lt;canvas&gt;</code> element that can be used for drawing.</li>
-      <li>The canvas' graphics context may be used to draw various shapes and text to the canvas.</li>
+      <li>The canvas can generate a graphics context that may be used to draw various shapes and text to the canvas.
+      </li>
     </ul>
     <hr>
 

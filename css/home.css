@@ -23,7 +23,7 @@ nav {
 }
 
 nav .wrapper {
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -97,7 +97,7 @@ header p.motto {
 
 /* Sections */
 section {
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
   background: white;
   padding: 10px 20px 50px;
@@ -161,12 +161,12 @@ section .li-div::before {
 section .li-div {
   position: relative;
   padding-left: 38px;
-  margin-bottom: 2px;
+  margin-bottom: 5px;
 }
 
 section a {
   text-decoration: none;
-  color: #09457E;
+  color: #0059b2;
 }
 
 section a:hover {
@@ -198,7 +198,7 @@ section a.btn:hover {
   }
 
   section {
-    padding: 10px 75px 50px;
+    padding: 50px 100px 75px;
   }
 
   section a.item {
