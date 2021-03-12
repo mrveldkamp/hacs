@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>HACS</title>
+  <script src="https://kit.fontawesome.com/5da9f5ff62.js" crossorigin="anonymous"></script>
+
+  <link rel="shortcut icon" type="image/png" href="../img/ainlay-logo-blue-white.png">
+  <link href="../css/home.css" rel="stylesheet" type="text/css" />
+  <link href="../css/page.css" rel="stylesheet" type="text/css" />
+  <link href="../css/prism.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <nav></nav>
+
+  <main>
+    <div class="title">
+      <h1>Control Animation</h1>
+      <a href="#" id="yt-link" target="_blank">
+        <i class="fab fa-youtube fa-lg"></i>
+        Video Lesson
+      </a>
+    </div>
+    <hr>
+
+    <p class="description">If statements provide the ability to control animations.</p>
+    <p class="concept-list">Animate if True | Reset Animation</p>
+
+    <h2><i class="far fa-bookmark topic-heading"></i> Animate If True</h2>
+    <p>Put the code that changes the animation variable into an if statement. This will make the animation run only when
+      the if statement condition is true.</p>
+    <pre><code class="lang-js">
+let x = 100;
+
+requestAnimationFrame(draw);
+function draw() {
+  // Update Variable if x < 300
+  if (x < 300) {
+    x += 2;
+  } 
+
+  // Draw Background 
+  ctx.fillStyle = "white";
+  ctx.fillRect(0, 0, cnv.width, cnv.height);
+
+  // Draw Rectangle (using x)
+  ctx.fillStyle = "green";
+  ctx.fillRect(x, 100, 50, 50);
+
+  // Run draw again... 
+  requestAnimationFrame(draw);
+}
+    </code></pre>
+    <hr>
+
+    <h2><i class="far fa-bookmark topic-heading"></i> Reset Animation</h2>
+    <p>An if statement may be used to test the state of an animation variable and then reset the value of that variable.
+    </p>
+    <pre><code class="lang-js">
+let x = 100;
+
+requestAnimationFrame(draw);
+function draw() {
+  // Update Variable
+  x += 2;
+
+  // Reset Animation if x > 300
+  if (x > 300) {
+    x = 100;
+  }
+
+  // Draw Background 
+  ctx.fillStyle = "white";
+  ctx.fillRect(0, 0, cnv.width, cnv.height);
+
+  // Draw Rectangle (using x)
+  ctx.fillStyle = "green";
+  ctx.fillRect(x, 100, 50, 50);
+
+  // Run draw again... 
+  requestAnimationFrame(draw);
+}
+    </code></pre>
+    <hr>
+
+    <h2><i class="far fa-list-alt summary"></i> Summary</h2>
+    <ul>
+      <li>If statements can make an animation run while a condition is true.</li>
+      <li>Reset an animation by testing the state of the animation.</li>
+    </ul>
+    <hr>
+
+    <h2><i class="far fa-check-square check"></i> Check Your Understanding</h2>
+    <h4>Animate Sunrise (Part 2)</h4>
+    <p>Modify your sunrise animation so that the following occurs:</p>
+    <ul>
+      <li>the sun will stop rising and stop getting bigger and stop changing color once it reaches a point near the top
+        of the
+        canvas.
+      </li>
+      <li>both clouds should move in the same direction and when a cloud goes off of the canvas it should enter the
+        canvas from the other side.</li>
+      <li>when a cloud enters the canvas from the other side, set the height of the cloud to a random value.</li>
+    </ul>
+    <p>
+      <img src="img/draw-sunrise.png" alt="Draw Sunrise" class="w-60">
+    </p>
+    <p>
+      <a href="#" class="btn"><i class="fab fa-youtube fa-lg"></i> Video Explanation</a> |
+      <a href="#" class="btn"><i class="fab fa-youtube fa-lg"></i> Video Solution</a>
+    </p>
+    <hr>
+
+  </main>
+
+  <!-- Load Nav -->
+  <script src="../js/load-nav.js"></script>
+  <script>
+    loadFileIntoEl("../includes/nav-cs10.html", "nav");
+  </script>
+
+  <script src="../js/prism.js"></script>
+</body>
+
+</html>
