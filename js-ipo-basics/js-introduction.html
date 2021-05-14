@@ -7,18 +7,24 @@
   <title>HACS</title>
   <script src="https://kit.fontawesome.com/5da9f5ff62.js" crossorigin="anonymous"></script>
 
-  <link rel="shortcut icon" type="image/png" href="../img/ainlay-logo-blue-white.png">
-  <link href="../css/home.css" rel="stylesheet" type="text/css" />
-  <link href="../css/page.css" rel="stylesheet" type="text/css" />
-  <link href="../css/prism.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" type="image/png" href="/hacs/img/ainlay-logo-blue-white.png">
+  <link href="/hacs/css/home.css" rel="stylesheet" type="text/css" />
+  <link href="/hacs/css/page.css" rel="stylesheet" type="text/css" />
+  <link href="/hacs/css/prism.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <nav></nav>
 
   <main>
-    <h1>Introduction to JavaScript</h1>
-
+    <a class="back-link" href="/hacs/js-reference.html">&lt; JS Reference</a>
+    <div class="title">
+      <h1>Introduction to JavaScript</h1>
+      <!-- <a href="#" id="yt-link" target="_blank">
+        <i class="fab fa-youtube fa-lg"></i>
+        Video Explanation
+      </a> -->
+    </div>
     <hr>
 
     <h2><i class="far fa-bookmark topic-heading"></i> What is JavaScript?</h2>
@@ -52,7 +58,8 @@ alert("Welcome to JavaScript.");
     </p>
 
     <h3>Step 2: Run JavaScript in HTML document</h3>
-    <p>Put a <code class="lang-html">&lt;script&gt;</code> element as the last element in the html body. This will run
+    <p>Put a <code class="lang-html">&lt;script&gt;</code> element as the <strong>last element</strong> in the html
+      body. This will run
       the JavaScript code specificed in the script's src attribute.</p>
 
     <h4>index.html</h4>
@@ -87,12 +94,12 @@ alert("Welcome to JavaScript.");
   </main>
 
   <!-- Load Nav -->
-  <script src="../js/load-nav.js"></script>
+  <script src="/hacs/js/load-nav.js"></script>
   <script>
-    loadFileIntoEl("../includes/nav.html", "nav");
+    loadFileIntoEl("/hacs/includes/nav-js-ref.html", "nav");
   </script>
 
-  <script src="../js/prism.js"></script>
+  <script src="/hacs/js/prism.js"></script>
 </body>
 
 </html>

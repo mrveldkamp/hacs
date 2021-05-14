@@ -7,23 +7,30 @@
   <title>HACS</title>
   <script src="https://kit.fontawesome.com/5da9f5ff62.js" crossorigin="anonymous"></script>
 
-  <link rel="shortcut icon" type="image/png" href="../img/ainlay-logo-blue-white.png">
-  <link href="../css/home.css" rel="stylesheet" type="text/css" />
-  <link href="../css/page.css" rel="stylesheet" type="text/css" />
-  <link href="../css/prism.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" type="image/png" href="/hacs/img/ainlay-logo-blue-white.png">
+  <link href="/hacs/css/home.css" rel="stylesheet" type="text/css" />
+  <link href="/hacs/css/page.css" rel="stylesheet" type="text/css" />
+  <link href="/hacs/css/prism.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <nav></nav>
 
   <main>
-    <h1>JS Comments</h1>
+    <a class="back-link" href="/hacs/js-reference.html">&lt; JS Reference</a>
+    <div class="title">
+      <h1>JS Comments</h1>
+      <!-- <a href="#" id="yt-link" target="_blank">
+        <i class="fab fa-youtube fa-lg"></i>
+        Video Explanation
+      </a> -->
+    </div>
     <hr>
 
     <h2><i class="far fa-bookmark topic-heading"></i> Comment Basics</h2>
     <p>Comments are ignored when a script is run.</p>
     <p>Single-line comments start with two forward slash characters (<code class="lang-js">//</code>).</p>
-    <p>A comment may be a full line or follow a statement.</p>
+    <p>A comment may be a full line comment or a comment that follows a statement.</p>
     <p>
       <pre><code class="lang-js">
 // A full line comment
@@ -31,7 +38,7 @@ alert("Hello");
 
 alert("World"); // A comment after a statement
 
-// The alert below is ignored because it is commented
+// The alert below is ignored since it is a comment
 // alert("I am being ignored.");
       </code></pre>
     </p>
@@ -60,12 +67,12 @@ alert("World"); // A comment after a statement
   </main>
 
   <!-- Load Nav -->
-  <script src="../js/load-nav.js"></script>
+  <script src="/hacs/js/load-nav.js"></script>
   <script>
-    loadFileIntoEl("../includes/nav.html", "nav");
+    loadFileIntoEl("/hacs/includes/nav-js-ref.html", "nav");
   </script>
 
-  <script src="../js/prism.js"></script>
+  <script src="/hacs/js/prism.js"></script>
 </body>
 
 </html>

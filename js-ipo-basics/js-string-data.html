@@ -7,30 +7,33 @@
   <title>HACS</title>
   <script src="https://kit.fontawesome.com/5da9f5ff62.js" crossorigin="anonymous"></script>
 
-  <link rel="shortcut icon" type="image/png" href="../img/ainlay-logo-blue-white.png">
-  <link href="../css/home.css" rel="stylesheet" type="text/css" />
-  <link href="../css/page.css" rel="stylesheet" type="text/css" />
-  <link href="../css/prism.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" type="image/png" href="/hacs/img/ainlay-logo-blue-white.png">
+  <link href="/hacs/css/home.css" rel="stylesheet" type="text/css" />
+  <link href="/hacs/css/page.css" rel="stylesheet" type="text/css" />
+  <link href="/hacs/css/prism.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <nav></nav>
 
   <main>
-    <h1>JS String Data</h1>
+    <a class="back-link" href="/hacs/js-reference.html">&lt; JS Reference</a>
+    <div class="title">
+      <h1>JS String Data</h1>
+      <!-- <a href="#" id="yt-link" target="_blank">
+        <i class="fab fa-youtube fa-lg"></i>
+        Video Explanation
+      </a> -->
+    </div>
     <hr>
 
     <h2><i class="far fa-bookmark topic-heading"></i> String Data Type</h2>
-    <p>A common type of data that programs work with is the <strong>String</strong> data type.</p>
-    <p>A String is a squence of characters used to represent text. Strings are enclosed by matching double or single
-      quotes.</p>
+    <p>A String is a sequence of characters used to represent text.</p>
+    <p>Strings are enclosed by matching double or single quotes.</p>
     <p>
       <pre><code class="lang-js">
-"doubled-quoted String data"
-'single-quoted String data'
-"Hello World"
-'green'
-"42"
+let double = "doubled-quoted String data";
+let single = 'single-quoted String data';
       </code></pre>
     </p>
     <hr>
@@ -70,6 +73,30 @@ console.log("JavaScript".toUpperCase()); // Output=> "JAVASCRIPT"
     </p>
     <hr>
 
+    <h2><i class="far fa-bookmark topic-heading"></i> Template Strings</h2>
+    <p>A String can also be enclosed with backticks. <em>(The key above 'Tab' on most keyboards)</em></p>
+    <p>
+      <pre><code class="lang-js">
+let backtick = `backtick String data`;
+    </code></pre>
+    </p>
+    <p>Backticks allow us to embed any expression into the string, by wrapping the expression in <code
+        class="lang-js">${...}</code>.
+    </p>
+    <p>
+      <pre><code class="lang-js">
+let name = "John";
+console.log(`Hello ${name}!`); // Output => "Hello John!"
+
+console.log(`2 + 3 = ${2 + 3}`); // Output => 2 + 3 = 5
+
+console.log(`A random number is: ${Math.random()}`);
+// Output => "A random number is: 0.73250932"
+    </code></pre>
+    </p>
+    <p>A String made with backticks is commonly called a <strong>Template String</strong>.</p>
+    <hr>
+
     <h2><i class="far fa-list-alt summary"></i> Summary</h2>
     <ul>
       <li>The String data type is used to represent text.</li>
@@ -77,17 +104,20 @@ console.log("JavaScript".toUpperCase()); // Output=> "JAVASCRIPT"
       <li>Use the <code class="lang-js">length</code> property to get the number of characters in a string.</li>
       <li>Use the <code class="lang-js">toLowerCase()</code> and <code class="lang-js">toUpperCase()</code> methods to
         convert strings to all lowercase or all uppercase.</li>
+      <li>A Template String is made using backticks. Expressions may be inserted into a Template String with <code
+          class="lang-js">${...}</code>.</li>
     </ul>
     <hr>
+
   </main>
 
   <!-- Load Nav -->
-  <script src="../js/load-nav.js"></script>
+  <script src="/hacs/js/load-nav.js"></script>
   <script>
-    loadFileIntoEl("../includes/nav.html", "nav");
+    loadFileIntoEl("/hacs/includes/nav-js-ref.html", "nav");
   </script>
 
-  <script src="../js/prism.js"></script>
+  <script src="/hacs/js/prism.js"></script>
 </body>
 
 </html>

@@ -7,17 +7,24 @@
   <title>HACS</title>
   <script src="https://kit.fontawesome.com/5da9f5ff62.js" crossorigin="anonymous"></script>
 
-  <link rel="shortcut icon" type="image/png" href="../img/ainlay-logo-blue-white.png">
-  <link href="../css/home.css" rel="stylesheet" type="text/css" />
-  <link href="../css/page.css" rel="stylesheet" type="text/css" />
-  <link href="../css/prism.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" type="image/png" href="/hacs/img/ainlay-logo-blue-white.png">
+  <link href="/hacs/css/home.css" rel="stylesheet" type="text/css" />
+  <link href="/hacs/css/page.css" rel="stylesheet" type="text/css" />
+  <link href="/hacs/css/prism.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <nav></nav>
 
   <main>
-    <h1>JS Number Data</h1>
+    <a class="back-link" href="/hacs/js-reference.html">&lt; JS Reference</a>
+    <div class="title">
+      <h1>JS Number Data</h1>
+      <!-- <a href="#" id="yt-link" target="_blank">
+        <i class="fab fa-youtube fa-lg"></i>
+        Video Explanation
+      </a> -->
+    </div>
     <hr>
 
     <h2><i class="far fa-bookmark topic-heading"></i> Number Data Type</h2>
@@ -72,21 +79,38 @@ console.log((1 + 2) * 3); // Output=> 9
     </code></pre>
     <hr>
 
+    <h2><i class="far fa-bookmark topic-heading"></i> toFixed() Method</h2>
+    <p>Numbers may be rounded to a specified decimal place using the <code class="lang-js">toFixed()</code> method.</p>
+    <p>The <code class="lang-js">toFixed()</code> method rounds a number and converts the number to a String data type.
+    </p>
+    <p>
+      <pre><code class="lang-js">
+console.log(23.456.toFixed(2)); // Output => "23.46"
+console.log(7.2974.toFixed(1)); // Output => "7.3"
+      </code></pre>
+    </p>
+    <p>This method is often used when outputting the result of a calculation and you don't want to display so many
+      numbers after the decimal.
+    </p>
+    <hr>
+
     <h2><i class="far fa-list-alt summary"></i> Summary</h2>
     <ul>
       <li>The Number data type is used to represent numbers.</li>
-      <li>The basic math operations for numbers are supported by JavaScript.</li>
+      <li>JavaScript supports the basic math operations for numbers.</li>
+      <li>The <code class="lang-js">toFixed()</code> method rounds a number to a specified number of decimal places and
+        returns the result as a String.</li>
     </ul>
     <hr>
   </main>
 
   <!-- Load Nav -->
-  <script src="../js/load-nav.js"></script>
+  <script src="/hacs/js/load-nav.js"></script>
   <script>
-    loadFileIntoEl("../includes/nav.html", "nav");
+    loadFileIntoEl("/hacs/includes/nav-js-ref.html", "nav");
   </script>
 
-  <script src="../js/prism.js"></script>
+  <script src="/hacs/js/prism.js"></script>
 </body>
 
 </html>
