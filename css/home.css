@@ -36,15 +36,15 @@ nav a {
 
 nav a#logo {
   color: white;
-  font-size: 1.25rem;
-  letter-spacing: 2px;
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
 }
 
 nav a.nav-link {
   color: white;
-  margin-left: 0.8rem;
-  font-size: 1.1rem;
-  letter-spacing: 1.1px;
+  margin-left: 0.4rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
 }
 
 nav a.active {
@@ -206,6 +206,17 @@ section a.btn:hover {
 
 /* Media Queries */
 @media (min-width: 768px) {
+  nav a#logo {
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+  }
+
+  nav a.nav-link {
+    margin-left: 0.8rem;
+    font-size: 1.1rem;
+    letter-spacing: 1.1px;
+  }
+
   header h1 {
     font-size: 3rem;
   }

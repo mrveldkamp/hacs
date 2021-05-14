@@ -7,6 +7,15 @@ main {
   color: #444;
 }
 
+main a.back-link {
+  text-decoration: none;
+  color: #9E3300;
+}
+
+main a.back-link:hover {
+  text-decoration: underline;
+}
+
 main div.title {
   display: flex;
   justify-content: space-between;
@@ -16,7 +25,7 @@ main div.title {
 
 main h1 {
   font-variant: small-caps;
-  margin: 1.5rem 0 0.5rem;
+  margin: 1rem 0 0.5rem;
 }
 
 main i {
@@ -42,6 +51,7 @@ main hr {
   margin: 1rem auto;
 }
 
+/* Style for Lesson Descriptions - not sure I need it here  */
 main p.description {
   margin-bottom: 0.15rem;
 }
@@ -52,6 +62,8 @@ main p.concept-list {
   font-size: 0.9rem;
   margin-top: 0;
 }
+
+/* *********************************** */
 
 main h2 {
   letter-spacing: 0.5px;
@@ -78,7 +90,7 @@ main ul {
 
 main a.btn {
   text-decoration: none;
-  display: inline-block;
+  /* display: inline-block; */
   border: 1px solid #9E3300;
   border-radius: 25px;
   padding: 0 15px;
@@ -88,6 +100,16 @@ main a.btn {
 main a.btn:hover {
   background: #9E3300;
   color: white;
+}
+
+main a {
+  text-decoration: none;
+  color: #0059b2;
+}
+
+main a:hover {
+  text-decoration: underline;
+  color: #9E3300;
 }
 
 .w-100 {
