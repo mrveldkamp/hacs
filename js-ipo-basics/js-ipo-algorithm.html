@@ -19,50 +19,38 @@
   <main>
     <a class="back-link" href="/hacs/js-reference.html">&lt; JS Reference</a>
     <div class="title">
-      <h1>Page Title</h1>
-      <a href="#" id="yt-link" target="_blank">
+      <h1>JS IPO Algorithm</h1>
+      <!-- <a href="#" id="yt-link" target="_blank">
         <i class="fab fa-youtube fa-lg"></i>
         Video Explanation
-      </a>
+      </a> -->
     </div>
     <hr>
 
-    <h2><i class="far fa-bookmark topic-heading"></i> Topic Heading</h2>
-    <p>Notes...</p>
-    <p>Button link: <a href="#" class="btn">Test</a></p>
-    <p>Regular link: <a href="#">Test</a></p>
+    <p>A common algorithm is an <strong>Input, Process, Output</strong> algorithm.</p>
+    <p>This algorithm involves:</p>
+    <ol>
+      <li><strong>I</strong>nput - get input from user.</li>
+      <li><strong>P</strong>rocess - process input in some way <em>(ie. calculations).</em></li>
+      <li><strong>O</strong>utput - output the result.</li>
+    </ol>
 
+    <h4>Example</h4>
     <p>
       <pre><code class="lang-js">
-// Test Code
-Testing
-      </code></pre>
+// SIMPLE ADDITION CALCULATOR
+
+// Input - ask user for two numbers
+let num1 = +prompt('Please enter a number:'');
+let num2 = +prompt('Please enter another number:');
+
+// Process - calculate sum
+let total = num1 + num2;
+
+// Output - display result
+alert(`${num1} + ${num2} is ${total}`);
+    </code></pre>
     </p>
-    <hr>
-
-    <h2><i class="far fa-list-alt summary"></i> Summary</h2>
-    <ul>
-      <li>...</li>
-    </ul>
-    <hr>
-
-    <h2><i class="far fa-check-square check"></i> Check Your Understanding</h2>
-    <p>Try to do the following task(s) to check your understanding. Ask for help if needed.</p>
-    <ul>
-      <li>...</li>
-    </ul>
-    <hr>
-
-    <div class="attention-box">
-      <h4><i class="fas fa-exclamation-triangle attention"></i> Attention</h4>
-      <ul>
-        <li>...</li>
-        <li>...</li>
-      </ul>
-    </div>
-    <hr>
-
-
   </main>
 
   <!-- Load Nav -->

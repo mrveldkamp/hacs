@@ -7,27 +7,34 @@
   <title>HACS</title>
   <script src="https://kit.fontawesome.com/5da9f5ff62.js" crossorigin="anonymous"></script>
 
-  <link rel="shortcut icon" type="image/png" href="../img/ainlay-logo-blue-white.png">
-  <link href="../css/home.css" rel="stylesheet" type="text/css" />
-  <link href="../css/page.css" rel="stylesheet" type="text/css" />
-  <link href="../css/prism.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" type="image/png" href="/hacs/img/ainlay-logo-blue-white.png">
+  <link href="/hacs/css/home.css" rel="stylesheet" type="text/css" />
+  <link href="/hacs/css/page.css" rel="stylesheet" type="text/css" />
+  <link href="/hacs/css/prism.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <nav></nav>
 
   <main>
-    <h1>JS Input - prompt()</h1>
+    <a class="back-link" href="/hacs/js-reference.html">&lt; JS Reference</a>
+    <div class="title">
+      <h1>JS Input - prompt()</h1>
+      <!-- <a href="#" id="yt-link" target="_blank">
+        <i class="fab fa-youtube fa-lg"></i>
+        Video Explanation
+      </a> -->
+    </div>
     <hr>
 
     <h2><i class="far fa-bookmark topic-heading"></i> Text Input</h2>
     <p>The <code class="lang-js">prompt()</code> function will open a prompt-box where the user can provide text input.
-      The text input that is returned from the <code class="lang-js">prompt()</code> function and may be stored in a
+      The text input that is returned from the <code class="lang-js">prompt()</code> function may be stored in a
       variable for later use.</p>
     <pre><code class="lang-js">
 // Ask user for their name and greet them by name
 let name = prompt("Please enter your name:");
-alert("Hello " + name + "!");
+alert(`Hello ${name}!`);
     </code></pre>
     <p>
       <img src="img/prompt-eg1.PNG" alt="Prompt Example 1" class="img-fluid-max">
@@ -38,8 +45,9 @@ alert("Hello " + name + "!");
     <hr>
 
     <h2><i class="far fa-bookmark topic-heading"></i> Numerical Input</h2>
-    <p>Input received from the <code class="lang-js">prompt()</code> function is <em>always returned as a String data
-        type</em>.</p>
+    <p>Input received from the <code class="lang-js">prompt()</code> function is <strong>always returned as a String
+        data
+        type</strong>.</p>
     <p>If you want numerical input, convert the String that <code class="lang-js">prompt()</code> returns to a Number
       data type using the <code class="lang-js">Number()</code> function or the unary <code class="lang-js">+</code>
       operator.</p>
@@ -57,17 +65,19 @@ let num2 = Number(prompt("Please enter a number:"));
       <li>The <code class="lang-js">prompt()</code> function may be used to get input from the user via a prompt-box.
       </li>
       <li>The <code class="lang-js">prompt()</code> function always returns user input as a String data type.</li>
+      <li>Use the unary <code class="lang-js">+</code>
+        operator or the <code class="lang-js">Number()</code> function to convert String input to a Number.</li>
     </ul>
     <hr>
   </main>
 
   <!-- Load Nav -->
-  <script src="../js/load-nav.js"></script>
+  <script src="/hacs/js/load-nav.js"></script>
   <script>
-    loadFileIntoEl("../includes/nav.html", "nav");
+    loadFileIntoEl("/hacs/includes/nav-js-ref.html", "nav");
   </script>
 
-  <script src="../js/prism.js"></script>
+  <script src="/hacs/js/prism.js"></script>
 </body>
 
 </html>
