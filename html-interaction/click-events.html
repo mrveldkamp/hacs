@@ -7,50 +7,64 @@
   <title>HACS</title>
   <script src="https://kit.fontawesome.com/5da9f5ff62.js" crossorigin="anonymous"></script>
 
-  <link rel="shortcut icon" type="image/png" href="../img/ainlay-logo-blue-white.png">
-  <link href="../css/home.css" rel="stylesheet" type="text/css" />
-  <link href="../css/page.css" rel="stylesheet" type="text/css" />
-  <link href="../css/prism.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" type="image/png" href="/hacs/img/ainlay-logo-blue-white.png">
+  <link href="/hacs/css/home.css" rel="stylesheet" type="text/css" />
+  <link href="/hacs/css/page.css" rel="stylesheet" type="text/css" />
+  <link href="/hacs/css/prism.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <nav></nav>
 
   <main>
-    <h1>Click Events</h1>
+    <a class="back-link" href="/hacs/js-reference.html">&lt; JS Reference</a>
+    <div class="title">
+      <h1>Click Events</h1>
+      <!-- <a href="#" id="yt-link" target="_blank">
+        <i class="fab fa-youtube fa-lg"></i>
+        Video Explanation
+      </a> -->
+    </div>
     <hr>
 
     <p>In JavaScript, code may be executed on demand by using <strong>Functions</strong> and <strong>Event
         Listeners</strong>.</p>
 
     <h2><i class="far fa-bookmark topic-heading"></i> Functions</h2>
-    <p>A function may be thought of as a named block of code.</p>
+    <p>A function is a named block of code.</p>
+    <p>The code stored inside of a function will not execute until the
+      function is invoked / called <em>(ie. told to do its job!)</em></p>
+    <p>To create a function we can use a <em>function declaration</em>:</p>
+
     <pre><code class="lang-js">
-// Define a function that stores code
+// Declare a function that stores code
 // The name of this function is greeting
 function greeting() {
   alert("Hello Functions");
   alert("I am inside of a function.");
 }
     </code></pre>
-    <p>The content of a function is the code between the opening and closing braces <code class="lang-js">{ }</code>.
-    </p>
-    <p>The code stored inside of a function will not execute until the
-      function is invoked / called <em>(ie. told to do its job!)</em></p>
 
+    <p>The <code class="lang-js">function</code> keyword goes first, then the name of the function followed by
+      parentheses. Finally the code of the function, <em>"the function body"</em>, goes between curly braces.</p>
     <p>The name of a function should represent the task of the function.</p>
     <p>Function names should follow the same rules and conventions as variable names.</p>
     <hr>
 
     <h2><i class="far fa-bookmark topic-heading"></i> Event Listeners</h2>
-    <p>Event listeners may be added to HTML elements. Event listeners will tell a specified function to do its job when
+    <p>Event listeners may be added to HTML elements.</p>
+    <p>Event listeners will tell a specified function to do its job when
       a certain event occurs.</p>
+    <div class="attention-box">
+      <h4>Event Listener Syntax</h4>
+      <pre><code class="lang-js">element.addEventListener("event", nameOfFunction);</code></pre>
+    </div>
 
     <h4>index.html</h4>
     <pre><code class="lang-html">
 &lt;body&gt;
-&lt;h1 id="heading"&gt;This is a Heading&lt;/h1&gt;
-&lt;p&gt;&lt;button id="btn"&gt;Click Me&lt;/button&gt;&lt;/p&gt;
+&lt;h1 id="headingId"&gt;This is a Heading&lt;/h1&gt;
+&lt;p&gt;&lt;button id="btnId"&gt;Click Me&lt;/button&gt;&lt;/p&gt;
 
 &lt;!-- Run External JavaScript File --&gt;
 &lt;script src="script.js"&gt;&lt;/script&gt;
@@ -58,7 +72,7 @@ function greeting() {
     </code></pre>
 
     <h4>script.js</h4>
-    <p>The code below will run the greeting function when any part of the web page is clicked.</p>
+    <p>The code below will run the greeting function, declared above, when any part of the web page is clicked.</p>
     <pre><code class="lang-js">
 // Run greeting function when document is clicked
 document.addEventListener("click", greeting);
@@ -66,7 +80,7 @@ document.addEventListener("click", greeting);
     <p>The code below will run the greeting function when the button element is clicked.</p>
     <pre><code class="lang-js">
 // Variable to store reference to button element
-let btnEl = document.getElementById("btn");
+let btnEl = document.getElementById("btnId");
 
 // Run greeting function when button is clicked 
 btnEl.addEventListener("click", greeting);
@@ -83,12 +97,12 @@ btnEl.addEventListener("click", greeting);
   </main>
 
   <!-- Load Nav -->
-  <script src="../js/load-nav.js"></script>
+  <script src="/hacs/js/load-nav.js"></script>
   <script>
-    loadFileIntoEl("../includes/nav.html", "nav");
+    loadFileIntoEl("/hacs/includes/nav-js-ref.html", "nav");
   </script>
 
-  <script src="../js/prism.js"></script>
+  <script src="/hacs/js/prism.js"></script>
 </body>
 
 </html>
