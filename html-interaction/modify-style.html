@@ -7,17 +7,24 @@
   <title>HACS</title>
   <script src="https://kit.fontawesome.com/5da9f5ff62.js" crossorigin="anonymous"></script>
 
-  <link rel="shortcut icon" type="image/png" href="../img/ainlay-logo-blue-white.png">
-  <link href="../css/home.css" rel="stylesheet" type="text/css" />
-  <link href="../css/page.css" rel="stylesheet" type="text/css" />
-  <link href="../css/prism.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" type="image/png" href="/hacs/img/ainlay-logo-blue-white.png">
+  <link href="/hacs/css/home.css" rel="stylesheet" type="text/css" />
+  <link href="/hacs/css/page.css" rel="stylesheet" type="text/css" />
+  <link href="/hacs/css/prism.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <nav></nav>
 
   <main>
-    <h1>Modify Style</h1>
+    <a class="back-link" href="/hacs/js-reference.html">&lt; JS Reference</a>
+    <div class="title">
+      <h1>Modify Style</h1>
+      <!-- <a href="#" id="yt-link" target="_blank">
+        <i class="fab fa-youtube fa-lg"></i>
+        Video Explanation
+      </a> -->
+    </div>
     <hr>
 
     <h2><i class="far fa-bookmark topic-heading"></i> Modify Style with JavaScript</h2>
@@ -30,9 +37,9 @@
     <h4>index.html</h4>
     <pre><code class="lang-html">
 &lt;body&gt;
-&lt;h1 id="heading"&gt;This is a Heading&lt;/h1&gt;
-&lt;p id="para"&gt;This is a paragraph.&lt;/p&gt;
-&lt;p&gt;&lt;button id="btn"&gt;Click Me&lt;/button&gt;&lt;/p&gt;
+&lt;h1 id="headingId"&gt;This is a Heading&lt;/h1&gt;
+&lt;p id="paraId"&gt;This is a paragraph.&lt;/p&gt;
+&lt;p&gt;&lt;button id="btnId"&gt;Click Me&lt;/button&gt;&lt;/p&gt;
 
 &lt;!-- Run External JavaScript File --&gt;
 &lt;script src="main.js"&gt;&lt;/script&gt;
@@ -42,9 +49,9 @@
     <h4>main.js</h4>
     <pre><code class="lang-js">
 // Variables to store reference to HTML Elements
-let btnEl = document.getElementById("btn");
-let headingEl = document.getElementById("heading");
-let paragraphEl = document.getElementById("para");
+let btnEl = document.getElementById("btnId");
+let headingEl = document.getElementById("headingId");
+let paragraphEl = document.getElementById("paraId");
 
 // Run modifyStyle function when button is clicked 
 btnEl.addEventListener("click", modifyStyle);
@@ -68,12 +75,12 @@ function modifyStyle() {
   </main>
 
   <!-- Load Nav -->
-  <script src="../js/load-nav.js"></script>
+  <script src="/hacs/js/load-nav.js"></script>
   <script>
-    loadFileIntoEl("../includes/nav.html", "nav");
+    loadFileIntoEl("/hacs/includes/nav-js-ref.html", "nav");
   </script>
 
-  <script src="../js/prism.js"></script>
+  <script src="/hacs/js/prism.js"></script>
 </body>
 
 </html>
