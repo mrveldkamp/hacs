@@ -7,17 +7,24 @@
   <title>HACS</title>
   <script src="https://kit.fontawesome.com/5da9f5ff62.js" crossorigin="anonymous"></script>
 
-  <link rel="shortcut icon" type="image/png" href="../img/ainlay-logo-blue-white.png">
-  <link href="../css/home.css" rel="stylesheet" type="text/css" />
-  <link href="../css/page.css" rel="stylesheet" type="text/css" />
-  <link href="../css/prism.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" type="image/png" href="/hacs/img/ainlay-logo-blue-white.png">
+  <link href="/hacs/css/home.css" rel="stylesheet" type="text/css" />
+  <link href="/hacs/css/page.css" rel="stylesheet" type="text/css" />
+  <link href="/hacs/css/prism.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <nav></nav>
 
   <main>
-    <h1>JS Boolean Expressions</h1>
+    <a class="back-link" href="/hacs/js-reference.html">&lt; JS Reference</a>
+    <div class="title">
+      <h1>JS Boolean Expressions</h1>
+      <!-- <a href="#" id="yt-link" target="_blank">
+        <i class="fab fa-youtube fa-lg"></i>
+        Video Explanation
+      </a> -->
+    </div>
     <hr>
 
     <h2><i class="far fa-bookmark topic-heading"></i> Boolean Data Type</h2>
@@ -36,11 +43,12 @@ let found = false;
       <strong>false</strong>.</p>
     <pre><code class="lang-js">
 let age = 15;
-console.log(age < 18); // Output=> true
-console.log(age < 10); // Output=> false
+age < 18; // Result => true
+age < 10; // Result => false
     </code></pre>
-    <p>Mathematical expressions are made with mathematical operators...</p>
-    <p>Boolean expressions are made with <strong>comparison and logical operators</strong>...</p>
+    <p>Mathematical expressions are made with mathematical operators <code class="lang-js">(+, -, *, /)</code>...</p>
+    <p>Boolean expressions are made with <strong>comparison operators</strong> and <strong>logical operators</strong>.
+      These operators are explored below... </p>
     <hr>
 
     <h2><i class="far fa-bookmark topic-heading"></i> Comparison Operators</h2>
@@ -59,33 +67,34 @@ console.log(age < 10); // Output=> false
 let age = 15;
 
 // Equal To (===)
-console.log(age === 15); // Output=> true
-console.log(age === 18); // Output=> false
+age === 15; // Result => true
+age === 18; // Result => false
 
 // Not Equal To (!==)
-console.log(age !== 15); // Output=> false
-console.log(age !== 13); // Output=> true
+age !== 15; // Result => false
+age !== 13; // Result => true
 
 // Greater Than (>)
-console.log(age > 15); // Output=> false
-console.log(age > 10); // Output=> true
+age > 15; // Result => false
+age > 10; // Result => true
 
 // Greater Than or Equal To (>=)
-console.log(age >= 15); // Output=> true
-console.log(age >= 17); // Output=> false
+age >= 15; // Result => true
+age >= 17; // Result => false
 
 // Less Than (<)
-console.log(age < 20); // Output=> true
-console.log(age < 15); // Output=> false
+age < 20; // Result => true
+age < 15; // Result => false
 
 // Less Than or Equal To (<=)
-console.log(age <= 20); // Output=> true
-console.log(age <= 15); // Output=> true
+age <= 20; // Result => true
+age <= 15; // Result => true
     </code></pre>
     <hr>
 
     <h2><i class="far fa-bookmark topic-heading"></i> Logical Operators</h2>
-    <p>Logical Operators allow you to build more complex boolean expressions by connecting simple boolean expressions:
+    <p>Logical Operators allow you to build more complex boolean expressions by connecting simple boolean
+      expressions:
     </p>
     <ul>
       <li>Logical And: <code class="lang-js">&&</code></li>
@@ -98,20 +107,20 @@ console.log(age <= 15); // Output=> true
 let age = 15;
 
 // And (&&) is true if all connected boolean expressions are true
-console.log(age > 10 && age < 20); // Output=> true
-console.log(age > 10 && age < 14); // Output=> false
+age > 10 && age < 20; // Result => true
+age > 10 && age < 14; // Result => false
 
 // Or (||) is true if at least one of the connected boolean expressions is true
-console.log(age < 10 || age > 20); // Output=> false
-console.log(age < 10 || age > 13); // Output=> true
-console.log(age > 10 || age < 18); // Output=> true
+age < 10 || age > 20; // Result => false
+age < 10 || age > 13; // Result => true
+age > 10 || age < 18; // Result => true
 
 // Not (!) changes true to false and false to true
 let found = true;
-console.log(!found); // Output=> false
+!found; // Result => false
 
 found = false;
-console.log(!found); // Output=> true
+!found; // Result => true
     </code></pre>
     <hr>
 
@@ -125,12 +134,12 @@ console.log(!found); // Output=> true
   </main>
 
   <!-- Load Nav -->
-  <script src="../js/load-nav.js"></script>
+  <script src="/hacs/js/load-nav.js"></script>
   <script>
-    loadFileIntoEl("../includes/nav.html", "nav");
+    loadFileIntoEl("/hacs/includes/nav-js-ref.html", "nav");
   </script>
 
-  <script src="../js/prism.js"></script>
+  <script src="/hacs/js/prism.js"></script>
 </body>
 
 </html>
