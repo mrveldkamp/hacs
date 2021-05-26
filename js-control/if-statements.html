@@ -7,17 +7,24 @@
   <title>HACS</title>
   <script src="https://kit.fontawesome.com/5da9f5ff62.js" crossorigin="anonymous"></script>
 
-  <link rel="shortcut icon" type="image/png" href="../img/ainlay-logo-blue-white.png">
-  <link href="../css/home.css" rel="stylesheet" type="text/css" />
-  <link href="../css/page.css" rel="stylesheet" type="text/css" />
-  <link href="../css/prism.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" type="image/png" href="/hacs/img/ainlay-logo-blue-white.png">
+  <link href="/hacs/css/home.css" rel="stylesheet" type="text/css" />
+  <link href="/hacs/css/page.css" rel="stylesheet" type="text/css" />
+  <link href="/hacs/css/prism.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <nav></nav>
 
   <main>
-    <h1>JS If Statements</h1>
+    <a class="back-link" href="/hacs/js-reference.html">&lt; JS Reference</a>
+    <div class="title">
+      <h1>JS If Statements</h1>
+      <!-- <a href="#" id="yt-link" target="_blank">
+        <i class="fab fa-youtube fa-lg"></i>
+        Video Explanation
+      </a> -->
+    </div>
     <hr>
 
     <p>If statements are a type of <strong>selection control structure</strong>. They allow you to control / select what
@@ -27,9 +34,9 @@
     <p>Select one of two paths...</p>
     <pre><code class='lang-js'>
 if (boolean_expression) {
-  console.log('boolean_expression is true');
+  console.log("boolean_expression is true");
 } else {
-  console.log('boolean_expression is false');
+  console.log("boolean_expression is false");
 }
     </code></pre>
     <p>
@@ -41,12 +48,13 @@ if (boolean_expression) {
     <p>Select path or not...</p>
     <pre><code class='lang-js'>
 if (boolean_expression) {
-  console.log('boolean_expression is true');
+  console.log("boolean_expression is true");
 } 
     </code></pre>
     <p>
       <img class="img-fluid-max" src="img/if-unary-diagram.PNG" alt="Unary Selection">
     </p>
+    <p>A unary selection statement is like a binary selection statement without the else.</p>
     <hr>
 
     <h2><i class="far fa-bookmark topic-heading"></i> Chained Selection</h2>
@@ -123,12 +131,12 @@ if (boolean_expression_1) {
   </main>
 
   <!-- Load Nav -->
-  <script src="../js/load-nav.js"></script>
+  <script src="/hacs/js/load-nav.js"></script>
   <script>
-    loadFileIntoEl("../includes/nav.html", "nav");
+    loadFileIntoEl("/hacs/includes/nav-js-ref.html", "nav");
   </script>
 
-  <script src="../js/prism.js"></script>
+  <script src="/hacs/js/prism.js"></script>
 </body>
 
 </html>
