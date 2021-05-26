@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>HACS</title>
+  <script src="https://kit.fontawesome.com/5da9f5ff62.js" crossorigin="anonymous"></script>
+
+  <link rel="shortcut icon" type="image/png" href="/hacs/img/ainlay-logo-blue-white.png">
+  <link href="/hacs/css/home.css" rel="stylesheet" type="text/css" />
+  <link href="/hacs/css/page.css" rel="stylesheet" type="text/css" />
+  <link href="/hacs/css/prism.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <nav></nav>
+
+  <main>
+    <a class="back-link" href="/hacs/js-reference.html">&lt; JS Reference</a>
+    <div class="title">
+      <h1>Update Variables</h1>
+      <!-- <a href="#" id="yt-link" target="_blank">
+        <i class="fab fa-youtube fa-lg"></i>
+        Video Explanation
+      </a> -->
+    </div>
+    <hr>
+
+    <p>Before studying loops, it is important to understand how to update variables...</p>
+
+    <h2><i class="far fa-bookmark topic-heading"></i> Modify & Assign</h2>
+    <p>It is common to apply an operation to a variable and store the new result in the same variable.</p>
+
+    <p>
+      <pre><code class="lang-js">
+let n = 1;
+
+// Increase n by 5
+n = n + 5;
+
+// Decrease n by 3
+n = n - 3;
+
+// Multiply n by 2
+n = n * 2;
+
+// Divide n by 3
+n = n / 3;
+
+let greeting = "Hi";
+
+// Append "!" to greeting
+greeting = greeting + "!";
+      </code></pre>
+    </p>
+    <hr>
+
+    <h2><i class="far fa-bookmark topic-heading"></i> Shorthand Operators</h2>
+    <p>Shorthand operators exist to accomplish the same "modify & assign" tasks as above.</p>
+
+    <p>
+      <pre><code class="lang-js">
+let n = 1;
+
+// Increase n by 5
+n += 5; // Same as n = n + 5;
+
+// Decrease n by 3
+n -= 3; // Same as n = n - 3;
+
+// Multiply n by 2
+n *= 2; // Same as n = n * 2;
+
+// Divide n by 3
+n /= 3; // Same as n = n / 3;
+
+let greeting = "Hi";
+
+// Append "!" to greeting
+greeting += "!"; // Same as greeting = greeting + "!";
+      </code></pre>
+    </p>
+    <hr>
+
+    <h2><i class="far fa-bookmark topic-heading"></i> Increment and Decrement</h2>
+    <p>Since it is very common to increase or decrease a variable by one, special operators exist to do this:</p>
+    <ul>
+      <li>Increment Operator (increase by 1): <code class="lang-js">++</code></li>
+      <li>Decrement Operator (decrease by 1): <code class="lang-js">--</code></li>
+    </ul>
+
+    <p>
+      <pre><code class="lang-js">
+let counter = 1;
+
+// Increment: increase variable by 1
+counter++; // Same as counter = counter + 1 or counter += 1
+console.log(counter); // Output => 2
+
+// Decrement: decrease variable by 1
+counter--; // Same as counter = counter - 1 or counter -= 1
+console.log(counter); // Output => 1
+      </code></pre>
+    </p>
+    <hr>
+
+    <h2><i class="far fa-list-alt summary"></i> Summary</h2>
+    <ul>
+      <li>It is common to apply an operation to a variable and store the new result in the same variable.</li>
+      <li>Shorthand operators exist that may be used to update variables concisely.</li>
+    </ul>
+    <hr>
+
+  </main>
+
+  <!-- Load Nav -->
+  <script src="/hacs/js/load-nav.js"></script>
+  <script>
+    loadFileIntoEl("/hacs/includes/nav-js-ref.html", "nav");
+  </script>
+
+  <script src="/hacs/js/prism.js"></script>
+</body>
+
+</html>
