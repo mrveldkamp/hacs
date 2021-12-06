@@ -20,7 +20,7 @@ body {
   background: url('/hacs/img/Harry-Ainlay_background-1600x700.png') no-repeat center fixed;
   background-size: cover;
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, */
-    /* Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  /* Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
   font-family: 'Open Sans', sans-serif;
   color: #444;
   padding: 0 20px;
@@ -106,10 +106,11 @@ h1.main-heading {
 h2.section-heading {
   color: var(--orange);
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 700;
   font-family: Raleway, sans-serif;
   padding-bottom: 1rem;
   font-variant: small-caps;
+  letter-spacing: 1.5px;
 }
 
 h2.section-heading:not(:first-of-type) {
@@ -225,7 +226,7 @@ h2.section-heading:not(:first-of-type) {
   background: white;
   border-radius: 10px;
   padding: 20px;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* BACK LINK */
@@ -250,16 +251,19 @@ h2.section-heading:not(:first-of-type) {
   margin: 1rem 0;
 }
 
-.content p, .content ul {
+.content p,
+.content ul {
   margin: 1rem 0;
   line-height: 1.75rem;
 }
 
-.content ol, .content ul {
+.content ol,
+.content ul {
   padding-left: 1.5rem;
 }
 
-.content h3, .content h4 {
+.content h3,
+.content h4 {
   font-variant: small-caps;
   margin: 1rem 0 0;
 }
@@ -302,7 +306,8 @@ h2.section-heading:not(:first-of-type) {
 /* RESPONSIVE YOUTUBE VIDS */
 .video-container {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
+  padding-bottom: 56.25%;
+  /* 16:9 */
   height: 0;
   /* overflow: hidden; */
 }
@@ -354,7 +359,8 @@ h2.section-heading:not(:first-of-type) {
   margin-bottom: 5px;
 }
 
-.notes-content ol.pl, .notes-content ul.pl {
+.notes-content ol.pl,
+.notes-content ul.pl {
   padding-left: 0;
 }
 
@@ -399,8 +405,8 @@ h2.section-heading:not(:first-of-type) {
     flex-direction: row;
   }
 
-   /* VOCABULARY */
-   .right-column {
+  /* VOCABULARY */
+  .right-column {
     text-align: right;
   }
 

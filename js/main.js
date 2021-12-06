@@ -1,7 +1,7 @@
 // Load content into head element
 function loadHead() {
   let headEl = document.querySelector("head");
-  headEl.innerHTML = 
+  headEl.innerHTML =
     `<meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>HACS</title>
@@ -40,7 +40,7 @@ function loadNav(cs10active, cs20active, cs30active, notesactive) {
 
 function loadRightColumn() {
   let rightColumnEl = document.querySelector(".right-column");
-  rightColumnEl.innerHTML = 
+  rightColumnEl.innerHTML =
     `<h4>Vocabulary</h4>
     <ul>
       <li><a href="#">Algorithm</a></li>
