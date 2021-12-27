@@ -32,6 +32,10 @@ body {
   margin: auto;
 }
 
+.img-fluid-60 {
+  width: 60%;
+}
+
 /* NAVIGATION */
 nav {
   background: url('/hacs/img/Harry-Ainlay_background-1600x700.png') no-repeat center fixed;
@@ -377,6 +381,10 @@ h2.section-heading:not(:first-of-type) {
 
 /* MEDIA QUERIES */
 @media (min-width: 768px) {
+  /* UTILITIES */
+  .img-fluid-60 {
+    width: 100%;
+  }
 
   /* NAVIGATION */
   nav a#logo {

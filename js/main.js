@@ -33,7 +33,7 @@ function loadNav(cs10active, cs20active, cs30active, notesactive) {
         <a href="/hacs/cs10.html" class="nav-link ${cs10active}">CS10</a>
         <a href="/hacs/cs20.html" class="nav-link ${cs20active}">CS20</a>
         <a href="/hacs/cs30.html" class="nav-link ${cs30active}">CS30</a>
-        <a href="/hacs/js-reference.html" class="nav-link ${notesactive}"><i class="far fa-sticky-note"></i></a>
+        <a href="/hacs/concept-notes.html" class="nav-link ${notesactive}"><i class="far fa-sticky-note"></i></a>
       </div>
     </div>`;
 }
