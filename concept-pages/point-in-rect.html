@@ -16,28 +16,8 @@
     <h1>Point in Rectangle</h1>
 
     <p>Use if statements to determine if a point is inside of a rectangle.</p>
-
-    <!-- CONCEPT TITLE -->
-    <h2><i class="far fa-bookmark topic-heading"></i>Concrete Example</h2>
-    <hr>
-    <p>In this example, our test point will be the location of the mouse given by <code class="lang-js">(mouseX,
-        mouseY)</code>.</p>
-    <p>Our test rectangle will have a top-left corner of <code class="lang-js">(100, 150)</code>, a width of <code
-        class="lang-js">200</code> and a height of <code class="lang-js">50</code>.</p>
-
-    <p>The point will be in the rectangle if <strong>ALL</strong> of the following are true:</p>
-    <ul>
-      <li><code class="lang-js">mouseX &gt; 100</code></li>
-      <li><code class="lang-js">mouseX &lt; 300</code></li>
-      <li><code class="lang-js">mouseY &gt; 150</code></li>
-      <li><code class="lang-js">mouseY &lt; 200</code></li>
-    </ul>
-
-
-
-
-
-    <h4>Linear Search Explanation (6:33)</h4>
+    <!--
+    <h4>Point in Rectangle Explanation (6:33)</h4>
     <div class="video-wrap">
       <div class="video-container">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/HMYM7O7FNvw?rel=0"
@@ -46,44 +26,56 @@
           allowfullscreen></iframe>
       </div>
     </div>
+    -->
 
-    <!-- Topic -->
-    <h2><i class="far fa-bookmark topic-heading"></i>Unit Title</h2>
+    <!-- CONCEPT TITLE -->
+    <h2><i class="far fa-bookmark topic-heading"></i>Concrete Example</h2>
     <hr>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quae recusandae dolores, exercitationem
-      assumenda quidem?</p>
+    <p>In this example, our test point will be the location of the mouse given by <code class="lang-js">(mouseX,
+        mouseY)</code>.</p>
+    <p>Our test rectangle will have a top-left corner of <code class="lang-js">(100, 50)</code>, a width of <code
+        class="lang-js">200</code> and a height of <code class="lang-js">100</code>.</p>
+
+    <p><img class="img-fluid-80" src="img/pt-in-rect-concrete.PNG" alt="Point in Rectangle Concrete Example"></p>
+    <p>The point will be in the rectangle if <code class="lang-js">mouseX</code> is between the <strong>left</strong>
+      and <strong>right</strong> edges of
+      the rectangle and if <code class="lang-js">mouseY</code> is between the <strong>top</strong> and
+      <strong>bottom</strong> edges of the rectangle.
+      <pre><code class="lang-js">
+if (mouseX > 100 && mouseX < 300 && mouseY > 50 && mouseY < 150) {
+  console.log("Mouse point is in rectangle.");
+}
+    </code></pre>
 
 
-    <!-- Summary -->
-    <h2><i class="far fa-list-alt summary"></i>Summary</h2>
-    <hr>
-    <ul>
-      <li>...</li>
-      <li>...</li>
-    </ul>
+      <!-- CONCEPT TITLE -->
+      <h2><i class="far fa-bookmark topic-heading"></i>Abstract Example</h2>
+      <hr>
+      <p>In this example, our test point will be the location of the mouse given by <code class="lang-js">(mouseX,
+          mouseY)</code>.</p>
+      <p>Our test rectangle will have a top-left corner of <code class="lang-js">(x, y)</code>, a width of <code
+          class="lang-js">w</code> and a height of <code class="lang-js">h</code>.</p>
 
-    <!-- Check Your Understanding -->
-    <h2><i class="far fa-check-square check"></i>Check Your Understanding</h2>
-    <hr>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quae recusandae dolores, exercitationem
-      assumenda quidem?</p>
+      <p><img class="img-fluid-80" src="img/pt-in-rect-abstract.PNG" alt="Point in Rectangle Abstract Example"></p>
+      <p>The point will be in the rectangle if <code class="lang-js">mouseX</code> is between the <strong>left</strong>
+        and <strong>right</strong> edges of
+        the rectangle and if <code class="lang-js">mouseY</code> is between the <strong>top</strong> and
+        <strong>bottom</strong> edges of the rectangle.
+        <pre><code class="lang-js">
+ if (mouseX > x && mouseX < (x + w) && mouseY > y && mouseY < (y + h)) {
+   console.log("Mouse point is in rectangle.");
+ }
+     </code></pre>
 
-    <!-- Attention Box -->
-    <div class="attention-box">
-      <h4><i class="fas fa-exclamation-triangle attention"></i> Attention</h4>
-      <ul>
-        <li>...</li>
-        <li>...</li>
-      </ul>
-    </div>
-    <hr>
+        <!-- Summary -->
+        <h2><i class="far fa-list-alt summary"></i>Summary</h2>
+        <hr>
+        <p>A point is in a rectangle if <strong>both</strong> of the following are true:</p>
+        <ul>
+          <li>the x-coordinate of the point is between the left and right edges of the rectangle</li>
+          <li>the y-coordinate of the point is between the top and bottom edges of the rectangle</li>
+        </ul>
 
-    <!-- Code Sample -->
-    <h4 class="code-title">main.js</h4>
-    <pre><code class="lang-js">
-// Test Code
-Testing
-  </code></pre>
   </div> <!-- end .content -->
 
   <!-- JAVASCRIPT -->
