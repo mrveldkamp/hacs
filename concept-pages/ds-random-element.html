@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>HACS</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Economica&family=Open+Sans&family=Raleway:wght@300&display=swap"
+    rel="stylesheet">
+
+  <!-- Page Icon -->
+  <link rel="shortcut icon" type="image/png" href="/hacs/img/ainlay-logo-blue-white.png">
+
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="/hacs/css/style.css">
+  <link href="/hacs/css/prism.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+  <nav></nav>
+
+  <div class="content wrapper">
+    <!-- BACK LINK -->
+    <a class="back-link" href="/hacs/concept-notes.html"><i class="fas fa-angle-double-left"></i> Concept Notes</a>
+
+    <!-- SECTION HEADER -->
+    <h1>Random Array Element</h1>
+
+    <p>Get a random array element by generating a random index value.</p>
+
+    <!--
+    <h4>Linear Search Explanation (6:33)</h4>
+    <div class="video-wrap">
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HMYM7O7FNvw?rel=0"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    -->
+
+    <!-- CONCEPT TITLE -->
+    <h2><i class="far fa-bookmark topic-heading"></i> Examples</h2>
+    <hr>
+    <p>The array below has a length of 6, which means that the index values go from 0 to 5.</p>
+    <p>Get a random index by generating a random integer between 0 and 5, inclusive.</p>
+    <pre><code class="lang-js">
+let colors = ["red", "green", "blue", "cyan", "yellow", "magenta"];
+// (index) ->   0       1        2       3        4         5
+
+let randIndex = Math.floor(Math.random() * 6);
+console.log(randIndex);
+console.log("Random Color: " + colors[randIndex]);
+    </code></pre>
+
+    <p>The array below has a length of 4, which means that the index values go from 0 to 3.</p>
+    <p>Get a random index by generating a random integer between 0 and 3, inclusive.</p>
+    <pre><code class="lang-js">
+let directions = ["N", "E", "S", "W"];
+//    (index) ->   0    1    2    3
+
+let randIndex = Math.floor(Math.random() * 4);
+console.log(randIndex);
+console.log("Random Direction: " + directions[randIndex]);
+    </code></pre>
+
+    <!-- Topic -->
+    <h2><i class="far fa-bookmark topic-heading"></i> General Case</h2>
+    <hr>
+    <p>The index of the last element of an array is always one less than the length of the array.</p>
+    <p>Get a random value from <strong>any array</strong> by generating a random integer between 0 and (array.length -
+      1),
+      inclusive</p>
+    <pre><code class="lang-js">
+let myArray = ["?", "?", ... , "?"];
+// (index) ->   0    1  ... (length - 1)
+
+let randIndex = Math.floor(Math.random() * myArray.length);
+console.log(randIndex);
+console.log("Random Element: " + myArray[randIndex]);
+    </code></pre>
+
+  </div> <!-- end .content -->
+
+  <!-- JAVASCRIPT -->
+  <script src="https://kit.fontawesome.com/5da9f5ff62.js" crossorigin="anonymous"></script>
+  <script src="/hacs/js/main.js"></script>
+  <script>
+    loadNav("", "", "", "active");
+  </script>
+
+  <script src="/hacs/js/prism.js"></script>
+</body>
+
+</html>
