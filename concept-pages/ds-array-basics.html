@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+  <nav></nav>
+
+  <div class="content wrapper">
+    <!-- BACK LINK -->
+    <a class="back-link" href="/hacs/concept-notes.html"><i class="fas fa-angle-double-left"></i> Concept Notes</a>
+
+    <!-- SECTION HEADER -->
+    <h1>Array Basics</h1>
+
+    <!--
+    <h4>Linear Search Explanation (6:33)</h4>
+    <div class="video-wrap">
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HMYM7O7FNvw?rel=0"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    -->
+
+    <p>An array is an ordered collection of values.</p>
+    <pre><code class="lang-js">
+let vowels = ["a", "e", "i", "o", "u"];
+    </code></pre>
+
+    <!-- CREATE AN ARRAY WITH [] -->
+    <h2><i class="far fa-bookmark topic-heading"></i>Create an Array with [ ]</h2>
+    <hr>
+    <p>An array can be created by putting comma-separated values into square brackets.</p>
+    <pre><code class="lang-js">
+let emptyArray = [];
+let numberArray = [1, 2, 3.0, 4, 5];
+let stringArray = ["red", "green", "blue"];
+let mixedArray = ["text", 7, true, 3.14, [5, 10, 15]];
+    </code></pre>
+
+    <!-- ACCESS ELEMENTS WITH [] -->
+    <h2><i class="far fa-bookmark topic-heading"></i>Access Elements with [ ]</h2>
+    <hr>
+    <p>Each element in an array has a position / index.</p>
+    <p>Index values start at 0.</p>
+    <pre><code class="lang-js">
+let letterArray = ["a", "b", "c", "d"];
+//     (index) ->   0    1    2    3
+    </code></pre>
+
+    <p>The value of an individual array element may be accessed using the index operator: [ ].</p>
+    <pre><code class="lang-js">
+let letterArray = ["a", "b", "c", "d"];
+console.log("1st element at index 0 is: " + letterArray[0]);
+console.log("2nd element at index 1 is: " + letterArray[1]);
+console.log("3rd element at index 2 is: " + letterArray[2]);
+console.log("4th element at index 3 is: " + letterArray[3]);
+</code></pre>
+
+
+    <!-- Topic -->
+    <h2><i class="far fa-bookmark topic-heading"></i> Length of an Array</h2>
+    <hr>
+    <p>The length of an array may be determined using the length property.</p>
+    <pre><code class="lang-js">
+let numArray = [1, 2, 3, 4, 5, 6, 7, 8];
+console.log("Length of numArray is: " + numArray.length);
+    </code></pre>
+
+  </div> <!-- end .content -->
+
+  <!-- JAVASCRIPT -->
+  <script src="https://kit.fontawesome.com/5da9f5ff62.js" crossorigin="anonymous"></script>
+  <script src="/hacs/js/main.js"></script>
+  <script>
+    loadHead();
+    loadNav("", "", "", "active");
+  </script>
+
+  <script src="/hacs/js/prism.js"></script>
+</body>
+
+</html>
