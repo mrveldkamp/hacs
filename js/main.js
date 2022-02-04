@@ -35,7 +35,7 @@ function loadNav(cs10active, cs20active, cs30active, notesactive) {
         <a href="/hacs/cs20.html" class="nav-link ${cs20active}">CS20</a>
         <a href="/hacs/cs30.html" class="nav-link ${cs30active}">CS30</a>
         -->
-        
+
         <a href="#" class="nav-link ${cs10active}">CS10</a>
         <a href="#" class="nav-link ${cs20active}">CS20</a>
         <a href="#" class="nav-link ${cs30active}">CS30</a>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+  <nav></nav>
+
+  <div class="content wrapper">
+    <!-- BACK LINK -->
+    <a class="back-link" href="/hacs/concept-notes.html"><i class="fas fa-angle-double-left"></i> Concept Notes</a>
+
+    <!-- SECTION HEADER -->
+    <h1>Intro to Data Structures</h1>
+
+    <p>A data structure is a structure for storing data.</p>
+    <p>Some types of data structures include:</p>
+    <ul>
+      <li>Arrays</li>
+      <li>Objects <em>(Associative Arrays)</em></li>
+      <li>Arrays of Arrays</li>
+      <li>Arrays of Objects</li>
+    </ul>
+
+    <!--
+    <h4>Linear Search Explanation (6:33)</h4>
+    <div class="video-wrap">
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HMYM7O7FNvw?rel=0"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    -->
+
+    <!-- ARRAYS -->
+    <h2><i class="far fa-bookmark topic-heading"></i>Arrays</h2>
+    <hr>
+    <p>An array is an ordered collection of values.</p>
+    <pre><code class="lang-js">
+let vowels = ["a", "e", "i", "o", "u"];
+    </code></pre>
+
+    <!-- OBJECTS -->
+    <h2><i class="far fa-bookmark topic-heading"></i> Objects <em>(Associative Arrays)</em></h2>
+    <hr>
+    <p>An object <em>(Associative Array)</em> is a collection of property-value pairs.</p>
+    <pre><code class="lang-js">
+let point = {
+  x: 2,
+  y: 3,
+  label: "A"
+}
+    </code></pre>
+
+    <!-- ARRAYS OF ARRAYS -->
+    <h2><i class="far fa-bookmark topic-heading"></i> Arrays of Arrays</h2>
+    <hr>
+    <p>An array of arrays is useful for grid-based programs with rows and columns.</p>
+    <pre><code class="lang-js">
+// One line definition of grid
+let grid = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+
+// Same thing but on multiple lines to more clearly see grid structure.
+let grid = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9] 
+];
+    </code></pre>
+
+    <!-- ARRAYS OF OBJECTS -->
+    <h2><i class="far fa-bookmark topic-heading"></i> Arrays of Objects</h2>
+    <hr>
+    <p>An array of objects is a common data structure for storing lists of associated data.</p>
+    <pre><code class="lang-js">
+// Array of Point Objects
+let points = [
+  {
+    x: 2,
+    y: 3,
+    label: "A"
+  },
+  {
+    x: -4,
+    y: 0,
+    label: "B"
+  },
+  {
+    x: 8,
+    y: 5,
+    label: "C"
+  } 
+];
+    </code></pre>
+
+  </div> <!-- end .content -->
+
+  <!-- JAVASCRIPT -->
+  <script src="https://kit.fontawesome.com/5da9f5ff62.js" crossorigin="anonymous"></script>
+  <script src="/hacs/js/main.js"></script>
+  <script>
+    loadHead();
+    loadNav("", "", "", "active");
+  </script>
+
+  <script src="/hacs/js/prism.js"></script>
+</body>
+
+</html>
