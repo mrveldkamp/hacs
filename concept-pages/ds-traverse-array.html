@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>HACS</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Economica&family=Open+Sans&family=Raleway:wght@300&display=swap"
+    rel="stylesheet">
+
+  <!-- Page Icon -->
+  <link rel="shortcut icon" type="image/png" href="/hacs/img/ainlay-logo-blue-white.png">
+
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="/hacs/css/style.css">
+  <link href="/hacs/css/prism.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+  <nav></nav>
+
+  <div class="content wrapper">
+    <!-- BACK LINK -->
+    <a class="back-link" href="/hacs/concept-notes.html"><i class="fas fa-angle-double-left"></i> Concept Notes</a>
+
+    <!-- SECTION HEADER -->
+    <h1>Traverse Array</h1>
+
+    <p>To <strong>traverse</strong> an array means to travel over all the elements in an array.</p>
+    <p>A loop may be used to generate all of the index values of an array and then those index values can be used to
+      access each of the array elements.</p>
+
+    <pre><code class="lang-js">
+// NO LOOP - Print out all array elements 
+let fibonacci = [1, 2, 3, 5, 8, 13, 21];
+//   (index) ->  0  1  2  3  4  5   6
+console.log(fibonacci[0]);
+console.log(fibonacci[1]);
+console.log(fibonacci[2]);
+console.log(fibonacci[3]);
+console.log(fibonacci[4]);
+console.log(fibonacci[5]);
+console.log(fibonacci[6]);
+
+// LOOP - Print out all array elements
+let fibonacci = [1, 2, 3, 5, 8, 13, 21];
+//   (index) ->  0  1  2  3  4  5   6
+for (let i = 0; i < 7; i++) {
+  console.log(fibonacci[i]);
+}
+
+// GENERAL CASE - Traverse all elements 
+let myArray = ["?", "?", ... , "?"];
+for (let i = 0; i < myArray.length; i++) {
+  console.log(myArray[i]);
+}
+    </code></pre>
+
+    <!--
+    <h4>Linear Search Explanation (6:33)</h4>
+    <div class="video-wrap">
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HMYM7O7FNvw?rel=0"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    -->
+
+  </div> <!-- end .content -->
+
+  <!-- JAVASCRIPT -->
+  <script src="https://kit.fontawesome.com/5da9f5ff62.js" crossorigin="anonymous"></script>
+  <script src="/hacs/js/main.js"></script>
+  <script>
+    loadNav("", "", "", "active");
+  </script>
+
+  <script src="/hacs/js/prism.js"></script>
+</body>
+
+</html>
