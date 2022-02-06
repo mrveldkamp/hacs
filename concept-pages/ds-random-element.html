@@ -49,22 +49,27 @@
     <h2><i class="far fa-bookmark topic-heading"></i> Examples</h2>
     <hr>
     <p>The array below has a length of 6, which means that the index values go from 0 to 5.</p>
-    <p>Get a random index by generating a random integer between 0 and 5, inclusive.</p>
     <pre><code class="lang-js">
 let colors = ["red", "green", "blue", "cyan", "yellow", "magenta"];
 // (index) ->   0       1        2       3        4         5
+    </code></pre>
 
+    <p>Get a random index by generating a random integer between 0 and 5, inclusive.</p>
+    <pre><code class="lang-js">
 let randIndex = Math.floor(Math.random() * 6);
 console.log(randIndex);
 console.log("Random Color: " + colors[randIndex]);
     </code></pre>
+    <hr>
 
     <p>The array below has a length of 4, which means that the index values go from 0 to 3.</p>
-    <p>Get a random index by generating a random integer between 0 and 3, inclusive.</p>
     <pre><code class="lang-js">
 let directions = ["N", "E", "S", "W"];
 //    (index) ->   0    1    2    3
+    </code></pre>
 
+    <p>Get a random index by generating a random integer between 0 and 3, inclusive.</p>
+    <pre><code class="lang-js">
 let randIndex = Math.floor(Math.random() * 4);
 console.log(randIndex);
 console.log("Random Direction: " + directions[randIndex]);

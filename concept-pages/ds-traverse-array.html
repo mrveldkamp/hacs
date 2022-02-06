@@ -35,6 +35,8 @@
     <p>A loop may be used to generate all of the index values of an array and then those index values can be used to
       access each of the array elements.</p>
 
+    <h2><i class="far fa-bookmark topic-heading"></i> Example</h2>
+    <hr>
     <pre><code class="lang-js">
 // NO LOOP - Print out all array elements 
 let fibonacci = [1, 2, 3, 5, 8, 13, 21];
@@ -47,13 +49,18 @@ console.log(fibonacci[4]);
 console.log(fibonacci[5]);
 console.log(fibonacci[6]);
 
-// LOOP - Print out all array elements
+// WITH LOOP - Print out all array elements
 let fibonacci = [1, 2, 3, 5, 8, 13, 21];
 //   (index) ->  0  1  2  3  4  5   6
 for (let i = 0; i < 7; i++) {
   console.log(fibonacci[i]);
 }
+    </code></pre>
 
+    <h2><i class="far fa-bookmark topic-heading"></i> General Case</h2>
+    <hr>
+    <p>Using the length of the array will make the for loop traverse an array of any size.</p>
+    <pre><code class="lang-js">
 // GENERAL CASE - Traverse all elements 
 let myArray = ["?", "?", ... , "?"];
 for (let i = 0; i < myArray.length; i++) {
