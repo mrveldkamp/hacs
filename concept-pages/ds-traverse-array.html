@@ -32,15 +32,16 @@
     <h1>Traverse Array</h1>
 
     <p>To <strong>traverse</strong> an array means to travel over all the elements in an array.</p>
-    <p>A loop may be used to generate all of the index values of an array and then those index values can be used to
+    <p>A loop may be used to generate all of the index values of an array. Then those index values can be used to
       access each of the array elements.</p>
 
     <h2><i class="far fa-bookmark topic-heading"></i> Example</h2>
     <hr>
     <pre><code class="lang-js">
-// NO LOOP - Print out all array elements 
 let fibonacci = [1, 2, 3, 5, 8, 13, 21];
 //   (index) ->  0  1  2  3  4  5   6
+
+// WITHOUT A LOOP - Print out all array elements 
 console.log(fibonacci[0]);
 console.log(fibonacci[1]);
 console.log(fibonacci[2]);
@@ -49,9 +50,7 @@ console.log(fibonacci[4]);
 console.log(fibonacci[5]);
 console.log(fibonacci[6]);
 
-// WITH LOOP - Print out all array elements
-let fibonacci = [1, 2, 3, 5, 8, 13, 21];
-//   (index) ->  0  1  2  3  4  5   6
+// WITH A LOOP - Print out all array elements
 for (let i = 0; i < 7; i++) {
   console.log(fibonacci[i]);
 }
@@ -59,7 +58,7 @@ for (let i = 0; i < 7; i++) {
 
     <h2><i class="far fa-bookmark topic-heading"></i> General Case</h2>
     <hr>
-    <p>Using the length of the array will make the for loop traverse an array of any size.</p>
+    <p>Using the length of the array will allow the for loop to traverse an array of any size.</p>
     <pre><code class="lang-js">
 // GENERAL CASE - Traverse all elements 
 let myArray = ["?", "?", ... , "?"];

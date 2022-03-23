@@ -52,7 +52,7 @@
     <p>The <strong>push</strong> method will add values to the end of an array.</p>
     <pre><code class="lang-js">
 // Add item(s) to the end of an array 
-anArray.push(item1, item2, ...);
+anArray.push(itemToAdd1, itemToAdd2, ...);
 
 // Example
 let vowels = ["a", "e", "i", "o", "u"];
@@ -70,17 +70,16 @@ let lastElement = anArray.pop();
 // Example
 let vowels = ["a", "e", "i", "o", "u", "y"];
 vowels.pop(); // ["a", "e", "i", "o", "u"]
-
     </code></pre>
 
 
     <!-- Topic -->
     <h2><i class="far fa-bookmark topic-heading"></i>array.splice()</h2>
     <hr>
-    <p>The <strong>splice</strong> method may add/or remove array elements at specific indeX.</p>
+    <p>The <strong>splice</strong> method may add/or remove array elements at specific index.</p>
     <pre><code class="lang-js">
 // Add and/or Remove array elements at a specific index 
-anArray.splice(index, howManyToRemove, item1, item2, ...);
+anArray.splice(index, howManyToRemove, itemToAdd1, itemToAdd2, ...);
 
 // Example - remove 4th element 
 let colors = ["red", "green", "blue", "yellow", "cyan"];
@@ -89,10 +88,6 @@ colors.splice(3, 1); // ["red", "green", "blue", "cyan"]
 // Example - insert a value at index 2
 let colors = ["red", "green", "blue"];
 colors.splice(2, 0, "magenta"); // ["red", "green", "magenta", "blue"]
-
-// Example - remove 1st element and insert a value
-let colors = ["red", "green", "blue"];
-colors.splice(0, 1, "magenta"); // ["magenta", "green", "blue"]
     </code></pre>
 
   </div> <!-- end .content -->

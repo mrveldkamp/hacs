@@ -32,8 +32,14 @@
     <h1>Intro to Data Structures</h1>
 
     <p>A data structure is a structure for storing data.</p>
-    <p>Some common data structures are: arrays, objects <em>(associative arrays)</em>, arrays of arrays and arrays of
-      objects.</p>
+    <p>Some common data structures are:</p>
+    <ul class="indent-list">
+      <li>Arrays</li>
+      <li>Parallel Arrays</li>
+      <li>Associative Arrays</li>
+      <li>Arrays of Objects</li>
+      <li>Arrays of Arrays</li>
+    </ul>
 
     <!--
     <h4>Linear Search Explanation (6:33)</h4>
@@ -50,15 +56,31 @@
     <!-- ARRAYS -->
     <h2><i class="far fa-bookmark topic-heading"></i>Arrays</h2>
     <hr>
-    <p>An array is an ordered collection of values.</p>
+    <p>An Array is an ordered collection of values.</p>
     <pre><code class="lang-js">
 let vowels = ["a", "e", "i", "o", "u"];
     </code></pre>
 
-    <!-- OBJECTS -->
-    <h2><i class="far fa-bookmark topic-heading"></i> Objects <em>(Associative Arrays)</em></h2>
+    <!-- PARALLEL ARRAYS -->
+    <h2><i class="far fa-bookmark topic-heading"></i>Parallel Arrays</h2>
     <hr>
-    <p>An object <em>(associative array)</em> is a collection of property-value pairs.</p>
+    <p>Parallel Arrays use multiple arrays to store related data.</p>
+    <p>All the related data for an 'item' will be found at the same position of each array.</p>
+    <pre><code class="lang-js">
+// labels and (x, y) values of three points
+let pLabels = ["A", "B", "C"];
+let xValues = [100, 200, 300];
+let yValues = [200, 350, 500];
+    </code></pre>
+    <p>Point "A": <code>(100, 200)</code> |
+      Point "B": <code>(200, 350)</code> |
+      Point "C": <code>(300, 500)</code></p>
+
+    <!-- OBJECTS -->
+    <h2><i class="far fa-bookmark topic-heading"></i> Associative Arrays (Objects)</h2>
+    <hr>
+    <p>An Associative Array is a collection of property-value pairs.</p>
+    <p>In JavaScript, Associative Arrays are commonly referred to as Objects.</p>
     <pre><code class="lang-js">
 // One line definition of object
 let point = { x: 2, y: 3, label: "A"};
@@ -71,26 +93,10 @@ let point = {
 };
     </code></pre>
 
-    <!-- ARRAYS OF ARRAYS -->
-    <h2><i class="far fa-bookmark topic-heading"></i> Arrays of Arrays</h2>
-    <hr>
-    <p>An array of arrays is useful for grid-based programs with rows and columns.</p>
-    <pre><code class="lang-js">
-// One line definition of grid
-let grid = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
-
-// Same thing but on multiple lines to more clearly see grid structure.
-let grid = [
-  [1, 2, 3],
-  [4, 5, 6],
-  [7, 8, 9] 
-];
-    </code></pre>
-
     <!-- ARRAYS OF OBJECTS -->
     <h2><i class="far fa-bookmark topic-heading"></i> Arrays of Objects</h2>
     <hr>
-    <p>An array of objects is a common data structure for storing lists of associated data.</p>
+    <p>An Array of Objects is a common data structure for storing lists of related data.</p>
     <pre><code class="lang-js">
 // Array of Point Objects
 let points = [
@@ -111,6 +117,23 @@ let points = [
   } 
 ];
     </code></pre>
+
+    <!-- ARRAYS OF ARRAYS -->
+    <h2><i class="far fa-bookmark topic-heading"></i> Arrays of Arrays</h2>
+    <hr>
+    <p>An Array of Arrays is useful for grid-based programs with rows and columns.</p>
+    <pre><code class="lang-js">
+// One line definition of grid
+let grid = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+
+// Same thing but on multiple lines to more clearly see grid structure.
+let grid = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9] 
+];
+    </code></pre>
+
 
   </div> <!-- end .content -->
 
