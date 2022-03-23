@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>HACS</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Economica&family=Open+Sans&family=Raleway:wght@300&display=swap"
+    rel="stylesheet">
+
+  <!-- Page Icon -->
+  <link rel="shortcut icon" type="image/png" href="/hacs/img/ainlay-logo-blue-white.png">
+
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="/hacs/css/style.css">
+  <link href="/hacs/css/prism.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+  <nav></nav>
+
+  <div class="content wrapper">
+    <!-- BACK LINK -->
+    <a class="back-link" href="/hacs/concept-notes.html"><i class="fas fa-angle-double-left"></i> Concept Notes</a>
+
+    <!-- SECTION HEADER -->
+    <h1>Create Arrays++</h1>
+
+    <p>Arrays may be created and initialized in a variety of ways.</p>
+
+    <!--
+    <h4>Linear Search Explanation (6:33)</h4>
+    <div class="video-wrap">
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HMYM7O7FNvw?rel=0"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    -->
+
+    <!-- CREATE AN ARRAY WITH A LOOP -->
+    <h2><i class="far fa-bookmark topic-heading"></i>Create an Array with a Loop</h2>
+    <hr>
+    <p>Loops may be used to create arrays.</p>
+    <p>Start with an empty array and then add items one at a time inside of a loop.</p>
+
+    <pre><code class="lang-js">
+// Create an array with identical values (100 exclamation marks)
+let identicalArray = [];
+for (let n = 0; n < 100; n++) {
+    identicalArray.push("!");
+}
+
+// Create a random array (500 random decimals b/t 0 and 1)
+let randomArray = [];
+for (let n = 0; n < 500; n++) {
+    randomArray.push(Math.random());
+}
+
+// Create an array from user input (5 colors)
+let inputArray = [];
+for (let n = 0; n < 5; n++) {
+    inputArray.push(prompt("Please enter a color:"));
+}
+
+// Create a patterned array (even #'s b/t 0 and 50, inclusive)
+let patternArray = [];
+for (let num = 0; num <= 50; num += 2) {
+    patternArray.push(num);
+}
+    </code></pre>
+
+    <!-- CREATE AN ARRAY FROM A STRING -->
+    <h2><i class="far fa-bookmark topic-heading"></i>Create an Array From a String</h2>
+    <hr>
+    <p>A string may be turned into an array with the <strong>split()</strong> method.</p>
+    <p>The <strong>split()</strong> method takes in an argument that will be used as the token to separate the string.
+    </p>
+
+    <pre><code class="lang-js">
+// Create arrays from strings with split()
+let namesString = "adam,ben,caleb,david";
+let namesArray = namesString.split(",");
+// -> ["adam", "ben", "caleb", "david"]
+
+let scoresString = "80;90;75;88;95;99;85";
+let scoresArray = scoresString.split(";");
+// -> ["80", "90", "75", "88", "95", "99", "85"]
+
+let sentence = "I love arrays";
+let wordArray = sentence.split(" ");
+// -> ["I", "love", "arrays"]
+let characterArray = sentence.split("");
+// -> ["I"," ","l","o","v","e"," ","a","r","r","a","y","s"]
+    </code></pre>
+
+    <p>The <strong>join()</strong> method may be used to turn an array back into a string.</p>
+    <p>The <strong>join()</strong> method takes in an argument that will be used as the token to place between array
+      elements.</p>
+
+    <pre><code class="lang-js">
+// Convert an array into a string with join()
+let wordArray = ["I", "love", "arrays"];
+
+let sentence = wordArray.join(" ");
+// -> "I love arrays"
+
+let sentence2 = wordArray.join("-");
+// -> "I-love-arrays"
+
+    </code></pre>
+
+    <!-- CREATE AN ARRAY OF HTML ELEMENTS -->
+    <h2><i class="far fa-bookmark topic-heading"></i>Create an Array of HTML Elements</h2>
+    <hr>
+    <p>HTML elements may be selected using <strong>querySelectorAll()</strong>.</p>
+    <p>The <strong>querySelectorAll()</strong> method will take any valid css selector and all elements that match the
+      css selector will be returned in a NodeList <em>(which is similar to an array)</em>.</p>
+
+    <pre><code class="lang-js">
+// Select all elements with the class "special"
+let specialEls = document.querySelectorAll(".special");
+
+// Add an event listener to all elements with the class special
+for (let i = 0; i < specialEls.length; i++) {
+  specialEls[i].addEventListener("click", doSomethingSpecial);
+}
+    </code></pre>
+
+  </div> <!-- end .content -->
+
+  <!-- JAVASCRIPT -->
+  <script src="https://kit.fontawesome.com/5da9f5ff62.js" crossorigin="anonymous"></script>
+  <script src="/hacs/js/main.js"></script>
+  <script>
+    loadNav("", "", "", "active");
+  </script>
+
+  <script src="/hacs/js/prism.js"></script>
+</body>
+
+</html>
