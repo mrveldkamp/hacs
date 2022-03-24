@@ -311,6 +311,16 @@ h2.section-heading:not(:first-of-type) {
   color: var(--yellow);
 }
 
+/* FUNCTION BOX */
+.function-box {
+  display: inline-block;
+  border: 1px solid var(--dark-orange);
+  padding: 0.75rem 2rem;
+  font-size: 1.25rem;
+  margin: 0.5rem 0 1rem;
+  font-family: Consolas;
+}
+
 /* RESPONSIVE YOUTUBE VIDS */
 .video-container {
   position: relative;

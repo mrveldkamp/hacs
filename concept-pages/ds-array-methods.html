@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>HACS</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Economica&family=Open+Sans&family=Raleway:wght@300&display=swap"
+    rel="stylesheet">
+
+  <!-- Page Icon -->
+  <link rel="shortcut icon" type="image/png" href="/hacs/img/ainlay-logo-blue-white.png">
+
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="/hacs/css/style.css">
+  <link href="/hacs/css/prism.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+  <nav></nav>
+
+  <div class="content wrapper">
+    <!-- BACK LINK -->
+    <a class="back-link" href="/hacs/concept-notes.html"><i class="fas fa-angle-double-left"></i> Concept Notes</a>
+
+    <!-- SECTION HEADER -->
+    <h1>Array Methods+</h1>
+
+    <p>JavaScript has some built-in tools that help when working with arrays.</p>
+
+    <!--
+    <h4>Linear Search Explanation (6:33)</h4>
+    <div class="video-wrap">
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HMYM7O7FNvw?rel=0"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    -->
+
+    <!-- INCLUDES METHOD -->
+    <h2><i class="far fa-bookmark topic-heading"></i>includes() Method</h2>
+    <hr>
+    <p>The <strong>includes()</strong> method determines whether an array contains a specified item.</p>
+    <p>This method returns <em>true</em> if the array contains the item, and <em>false</em> if not.</p>
+
+    <!-- Attention Box -->
+    <div class="function-box">
+      array.includes(item);
+    </div>
+
+    <pre><code class="lang-js">
+let attendanceList = ["Angela", "Bryan", "Carol", "David"];
+if (attendanceList.includes("Joe")) {
+  console.log("I'm so glad Joe could make it!");
+} else {
+  console.log("I wonder where Joe is?");
+}
+    </code></pre>
+
+    <!-- INDEXOF METHOD -->
+    <h2><i class="far fa-bookmark topic-heading"></i>indexOf() Method</h2>
+    <hr>
+    <p>The <strong>indexOf()</strong> method searches the array for a specified item.</p>
+    <p>If the item is found, the method will return the index of the <em>first</em> occurence of the item.</p>
+    <p>If the item is not found, the method will return -1.</p>
+
+    <!-- Attention Box -->
+    <div class="function-box">
+      array.indexOf(item);
+    </div>
+
+    <pre><code class="lang-js">
+let attendanceList = ["Angela", "Bryan", "Carol", "David"];
+let index = attendanceList.indexOf("Carol");
+if (index === -1) {
+  console.log("Carol not found.");
+} else {
+  console.log(`Carol found at position: ${index}.`);
+}
+    </code></pre>
+
+    <p>*Note: there is also a lastIndexOf() method that returns the index of the last occurance of the item.</p>
+
+    <!-- CONCAT METHOD -->
+    <h2><i class="far fa-bookmark topic-heading"></i>concat() Method</h2>
+    <hr>
+    <p>The <strong>concat()</strong> method merges two arrays into a new combined array.</p>
+
+    <!-- Attention Box -->
+    <div class="function-box">
+      array.concat(anArray);
+    </div>
+
+    <pre><code class="lang-js">
+let group1 = ["Angela", "Bryan", "Carol"];
+let group2 = ["David", "Ezra"];
+let combinedGroup = group1.concat(group2);
+// combinedGroup: ["Angela", "Bryan", "Carol", "David", "Ezra"]
+    </code></pre>
+
+    <!-- REVERSE METHOD -->
+    <h2><i class="far fa-bookmark topic-heading"></i>reverse() Method</h2>
+    <hr>
+    <p>The <strong>reverse()</strong> method reverses the order of the elements in the array.</p>
+
+    <!-- Attention Box -->
+    <div class="function-box">
+      array.reverse();
+    </div>
+
+    <pre><code class="lang-js">
+let nums = [1, 2, 3, 4, 5];
+nums.reverse();
+// nums: [5, 4, 3, 2, 1]
+    </code></pre>
+
+    <!-- MATH MAX/MIN METHOD -->
+    <h2><i class="far fa-bookmark topic-heading"></i>Math.max() & Math.min() Methods</h2>
+    <hr>
+    <p>The <strong>Math.max()</strong> and <strong>Math.min()</strong> methods take in numbers and return the maximum or
+      minimum number.</p>
+    <p>These methods are designed to work with multiple arguments and not an array argument.</p>
+    <p>In order to use these methods with arrays, the <strong>spread operator (...)</strong> may be used to expand the
+      array in place of
+      the required arguments.</p>
+
+    <!-- Attention Box -->
+    <div class="function-box">
+      Math.max(n1, n2, n3, ..., nX)<br>Math.min(n1, n2, n3, ..., nX)
+    </div>
+
+    <pre><code class="lang-js">
+// MAX OF A LIST OF ARGUMENTS
+let maxNum = Math.max(50, 20, 30, 70, 40); 
+// maxNum: 70
+
+// MAX & MIN OF AN ARRAY
+let numArray = [2, 8, 12, 5, 9, 20, 17, 3];
+
+// The Wrong Way
+let wrongMaxWay = Math.max(numArray);
+// wrongMaxWay: NaN
+
+// The Right Way (...Spread Operator)
+let maxElement = Math.max(...numArray);
+// maxElement: 20
+let minElement = Math.min(...numArray);
+// minElement: 2
+    </code></pre>
+
+  </div> <!-- end .content -->
+
+  <!-- JAVASCRIPT -->
+  <script src="https://kit.fontawesome.com/5da9f5ff62.js" crossorigin="anonymous"></script>
+  <script src="/hacs/js/main.js"></script>
+  <script>
+    loadNav("", "", "", "active");
+  </script>
+
+  <script src="/hacs/js/prism.js"></script>
+</body>
+
+</html>
