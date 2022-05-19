@@ -2,54 +2,25 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Learn JS</title>
-  <script src="https://kit.fontawesome.com/5da9f5ff62.js" crossorigin="anonymous"></script>
-
-  <link rel="shortcut icon" type="image/png" href="img/ainlay-logo-blue-white.png">
-  <link href="css/home.css" rel="stylesheet" type="text/css" />
+  <title>JS MVC</title>
+  <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <nav></nav>
+  <h1>JS Starter</h1>
+  <hr>
 
-  <header>
-    <h1>Learn JavaScript</h1>
-    <p class="lead">Create Web Games and Applications with HTML, CSS and JavaScript.</p>
-    <p class="motto">Html - JavaScript - Css</p>
-  </header>
+  <p>
+    <a href="./">Home</a>
+    <a href="./?about/">About</a>
+    <a href="./?contact/1">Contact</a>
+  </p>
 
-  <section>
-    <h2>HTML & CSS Basics</h2>
-    <p class="descr">Learn the basics of HTML & CSS to build simple web pages.</p>
-    <a class="item" href="#">
-      <i class="fab fa-youtube fa-lg"></i> Video Lessons
-    </a>
-    <a class="item" href="#">
-      <i class="far fa-keyboard fa-lg"></i> Assignment
-    </a>
-  </section>
+  <div id="content"></div>
 
-  <section>
-    <h2>JavaScript First Steps</h2>
-    <p class="descr">Learn the basics of JavaScript to build simple interactive web apps.</p>
-    <a class="item" href="#">
-      <i class="fab fa-youtube fa-lg"></i> Video Lessons
-    </a>
-    <a class="item" href="#">
-      <i class="far fa-keyboard fa-lg"></i> Assignment
-    </a>
-    <a class="item" href="#">
-      <i class="far fa-keyboard fa-lg"></i> Assignment
-    </a>
-  </section>
-
-  <!-- Load Nav -->
-  <script src="js/load-nav.js"></script>
-  <script>
-    loadFileIntoEl("includes/nav-cs10.html", "nav");
-  </script>
+  <!-- Load JavaScript -->
+  <script src="main.js"></script>
 </body>
 
 </html>
