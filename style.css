@@ -288,3 +288,26 @@ a.back-link {
     font-size: 1.25rem;
   }
 }
+
+@media (max-width: 900px) and (orientation: landscape) {
+
+  /* HOME PAGE */
+  main {
+    height: 60vh;
+  }
+
+  main h1 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+  }
+
+  main h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .courses {
+    flex-direction: row;
+  }
+
+}
