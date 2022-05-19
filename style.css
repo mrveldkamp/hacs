@@ -24,7 +24,6 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #333;
   padding: 0 20px;
-  margin-bottom: 200px;
 }
 
 .wrapper {
@@ -90,7 +89,7 @@ h1.main-heading {
   font-weight: 300;
   letter-spacing: 0.15rem;
   color: white;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 
 /* SECTION */
@@ -126,6 +125,7 @@ section p {
 }
 
 .flex-container h4 {
+  font-family: Montserrat, sans-serif;
   margin-bottom: 0.5rem;
 }
 
@@ -133,7 +133,7 @@ section p {
   display: block;
   border: 1px solid #BBB;
   padding: 10px;
-  border-radius: 2px;
+  border-radius: 5px;
   text-decoration: none;
   color: #333;
 }
@@ -143,7 +143,7 @@ section p {
   color: white;
 }
 
-/* CONCEPT NOTES CONTENT */
+/* JS NOTES CONTENT */
 .notes-content h2:first-of-type {
   margin: 0.5rem 0 1rem;
 }
@@ -192,6 +192,70 @@ section p {
   color: var(--dark-red);
 }
 
+/* MAIN HOME PAGE */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  padding: 20px;
+  text-align: center;
+}
+
+main h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 3.5rem;
+  color: white;
+  letter-spacing: 4px;
+  margin-bottom: 2rem;
+}
+
+main h2 {
+  color: white;
+  font-variant: small-caps;
+  letter-spacing: 0.75px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+/* Course Links */
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.courses a {
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  background-color: var(--orange);
+  border-radius: 15px;
+  color: white;
+  padding: 10px 0;
+  font-size: 1.25rem;
+  box-shadow: 2px 2px var(--orange);
+  width: 80%;
+}
+
+.courses a:hover {
+  color: var(--orange);
+  background-color: white;
+}
+
+/* NOTE PAGES */
+a.back-link {
+  display: inline-block;
+  color: var(--dark-red);
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+}
+
 /* MEDIA QUERIES */
 @media (min-width: 768px) {
 
@@ -205,4 +269,22 @@ section p {
     columns: 2;
   }
 
+  /* HOME PAGE */
+  main h1 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  main h2 {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .courses {
+    flex-direction: row;
+  }
+
+  .courses a {
+    font-size: 1.25rem;
+  }
 }
