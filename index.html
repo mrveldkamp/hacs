@@ -2,25 +2,41 @@
 <html>
 
 <head>
-  <title>JS MVC</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>HACS</title>
+
   <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
-  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Raleway&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-  <h1>JS Starter</h1>
-  <hr>
+  <nav>
+    <div class="wrapper">
+      <a id="logo" href="./">
+        <img src="./img/ainlay-logo.png" width="32">
+        HACS
+      </a>
+      <div>
+        <a href="./?cs10" class="nav-link">CS10</a>
+        <a href="./?cs20" class="nav-link">CS20</a>
+        <a href="./?cs30" class="nav-link">CS30</a>
+        <a href="./?js-notes" class="nav-link"><i class="far fa-sticky-note"></i></a>
+      </div>
+    </div>
+  </nav>
 
-  <p>
-    <a href="./">Home</a>
-    <a href="./?about/">About</a>
-    <a href="./?contact/1">Contact</a>
-  </p>
-
-  <div id="content"></div>
+  <div id="content" class="wrapper"></div>
 
   <!-- Load JavaScript -->
-  <script src="main.js"></script>
+  <script src="https://kit.fontawesome.com/5da9f5ff62.js" crossorigin="anonymous"></script>
+
+  <script src="./main.js"></script>
 </body>
 
 </html>

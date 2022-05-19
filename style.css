@@ -1,5 +1,208 @@
+/* CSS VARIABLES */
+:root {
+  /* --orange: #FB9C1B; */
+  --orange: #CF7902;
+  --dark-orange: #A35E00;
+  --dark-red: #742600;
+  --blue: #1B65A2;
+  --green: #286600;
+  --yellow: #F5BD08;
+}
+
+/* UNIVERSAL, BODY, WRAPPER, UTILITIES */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  width: 700px;
+  background: url('/hacs/img/Harry-Ainlay_background-1600x700.png') no-repeat center fixed;
+  background-size: cover;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, */
+  /* Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  padding: 0 20px;
+  margin-bottom: 200px;
+}
+
+.wrapper {
+  max-width: 800px;
   margin: auto;
+}
+
+hr {
+  margin: 1rem auto;
+}
+
+i {
+  margin-right: 0.5rem;
+}
+
+/* NAVIGATION */
+nav {
+  background: url('/hacs/img/Harry-Ainlay_background-1600x700.png') no-repeat center fixed;
+  background-size: cover;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 15px 0;
+  margin-bottom: 2rem;
+}
+
+nav .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a#logo {
+  color: white;
+  font-family: Raleway, sans-serif;
+  letter-spacing: 1.5px;
+}
+
+nav a.nav-link {
+  color: white;
+  margin-left: 0.5rem;
+  font-family: Montserrat, sans-serif;
+  letter-spacing: 1px;
+}
+
+nav a:hover {
+  color: var(--orange);
+}
+
+nav img {
+  vertical-align: middle;
+}
+
+/* MAIN HEADING */
+h1.main-heading {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.15rem;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+/* SECTION */
+section {
+  background: white;
   padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  font-family: Montserrat, sans-serif;
+  font-variant: small-caps;
+}
+
+section h2 i {
+  color: var(--orange);
+}
+
+section p {
+  margin-bottom: 1rem;
+}
+
+/* FLEX CONTAINER */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.flex-container div {
+  flex: 1;
+}
+
+.flex-container h4 {
+  margin-bottom: 0.5rem;
+}
+
+.flex-container a {
+  display: block;
+  border: 1px solid #BBB;
+  padding: 10px;
+  border-radius: 2px;
+  text-decoration: none;
+  color: #333;
+}
+
+.flex-container a:hover {
+  background: var(--blue);
+  color: white;
+}
+
+/* CONCEPT NOTES CONTENT */
+.notes-content h2:first-of-type {
+  margin: 0.5rem 0 1rem;
+}
+
+.notes-content {
+  counter-reset: a;
+}
+
+.notes-content ol {
+  margin-bottom: 2rem;
+  counter-increment: a;
+  counter-reset: b;
+  list-style: none;
+  columns: 1;
+}
+
+.notes-content .li-div::before {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  font-family: Consolas, Lucida Console, Menlo, Monaco, monospace;
+  font-size: 0.85rem;
+  line-height: 1rem;
+  counter-increment: b;
+  content: counter(a) '.'counter(b) ' ';
+}
+
+.notes-content .li-div {
+  position: relative;
+  padding-left: 38px;
+  margin-bottom: 5px;
+}
+
+.notes-content ol.pl,
+.notes-content ul.pl {
+  padding-left: 0;
+}
+
+.notes-content a {
+  text-decoration: none;
+  color: var(--blue);
+}
+
+.notes-content a:hover {
+  text-decoration: underline;
+  color: var(--dark-red);
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+
+  /* FLEX CONTAINER */
+  .flex-container {
+    flex-direction: row;
+  }
+
+  /* CONCEPT NOTES CONTENT */
+  .notes-content ol {
+    columns: 2;
+  }
+
 }

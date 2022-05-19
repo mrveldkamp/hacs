@@ -1,7 +1,7 @@
 // JS MVC Test
 
 // Constants
-const URL_ROOT = "http://127.0.0.1:5500/";
+const URL_ROOT = "http://127.0.0.1:5500/hacs/";
 let contentEl = document.getElementById("content");
 
 class Router {
