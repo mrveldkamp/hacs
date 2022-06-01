@@ -95,7 +95,7 @@ h1.main-heading {
 /* SECTION */
 section {
   background: white;
-  padding: 20px;
+  padding: 50px;
   border-radius: 5px;
   margin-bottom: 2rem;
 }
@@ -111,6 +111,15 @@ section h2 i {
 
 section p {
   margin-bottom: 1rem;
+}
+
+section h3 {
+  background-color: var(--orange);
+  color: white;
+  font-weight: 400;
+  padding: 5px 10px;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
 }
 
 /* FLEX CONTAINER */
@@ -139,7 +148,7 @@ section p {
 }
 
 .flex-container a:hover {
-  background: var(--blue);
+  background: #777;
   color: white;
 }
 
