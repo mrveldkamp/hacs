@@ -37,9 +37,12 @@ class Router {
   }
 
   checkJSLoad() {
+    // Load Prism for all pages
+    import("../js/prism.js");
+
     // Load JS for certain pages...
     if (this.query === "cs10/test") {
-      import("./cs10/test.js");
+      import("../cs10/test.js");
     }
   }
 }
