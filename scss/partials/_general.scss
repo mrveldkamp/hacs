@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("../img/Harry-Ainlay_background-1600x700.png") no-repeat
+    center fixed;
+  background-size: cover;
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  padding: 0 20px;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: auto;
+}
+
+h1.main-heading {
+  font-family: var(--ff-sans1);
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 0.15rem;
+  color: white;
+  margin-bottom: 2.5rem;
+}
+
+/* SECTION */
+section {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+
+  h2 {
+    font-size: 1.25rem;
+    font-family: var(--ff-sans2);
+    font-variant: small-caps;
+  }
+
+  h2 i {
+    color: var(--orange);
+    margin-right: 0.5rem;
+  }
+
+  hr {
+    margin: 1rem auto;
+  }
+
+  p {
+    margin-block: 1.5rem;
+  }
+}
+
+@media (min-width: 35rem) {
+  section {
+    padding: 50px;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  h1.main-heading {
+    font-size: 2.5rem;
+  }
+}

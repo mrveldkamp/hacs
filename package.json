@@ -1,0 +1,23 @@
+{
+  "name": "hacs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrveldkamp/hacs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrveldkamp/hacs/issues"
+  },
+  "homepage": "https://github.com/mrveldkamp/hacs#readme",
+  "devDependencies": {
+    "sass": "^1.52.1"
+  }
+}

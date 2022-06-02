@@ -1,0 +1,94 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  padding: 20px;
+  text-align: center;
+
+  h1 {
+    font-family: var(--ff-sans1);
+    font-size: 3.5rem;
+    color: white;
+    letter-spacing: 4px;
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    color: white;
+    font-variant: small-caps;
+    letter-spacing: 0.75px;
+    font-family: var(--ff-sans2);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .courses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .courses a {
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    background-color: var(--orange);
+    border-radius: 15px;
+    color: white;
+    padding: 10px 0;
+    font-size: 1.25rem;
+    box-shadow: 2px 2px var(--orange);
+    width: 80%;
+  }
+
+  .courses a:hover {
+    color: var(--orange);
+    background-color: white;
+  }
+}
+
+@media (min-width: 768px) {
+  /* HOME PAGE */
+  main {
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 4rem;
+    }
+
+    .courses {
+      flex-direction: row;
+    }
+
+    .courses a {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+  main {
+    height: 60vh;
+
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .courses {
+      flex-direction: row;
+    }
+  }
+}

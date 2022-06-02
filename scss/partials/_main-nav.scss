@@ -1,0 +1,42 @@
+nav {
+  background: url("../img/Harry-Ainlay_background-1600x700.png") no-repeat
+    center fixed;
+  background-size: cover;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 15px 0;
+  margin-bottom: 2rem;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a#logo {
+    color: white;
+    font-family: var(--ff-sans1);
+    letter-spacing: 1.5px;
+  }
+
+  a.nav-link {
+    color: white;
+    margin-left: 0.5rem;
+    font-family: var(--ff-sans2);
+    letter-spacing: 1px;
+  }
+
+  a:hover {
+    color: var(--orange);
+  }
+
+  img {
+    vertical-align: middle;
+  }
+}

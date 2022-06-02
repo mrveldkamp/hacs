@@ -1,0 +1,41 @@
+.notes-content {
+  counter-reset: a;
+
+  ol {
+    margin-bottom: 3rem;
+    counter-increment: a;
+    counter-reset: b;
+    list-style: none;
+    columns: 1;
+  }
+
+  .li-div {
+    margin-bottom: 5px;
+  }
+
+  .li-div::before {
+    font-family: var(--ff-mono);
+    font-size: 0.85rem;
+    line-height: 1rem;
+    counter-increment: b;
+    content: counter(a) "." counter(b) " ";
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--blue);
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: var(--dark-red);
+  }
+}
+
+@media (min-width: 48rem) {
+  .notes-content {
+    ol {
+      columns: 2;
+    }
+  }
+}

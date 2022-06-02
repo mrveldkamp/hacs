@@ -1,9 +1,5 @@
 // JS MVC Test
 
-// Constants
-const URL_ROOT = "https://mrveldkamp.github.io/hacs/";
-let contentEl = document.getElementById("content");
-
 class Router {
   constructor() {
     this.contentEl = document.getElementById("content");
@@ -26,16 +22,15 @@ class Router {
     if (queryString === "") {
       return "home";
     } else {
-      return queryString
+      return queryString;
     }
-
   }
 
   loadPage() {
     // Load File based on Query String
-    fetch(`${URL_ROOT}${this.query}.html`)
-      .then(data => data.text())
-      .then(html => {
+    fetch(`./${this.query}.html`)
+      .then((data) => data.text())
+      .then((html) => {
         this.contentEl.innerHTML = html;
         this.checkJSLoad();
       });
@@ -44,7 +39,7 @@ class Router {
   checkJSLoad() {
     // Load JS for certain pages...
     if (this.query === "cs10/test") {
-      import(URL_ROOT + "cs10/test.js")
+      import("./cs10/test.js");
     }
   }
 }
