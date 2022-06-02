@@ -1,4 +1,4 @@
-.notes-content {
+.notes-list {
   counter-reset: a;
 
   ol {
@@ -33,7 +33,7 @@
 }
 
 @media (min-width: 48rem) {
-  .notes-content {
+  .notes-list {
     ol {
       columns: 2;
     }
