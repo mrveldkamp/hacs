@@ -1,0 +1,63 @@
+<h1 class="main-heading">Traverse Arrays</h1>
+
+<section class="page-content">
+  <!-- BACK LINK -->
+  <div class="page-nav">
+    <a class="back-link" href="./?js-notes">
+      <i class="fas fa-angle-double-left"></i> JS Notes
+    </a>
+    <a href="#" class="yt-link d-none" target="_blank">
+      <i class="fa-brands fa-youtube fa-lg"></i> Video Notes
+    </a>
+  </div>
+
+  <!-- TOPIC TITLE -->
+  <h2><i class="far fa-bookmark topic-heading"></i>Access Each Element in an Array</h2>
+  <hr />
+  <p>To <strong>traverse</strong> an array means to travel over all the elements in an array.</p>
+  <p>A loop may be used to generate all of the index values of an array. Then those index values can be used to
+    access each of the array elements.</p>
+
+  <pre><code class="lang-js">
+let fibonacci = [1, 2, 3, 5, 8, 13, 21];
+//   (index) ->  0  1  2  3  4  5   6
+
+// WITHOUT A LOOP - Print out all array elements 
+console.log(fibonacci[0]);
+console.log(fibonacci[1]);
+console.log(fibonacci[2]);
+console.log(fibonacci[3]);
+console.log(fibonacci[4]);
+console.log(fibonacci[5]);
+console.log(fibonacci[6]);
+
+// WITH A LOOP - Print out all array elements
+for (let i = 0; i < 7; i++) {
+  console.log(fibonacci[i]);
+}
+    </code></pre>
+
+  <h2><i class="far fa-bookmark topic-heading"></i> Traverse - General Case</h2>
+  <hr>
+  <p>Using the <strong>length of the array</strong> will allow the for loop to traverse an array of any size.</p>
+
+  <p>The length of an array may be determined using the length property.</p>
+  <pre><code class="lang-js">
+let vowels = ['a', 'e', 'i', 'o', 'u'];
+//   index ->  0    1    2    3    4 
+vowels.length; // -> 5
+    </code></pre>
+
+  <pre><code class="lang-js">
+// GENERAL CASE - Traverse all elements 
+let myArray = ["?", "?", ... , "?"];
+//   index ->   0    1 ... (length - 1)
+
+// Traverse array - use index 0 up to 
+// but not including length of array
+for (let i = 0; i < myArray.length; i++) {
+  console.log(myArray[i]);
+}
+    </code></pre>
+  <hr />
+</section>

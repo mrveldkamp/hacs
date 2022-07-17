@@ -1,0 +1,67 @@
+<h1 class="main-heading">Modify Arrays</h1>
+
+<section class="page-content">
+  <!-- BACK LINK -->
+  <div class="page-nav">
+    <a class="back-link" href="./?js-notes">
+      <i class="fas fa-angle-double-left"></i> JS Notes
+    </a>
+    <a href="#" class="yt-link d-none" target="_blank">
+      <i class="fa-brands fa-youtube fa-lg"></i> Video Notes
+    </a>
+  </div>
+
+  <h2><i class="far fa-bookmark topic-heading"></i> Modify Elements with [ ]</h2>
+  <hr>
+  <p>You may reassign / modify array elements when accesing the element with [ ].</p>
+  <pre><code class="lang-js">
+let nums = [1, 2, 3, 4, 5, 6];
+// index -> 0  1  2  3  4  5
+
+nums[0] = 7;  // [7, 2, 3, 4, 5, 6]
+nums[3] += 5; // [7, 2, 3, 9, 5, 6]
+nums[5]++;    // [7, 2, 3, 9, 5, 7]
+    </code></pre>
+
+  <h2><i class="far fa-bookmark topic-heading"></i>array.push() / array.pop()</h2>
+  <hr>
+  <p>The <strong>push</strong> method will add values to the end of an array.</p>
+  <pre><code class="lang-js">
+// Add value to end of array
+let vowels = ["a", "e", "i", "o", "u"];
+vowels.push("y"); // ["a", "e", "i", "o", "u", "y"]
+    </code></pre>
+
+  <p>The <strong>pop</strong> method will remove the last element from an array</p>
+  <pre><code class="lang-js">
+// Remove last element
+let vowels = ["a", "e", "i", "o", "u", "y"];
+vowels.pop(); // ["a", "e", "i", "o", "u"]
+
+// The pop() method also returns the last element
+let lastElement = anArray.pop();
+    </code></pre>
+
+
+  <!-- Topic -->
+  <h2><i class="far fa-bookmark topic-heading"></i>array.splice()</h2>
+  <hr>
+  <p>The <strong>splice</strong> method may add/or remove array elements at specific index.</p>
+  <pre><code class="lang-js">
+// Add and/or Remove array elements at a specific index 
+anArray.splice(index, howManyToRemove, itemToAdd1, itemToAdd2, ...);
+  </code></pre>
+
+  <pre><code class="lang-js">
+// Remove 4th element 
+let colors = ["red", "green", "blue", "yellow", "cyan"];
+colors.splice(3, 1); // ["red", "green", "blue", "cyan"]
+  </code></pre>
+
+  <pre><code class="lang-js">
+// Insert a value at index 2
+let colors = ["red", "green", "blue"];
+colors.splice(2, 0, "magenta"); // ["red", "green", "magenta", "blue"]
+    </code></pre>
+  <hr />
+</section>

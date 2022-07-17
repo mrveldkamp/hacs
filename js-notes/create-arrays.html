@@ -1,0 +1,142 @@
+<h1 class="main-heading">Create Arrays</h1>
+
+<section class="page-content">
+  <!-- BACK LINK -->
+  <div class="page-nav">
+    <a class="back-link" href="./?js-notes">
+      <i class="fas fa-angle-double-left"></i> JS Notes
+    </a>
+    <a href="#" class="yt-link d-none" target="_blank">
+      <i class="fa-brands fa-youtube fa-lg"></i> Video Notes
+    </a>
+  </div>
+
+  <!-- CREATE AN ARRAY WITH [] -->
+  <h2><i class="far fa-bookmark topic-heading"></i>Create an Array with [ ]</h2>
+  <hr>
+  <p>An array can be created by putting comma-separated values into square brackets.</p>
+  <pre><code class="lang-js">
+let emptyArray = [];
+let numberArray = [1, 2, 3.0, 4, 5];
+let stringArray = ["red", "green", "blue"];
+let mixedArray = ["text", 7, true, 3.14, [5, 10, 15]];
+  </code></pre>
+
+  <!-- CREATE AN ARRAY FROM A STRING -->
+  <h2><i class="far fa-bookmark topic-heading"></i>Create an Array From a String</h2>
+  <hr>
+  <p>A string may be turned into an array with the <strong>split()</strong> method.</p>
+  <p>The <strong>split()</strong> method takes in an argument that will be used as the token to separate the string.
+  </p>
+
+  <pre><code class="lang-js">
+// CREATE ARRAYS FROM STRINGS WITH SPLIT()
+let namesString = "adam,ben,caleb,david";
+let namesArray = namesString.split(",");
+// -> ["adam", "ben", "caleb", "david"]
+
+let scoresString = "80;90;75;88;95;99;85";
+let scoresArray = scoresString.split(";");
+// -> ["80", "90", "75", "88", "95", "99", "85"]
+
+let sentence = "I love arrays";
+let wordArray = sentence.split(" ");
+// -> ["I", "love", "arrays"]
+let characterArray = sentence.split("");
+// -> ["I"," ","l","o","v","e"," ","a","r","r","a","y","s"]
+</code></pre>
+
+  <p>The <strong>join()</strong> method may be used to turn an array back into a string.</p>
+  <p>The <strong>join()</strong> method takes in an argument that will be used as the token to place between array
+    elements.</p>
+
+  <pre><code class="lang-js">
+// Convert an array into a string with join()
+let wordArray = ["I", "love", "arrays"];
+
+let sentence = wordArray.join(" ");
+// -> "I love arrays"
+
+let sentence2 = wordArray.join("-");
+// -> "I-love-arrays"
+
+</code></pre>
+
+  <!-- CREATE AN ARRAY WITH A LOOP -->
+  <h2><i class="far fa-bookmark topic-heading"></i>Create an Array with a Loop</h2>
+  <hr>
+  <p>Loops may be used to create arrays.</p>
+  <p>Start with an empty array and then use a loop to add items one at a time to the end of the array using the
+    <strong>push()</strong> method.</p>
+
+  <pre><code class="lang-js">
+// Create an array with identical values (100 exclamation marks)
+let identicalArray = [];
+for (let n = 0; n < 100; n++) {
+  identicalArray.push("!");
+}
+
+// Create a random array (500 random decimals b/t 0 and 1)
+let randomArray = [];
+for (let n = 0; n < 500; n++) {
+  randomArray.push(Math.random());
+}
+
+// Create an array from user input (5 colors)
+let inputArray = [];
+for (let n = 0; n < 5; n++) {
+  inputArray.push(prompt("Please enter a color:"));
+}
+
+// Create a patterned array (even #'s b/t 0 and 50, inclusive)
+let patternArray = [];
+for (let num = 0; num <= 50; num += 2) {
+  patternArray.push(num);
+}
+</code></pre>
+
+  <!-- CREATE AN ARRAY FROM A JSON FILE -->
+  <h2><i class="far fa-bookmark topic-heading"></i>Create an Array from a JSON File</h2>
+  <hr>
+
+  <p>JSON stands for JavaScript Object Notation.</p>
+  <p>JSON is a data-interchange format that may be used to convert strings to data structures and vice-versa.</p>
+  <p>Here we load a file containing a JSON string and convert it into the data structure that the string represents.</p>
+
+  <h4 class="code-title">points.json</h4>
+  <pre><code class="lang-js">
+[{
+  "x": 2,
+  "y": 3,
+  "label": "A"
+}, {
+  "x": -4,
+  "y": 0,
+  "label": "B"
+}, {
+  "x": 8,
+  "y": 5,
+  "label": "C"
+}]
+  </code></pre>
+
+  <h4 class="code-title">main.js</h4>
+  <pre><code class="lang-js">
+// Load data from points.json
+let points;
+fetch('points.json')
+    .then((res) => res.json())
+    .then((data) => points = data);
+  </code></pre>
+
+  <p>The global variable points will now be an array of point objects as defined in the points.json file.</p>
+
+  <p><code class="lang-js">fetch()</code> loads the contents of the file into <code class="lang-js">res</code>.</p>
+
+  <p><code class="lang-js">res.json()</code> then converts the JSON string from the file into a data structure and loads
+    it
+    into data.</p>
+
+  <p>Global variable points is then assigned data.</p>
+  <hr />
+</section>

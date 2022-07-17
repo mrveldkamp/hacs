@@ -1,0 +1,61 @@
+<h1 class="main-heading">Copy & Compare Arrays</h1>
+
+<section class="page-content">
+  <!-- BACK LINK -->
+  <div class="page-nav">
+    <a class="back-link" href="./?js-notes">
+      <i class="fas fa-angle-double-left"></i> JS Notes
+    </a>
+    <a href="#" class="yt-link d-none" target="_blank">
+      <i class="fa-brands fa-youtube fa-lg"></i> Video Notes
+    </a>
+  </div>
+
+  <!-- COPY ARRAYS -->
+  <h2><i class="far fa-bookmark topic-heading"></i>Copy Arrays</h2>
+  <hr>
+  <p>The <strong>slice()</strong> method may be used to <strong>copy</strong> all or part of an array.</p>
+  <p>The <strong>slice()</strong> method takes in optional start <em>(inclusive)</em> and stop <em>(exclusive)</em>
+    arguments that control the section of the array to copy. The default start value is 0 and the default stop value
+    is the length of the array.</p>
+
+  <pre><code class="lang-js">
+// Array Slice Method 
+let anArray = [10, 20, 30, 40, 50, 60, 70];
+//   index ->   0   1   2   3   4   5   6
+
+let slice1 = anArray.slice(1, 4); 
+// index 1 to 3: [20, 30, 40] 
+
+let slice2 = anArray.slice(3); 
+// index 3 to end: [40, 50, 60, 70] 
+
+let slice3 = anArray.slice(); 
+// entire array: [10, 20, 30, 40, 50, 60, 70]
+ </code></pre>
+
+  <!-- COPY ARRAYS -->
+  <h2><i class="far fa-bookmark topic-heading"></i>Compare Arrays</h2>
+  <hr>
+  <p>To <strong>compare</strong> arrays, one technique is to convert the arrays to strings and then check the strings
+    for equality.</p>
+  <p>The <strong>JSON.stringify()</strong> method may be used to convert an array to a string.</p>
+
+  <pre><code class="lang-js">
+// Array Compare with JSON.stringify 
+let array1 = [1, 2, 3];
+let array2 = [1, 2, 3];
+let array3 = [3, 2, 1];
+
+console.log(array1 === array2); 
+// -> False (Different memory addresses)
+
+console.log(JSON.stringify(array1) === JSON.stringify(array2)); 
+// -> True ("[1,2,3]" === "[1,2,3]")
+
+console.log(JSON.stringify(array1) === JSON.stringify(array3)); 
+// False ("[1,2,3]" !== "[3,2,1]")
+
+ </code></pre>
+  <hr />
+</section>
