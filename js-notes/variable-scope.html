@@ -1,0 +1,48 @@
+<h1 class="main-heading">Variable Scope</h1>
+
+<section class="page-content">
+  <!-- BACK LINK -->
+  <div class="page-nav">
+    <a class="back-link" href="./?js-notes">
+      <i class="fas fa-angle-double-left"></i> JS Notes
+    </a>
+    <a href="#" class="yt-link d-none" target="_blank">
+      <i class="fa-brands fa-youtube fa-lg"></i> Video Notes
+    </a>
+  </div>
+
+  <!-- TOPIC TITLE -->
+  <h2><i class="far fa-bookmark topic-heading"></i>Local & Global Scope</h2>
+  <hr />
+
+  <p><strong>Variable scope</strong> refers to the visibility of a variable: where the variable may be accessed in the
+    program.</p>
+
+  <p>A variable declared inside of a function has <strong>local scope</strong> <em>(only visible inside that
+      function)</em>.</p>
+  <p>A variable declared outside of any functions has <strong>global scope</strong> <em>(visible everywhere)</em>.</p>
+
+  <pre><code class="lang-js">
+let name = 'Megan'; // Global Variable
+
+function displayGreeting() {
+  let timeOfDay = 'Morning'; // Local Variable
+
+  console.log('Hello ' + name + '.'); 
+  // OK, global variable visible everywhere
+  
+  console.log('Have a good ' + timeOfDay + "!"); 
+  // OK, local variable visible in function
+}
+
+displayGreeting();
+console.log('Goodbye ' + name + '.'); 
+// OK, global variable visible everywhere
+
+console.log('See you next ' + timeOfDay + '.'); 
+// ERROR, timeOfDay is local to function
+  </code></pre>
+  <hr>
+  </div>
+  <hr />
+</section>

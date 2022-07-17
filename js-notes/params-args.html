@@ -1,0 +1,50 @@
+<h1 class="main-heading">Parameters & Arguments</h1>
+
+<section class="page-content">
+  <!-- BACK LINK -->
+  <div class="page-nav">
+    <a class="back-link" href="./?js-notes">
+      <i class="fas fa-angle-double-left"></i> JS Notes
+    </a>
+    <a href="#" class="yt-link d-none" target="_blank">
+      <i class="fa-brands fa-youtube fa-lg"></i> Video Notes
+    </a>
+  </div>
+
+  <!-- TOPIC TITLE -->
+  <h2><i class="far fa-bookmark topic-heading"></i>Pass Data Into a Function</h2>
+  <hr />
+  <p>A function may be given data to work with by using <strong>parameters & arguments</strong>.</p>
+  <p><strong>Arguments</strong> refer to the values passed into a function
+    and <strong>parameters</strong> refer to the variables that store the argument values.</p>
+
+  <pre><code class="lang-js">
+// DEFINE A FUNCTION
+// PARAMETERS ARE: name & timeOfDay
+function displayGreeting(name, timeOfDay) {
+  console.log('Hello ' + name + '.');
+  console.log('Have a good ' + timeOfDay + '!');
+}
+
+//INVOKE FUNCTION WITH DIFFERENT ARGUMENTS
+displayGreeting('Megan', 'Morning');
+// Arguments are 'Megan' & 'Morning' 
+// -> Hello Megan. Have a good Morning!
+
+displayGreeting('Azra', 'Afternoon'); 
+// Arguments are 'Azra' & 'Afternoon' 
+// -> Hello Azra. Have a good Afternoon!
+
+displayGreeting('Nathan', 'Night'); 
+// Arguments are 'Nathan' & 'Night' 
+// -> Hello Nathan. Have a good Night!
+  </code></pre>
+
+  <p>In the example above, the parameters <code>name</code> & <code>timeOfDay</code> are declared inside the parentheses
+    of the function heading.</p>
+
+  <p>Each time the function is invoked, the arguments inside of the parentheses will be stored in the function
+    parameters.</p>
+
+  <hr>
+</section>
