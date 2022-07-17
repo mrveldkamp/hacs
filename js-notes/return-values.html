@@ -1,0 +1,39 @@
+<h1 class="main-heading">Return Values</h1>
+
+<section class="page-content">
+  <!-- BACK LINK -->
+  <div class="page-nav">
+    <a class="back-link" href="./?js-notes">
+      <i class="fas fa-angle-double-left"></i> JS Notes
+    </a>
+    <a href="#" class="yt-link d-none" target="_blank">
+      <i class="fa-brands fa-youtube fa-lg"></i> Video Notes
+    </a>
+  </div>
+
+  <!-- TOPIC TITLE -->
+  <h2><i class="far fa-bookmark topic-heading"></i>Return Data from Function</h2>
+  <hr />
+  <p>A function may return a value.</p>
+  <p>Simply use the <strong>return</strong> keyword followed by the value to return.</p>
+  <p>The return command stops execution of the function and returns the value to where the function was called.</p>
+
+  <pre><code class="lang-js">
+// DEFINE A RANDOM DECIMAL FUNCTION
+// Return a random decimal between low (inclusive) and high (exclusive)
+function randomDec(low, high) {
+  return Math.random() * (high - low) + low;
+}
+
+// INVOKE FUNCTION AND USE RETURN VALUE IN VARIOUS WAYS
+// Store returned value in a variable
+let xVal = randomDec(0, 300); 
+
+// Pass returned value into console.log
+console.log(randomDec(1, 10)); 
+
+// Use returned value in an expression
+let circleArea = Math.PI * randomDec(1, 50) ** 2; 
+  </code></pre>
+  <hr>
+</section>
