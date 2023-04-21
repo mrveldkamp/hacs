@@ -1,0 +1,83 @@
+<h1 class="main-heading">getElementById()</h1>
+
+<section class="page-content">
+  <!-- BACK LINK -->
+  <div class="page-nav">
+    <a class="back-link" href="./?js-notes">
+      <i class="fas fa-angle-double-left"></i> JS Notes
+    </a>
+    <a href="#" class="yt-link d-none" target="_blank">
+      <i class="fa-brands fa-youtube fa-lg"></i> Video Notes
+    </a>
+  </div>
+
+  <!-- GETTING HTML ELEMENTS -->
+  <h2><i class="far fa-bookmark topic-heading"></i> Getting HTML Elements</h2>
+  <hr />
+  <p>
+    If an HTML element has an id attribute, JavaScript may use the
+    <code class="lang-js">document.getElementById()</code> method to get a
+    reference to that HTML element.
+  </p>
+  <p>
+    The <code class="lang-html">defer</code> attribute must be added to the
+    <code class="lang-html">&lt;script&gt;</code> element to ensure that the
+    JavaScript defers to the HTML and allows the page elements to load before
+    running the JavaScript code.
+  </p>
+
+  <h4>index.html</h4>
+  <pre><code class="lang-html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  ...
+  &lt;script defer src="main.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;h1 id="headingId"&gt;This is a Heading&lt;/h1&gt;
+  &lt;p id="paraId"&gt;This is a paragraph.&lt;/p&gt;
+    ...
+&lt;/body&gt;
+&lt;/html&gt;
+  </code></pre>
+
+  <h4>main.js</h4>
+  <pre><code class="lang-js">
+// Store references to HTML Elements in variables
+let headingEl = document.getElementById("headingId");
+let paragraphEl = document.getElementById("paraId");
+
+// Log elements to console to verify
+console.log(headingEl);
+console.log(paragraphEl);
+  </code></pre>
+
+  <p>
+    Below, you can see the result of logging the headingEl and paragraphEl
+    variables to the console. The variables are storing a reference to the HTML
+    heading and paragraph elements.
+  </p>
+  <p>
+    <img
+      src="img/getElementByIdEg.PNG"
+      alt="Get Element By Id Example"
+      class="img-fluid" />
+  </p>
+
+  <!-- SUMMARY -->
+  <h2><i class="far fa-list-alt summary"></i> Summary</h2>
+  <hr />
+  <ul>
+    <li>
+      JavaScript can use
+      <code class="lang-js">document.getElementById()</code> to get a reference
+      to an html element.
+    </li>
+    <li>
+      Further lessons will show how JavaScript can use a reference to an html
+      element to interact with that element.
+    </li>
+  </ul>
+</section>

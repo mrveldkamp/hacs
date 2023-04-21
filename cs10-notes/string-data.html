@@ -1,0 +1,114 @@
+<h1 class="main-heading">String Data</h1>
+
+<section class="page-content">
+  <!-- BACK LINK -->
+  <div class="page-nav">
+    <a class="back-link" href="./?js-notes">
+      <i class="fas fa-angle-double-left"></i> JS Notes
+    </a>
+    <a href="#" class="yt-link d-none" target="_blank">
+      <i class="fa-brands fa-youtube fa-lg"></i> Video Notes
+    </a>
+  </div>
+
+  <!-- STRING DATA TYPE -->
+  <h2><i class="far fa-bookmark topic-heading"></i> String Data Type</h2>
+  <hr />
+  <p>A String is a sequence of characters used to represent text.</p>
+  <p>
+    Strings are enclosed by matching double quotes, single quotes or backticks.
+  </p>
+  <pre><code class="lang-js">
+let string1 = "doubled-quoted String data";
+let string2 = 'single-quoted String data';
+let string3 = `backtick-quoted String data`;
+  </code></pre>
+  <p>The backtick key is located above the left Tab key on most keyboards.</p>
+
+  <!-- STRING CONCATENATION -->
+  <h2><i class="far fa-bookmark topic-heading"></i> String Concatenation</h2>
+  <hr />
+  <p>
+    The operation of joining strings together is called
+    <strong>concatenation</strong>.
+  </p>
+  <p>
+    In JavaScript, concatenation is done with the
+    <code class="lang-js">+</code> operator.
+  </p>
+  <pre><code class="lang-js">
+"Hello" + "World"; // Result => "HelloWorld"
+"Hi" + " There!"; // Result => "Hi There!"
+      </code></pre>
+
+  <!-- STRING PROPERTIES & METHODS -->
+  <h2>
+    <i class="far fa-bookmark topic-heading"></i> String Properties & Methods
+  </h2>
+  <hr />
+  <p>There are some useful properties and methods that work on String data.</p>
+
+  <h4>Length Property</h4>
+  <p>
+    The <code class="lang-js">length</code> property of a string will return the
+    number of characters in a string.
+  </p>
+  <pre><code class="lang-js">
+"hello".length; // Result => 5
+"Hi There".length; // Result => 8
+      </code></pre>
+
+  <h4>toLowerCase() / toUpperCase() Methods</h4>
+  <p>
+    The <code class="lang-js"> toLowerCase()</code> and
+    <code class="lang-js">toUpperCase()</code> methods will convert a string to
+    either all lowercase or all uppercase letters.
+  </p>
+  <pre><code class="lang-js">
+"Algorithm".toLowerCase(); // Result => "algorithm"
+"JavaScript".toUpperCase(); // Result => "JAVASCRIPT"
+      </code></pre>
+
+  <!-- TEMPLATE STRINGS -->
+  <h2><i class="far fa-bookmark topic-heading"></i> Template Strings</h2>
+  <hr />
+
+  <p>
+    When a string is enclosed with backticks, we can embed variables into the
+    string by wrapping the variables in <code class="lang-js">${...}</code>.
+  </p>
+  <pre><code class="lang-js">
+let name = "John";
+let timeOfDay = "Morning";
+let greeting = `Hello ${name}. Have a great ${timeOfDay}!`; 
+// greeting  => "Hello John. Have a great Morning!"
+    </code></pre>
+  <p>
+    A String made with backticks is commonly called a
+    <strong>Template String</strong>.
+  </p>
+
+  <!-- SUMMARY -->
+  <h2><i class="far fa-list-alt summary"></i> Summary</h2>
+  <hr />
+  <ul>
+    <li>The String data type is used to represent text.</li>
+    <li>
+      Join strings together (concatenate) with the
+      <code class="lang-js">+</code> operator.
+    </li>
+    <li>
+      Use the <code class="lang-js">length</code> property to get the number of
+      characters in a string.
+    </li>
+    <li>
+      Use the <code class="lang-js">toLowerCase()</code> and
+      <code class="lang-js">toUpperCase()</code> methods to convert strings to
+      all lowercase or all uppercase.
+    </li>
+    <li>
+      A Template String is made using backticks. Variables may be inserted into
+      a Template String with <code class="lang-js">${...}</code>.
+    </li>
+  </ul>
+</section>

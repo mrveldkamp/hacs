@@ -1,0 +1,81 @@
+<h1 class="main-heading">Prompt()</h1>
+
+<section class="page-content">
+  <!-- BACK LINK -->
+  <div class="page-nav">
+    <a class="back-link" href="./?js-notes">
+      <i class="fas fa-angle-double-left"></i> JS Notes
+    </a>
+    <a href="#" class="yt-link d-none" target="_blank">
+      <i class="fa-brands fa-youtube fa-lg"></i> Video Notes
+    </a>
+  </div>
+
+  <!-- TEXT INPUT -->
+  <h2><i class="far fa-bookmark topic-heading"></i> Text Input</h2>
+  <hr />
+  <p>
+    The <code class="lang-js">prompt()</code> function will open a prompt-box
+    where the user can provide text input. The text input that is returned from
+    the <code class="lang-js">prompt()</code> function may be stored in a
+    variable for later use.
+  </p>
+  <pre><code class="lang-js">
+// Ask user for their name and greet them by name
+let name = prompt("Please enter your name:");
+alert(`Hello ${name}!`);
+    </code></pre>
+  <p>
+    <img
+      src="img/prompt-eg1.PNG"
+      alt="Prompt Example 1"
+      class="img-fluid-max" />
+  </p>
+  <p>
+    <img
+      src="img/prompt-eg2.PNG"
+      alt="Prompt Example 2"
+      class="img-fluid-max" />
+  </p>
+
+  <!-- NUMERICAL INPUT -->
+  <h2><i class="far fa-bookmark topic-heading"></i> Numerical Input</h2>
+  <hr />
+  <p>
+    Input received from the <code class="lang-js">prompt()</code> function is
+    <strong>always returned as a String data type</strong>.
+  </p>
+  <p>
+    If you want numerical input, convert the String that
+    <code class="lang-js">prompt()</code> returns to a Number data type using
+    the unary <code class="lang-js">+</code> operator or the
+    <code class="lang-js">Number()</code>
+    function.
+  </p>
+  <pre><code class="lang-js">
+// Convert user input to Number data type with '+' operator
+let num1 = +prompt("Please enter a number:");
+
+// Convert user input to Number data type with Number() function
+let num2 = Number(prompt("Please enter a number:"));
+    </code></pre>
+
+  <!-- SUMMARY -->
+  <h2><i class="far fa-list-alt summary"></i> Summary</h2>
+  <hr />
+  <ul>
+    <li>
+      The <code class="lang-js">prompt()</code> function may be used to get
+      input from the user via a prompt-box.
+    </li>
+    <li>
+      The <code class="lang-js">prompt()</code> function always returns user
+      input as a String data type.
+    </li>
+    <li>
+      Use the unary <code class="lang-js">+</code> operator or the
+      <code class="lang-js">Number()</code> function to convert String input to
+      a Number.
+    </li>
+  </ul>
+</section>

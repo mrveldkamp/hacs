@@ -1,0 +1,87 @@
+<h1 class="main-heading">Click Events</h1>
+
+<section class="page-content">
+  <!-- BACK LINK -->
+  <div class="page-nav">
+    <a class="back-link" href="./?js-notes">
+      <i class="fas fa-angle-double-left"></i> JS Notes
+    </a>
+    <a href="#" class="yt-link d-none" target="_blank">
+      <i class="fa-brands fa-youtube fa-lg"></i> Video Notes
+    </a>
+  </div>
+
+  <!-- DOCUMENT EVENT LISTENER -->
+  <h2><i class="far fa-bookmark topic-heading"></i> Document Event Listener</h2>
+  <hr />
+  <p>An Event Listener is used to run code when a certain event occurs.</p>
+  <p>
+    The following code will add a Click Event Listener to the HTML document.
+    Every time the document is clicked, the message
+    <code class="lang-js">"Hello Document!"</code> will be displayed in an
+    alert-box.
+  </p>
+
+  <h4>main.js</h4>
+  <pre><code class="lang-js">
+// Add Click Event Listener to HTML document
+document.addEventListener("click", greeting);
+
+function greeting() {
+  alert("Hello Document!");
+}
+  </code></pre>
+
+  <p>
+    The greeting function stores code that will only run when the function is
+    invoked/called.
+  </p>
+  <p>
+    When we add a Click Event Listener to the document, we give the Event
+    Listener the name of a function to invoke/call when the event occurs. In
+    this case, the Event Listener will call the function named greeting.
+  </p>
+
+  <!-- ELEMENT EVENT LISTENER -->
+  <h2><i class="far fa-bookmark topic-heading"></i> Element Event Listener</h2>
+  <hr />
+
+  <p>Event Listeners may also be added to HTML elements.</p>
+  <p>
+    The following code will add a Click Event Listener to an HTML button
+    element. Every time the button is clicked, the message
+    <code class="lang-js">"Hello Button!"</code> will be displayed in an
+    alert-box and in the console.
+  </p>
+
+  <h4>index.html</h4>
+  <pre><code class="lang-html">
+&lt;body&gt;
+  &lt;h1 id="heading"&gt;This is a Heading&lt;/h1&gt;
+  &lt;p&gt;&lt;button id="btn"&gt;Click Me&lt;/button&gt;&lt;/p&gt;
+&lt;/body&gt;
+  </code></pre>
+
+  <h4>main.js</h4>
+  <pre><code class="lang-js">
+// Run greetButton function when button is clicked 
+document.getElementById("btn").addEventListener("click", greetButton);
+
+function greetButton() {
+  console.log("Hello Button!");
+  alert("Hello Button!");
+}
+    </code></pre>
+
+  <!-- SUMMARY -->
+  <h2><i class="far fa-list-alt summary"></i> Summary</h2>
+  <hr />
+  <ul>
+    <li>Functions may be used to store blocks of code.</li>
+    <li>
+      Event listeners may be added to the document or specific HTML elements.
+      When the specified event occurs, the event listener will tell the provided
+      function to run its code.
+    </li>
+  </ul>
+</section>

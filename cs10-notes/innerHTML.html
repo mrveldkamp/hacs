@@ -1,0 +1,69 @@
+<h1 class="main-heading">innerHTML</h1>
+
+<section class="page-content">
+  <!-- BACK LINK -->
+  <div class="page-nav">
+    <a class="back-link" href="./?js-notes">
+      <i class="fas fa-angle-double-left"></i> JS Notes
+    </a>
+    <a href="#" class="yt-link d-none" target="_blank">
+      <i class="fa-brands fa-youtube fa-lg"></i> Video Notes
+    </a>
+  </div>
+
+  <!-- SET ELEMENT CONTENT -->
+  <h2><i class="far fa-bookmark topic-heading"></i> Set Element Content</h2>
+  <hr />
+  <p>
+    JavaScript is able to access the content of an HTML element with the
+    <code class="lang-js">innerHTML</code> property.
+  </p>
+  <p>
+    The <code class="lang-js">innerHTML</code> of an element is the content
+    between the element's opening and closing tags.
+  </p>
+
+  <h4>index.html</h4>
+  <pre><code class="lang-html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  ...
+  &lt;script defer src="main.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;h1 id="heading"&gt;This is a Heading&lt;/h1&gt;
+  &lt;p id="para"&gt;This is a paragraph.&lt;/p&gt;
+  &lt;p&gt;&lt;button id="btn"&gt;Click Me&lt;/button&gt;&lt;/p&gt;
+  ...
+&lt;/body&gt;
+&lt;/html&gt;
+  </code></pre>
+
+  <p>
+    The code below will use the innerHTML property to change the content of the
+    heading and paragraph elements when the button element is clicked.
+  </p>
+  <h4>main.js</h4>
+  <pre><code class="lang-js">
+// Run changeContent function when button is clicked 
+document.getElementById("btn").addEventListener("click", changeContent);
+
+// Use innerHTML to change content of heading and paragraph
+function changeContent() {
+  document.getElementById("heading").innerHTML = "New Heading";
+  document.getElementById("para").innerHTML = "New &lt;em&gt;Awesome&lt;/em&gt; Paragraph.";
+}
+  </code></pre>
+
+  <!-- SUMMARY -->
+  <h2><i class="far fa-list-alt summary"></i> Summary</h2>
+  <hr />
+  <ul>
+    <li>
+      Use an elements <code class="lang-js">innerHTML</code> property to set the
+      content of the element.
+    </li>
+  </ul>
+</section>

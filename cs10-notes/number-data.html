@@ -1,0 +1,101 @@
+<h1 class="main-heading">Number Data</h1>
+
+<section class="page-content">
+  <!-- BACK LINK -->
+  <div class="page-nav">
+    <a class="back-link" href="./?js-notes">
+      <i class="fas fa-angle-double-left"></i> JS Notes
+    </a>
+    <a href="#" class="yt-link d-none" target="_blank">
+      <i class="fa-brands fa-youtube fa-lg"></i> Video Notes
+    </a>
+  </div>
+
+  <!-- NUMBER DATA TYPE -->
+  <h2><i class="far fa-bookmark topic-heading"></i> Number Data Type</h2>
+  <hr />
+  <p>
+    A Number is simply a numerical value
+    <em>(with or without a decimal)</em> that is not enclosed by quotes.
+  </p>
+  <pre><code class="lang-js">
+25
+3.14159
+42
+  </code></pre>
+
+  <!-- NUMBER OPERATIONS -->
+  <h2><i class="far fa-bookmark topic-heading"></i> Number Operations</h2>
+  <hr />
+  <p>JavaScript supports common math operations on Numbers.</p>
+
+  <h4>Addition (<code class="lang-js">+</code>)</h4>
+  <pre><code class="lang-js">
+2 + 3; // Result => 5
+    </code></pre>
+  <h4>Subraction (<code class="lang-js">-</code>)</h4>
+  <pre><code class="lang-js">
+7 - 3; // Result => 4
+    </code></pre>
+  <h4>Multiplication (<code class="lang-js">*</code>)</h4>
+  <pre><code class="lang-js">
+6 * 5; // Result => 30
+    </code></pre>
+  <h4>Division (<code class="lang-js">/</code>)</h4>
+  <pre><code class="lang-js">
+3 / 2; // Result => 1.5
+    </code></pre>
+  <h4>Remainder (<code class="lang-js">%</code>)</h4>
+  <pre><code class="lang-js">
+3 % 2; // Result => 1
+11 % 3; // Result => 2
+12 % 4; // Result => 0
+    </code></pre>
+  <h4>Exponent (<code class="lang-js">**</code>)</h4>
+  <pre><code class="lang-js">
+5 ** 2; // Result => 25
+2 ** 3; // Result => 8
+16 ** 0.5; // Result => 4
+    </code></pre>
+  <h4>Order of Operations</h4>
+  <p>
+    JavaScript follows proper order of operations and ( ) may be used in
+    calculations to influence the order of operations.
+  </p>
+  <pre><code class="lang-js">
+1 + 2 * 3; // Result => 7
+(1 + 2) * 3; // Result => 9
+    </code></pre>
+
+  <!-- TOFIXED() METHOD -->
+  <h2><i class="far fa-bookmark topic-heading"></i> toFixed() Method</h2>
+  <hr />
+  <p>
+    Numbers may be rounded to a specified decimal place using the
+    <code class="lang-js">toFixed()</code> method.
+  </p>
+  <p>
+    The <code class="lang-js">toFixed()</code> method rounds a number and
+    converts the number to a String data type.
+  </p>
+  <pre><code class="lang-js">
+23.451.toFixed(2); // Result => "23.45"
+7.2974.toFixed(1); // Result => "7.3"
+      </code></pre>
+  <p>
+    This method is often used when outputting the result of a calculation and
+    you want to displaly a rounded value.
+  </p>
+
+  <!-- SUMMARY -->
+  <h2><i class="far fa-list-alt summary"></i> Summary</h2>
+  <hr />
+  <ul>
+    <li>The Number data type is used to represent numbers.</li>
+    <li>JavaScript supports the basic math operations for numbers.</li>
+    <li>
+      The <code class="lang-js">toFixed()</code> method rounds a number to a
+      specified number of decimal places and returns the result as a String.
+    </li>
+  </ul>
+</section>

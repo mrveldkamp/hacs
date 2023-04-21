@@ -1,0 +1,127 @@
+<h1 class="main-heading">&lt;input&gt; Elements</h1>
+
+<section class="page-content">
+  <!-- BACK LINK -->
+  <div class="page-nav">
+    <a class="back-link" href="./?js-notes">
+      <i class="fas fa-angle-double-left"></i> JS Notes
+    </a>
+    <a href="#" class="yt-link d-none" target="_blank">
+      <i class="fa-brands fa-youtube fa-lg"></i> Video Notes
+    </a>
+  </div>
+
+  <!-- HTML INPUT ELEMENT -->
+  <h2>
+    <i class="far fa-bookmark topic-heading"></i> HTML &lt;input&gt; Element
+  </h2>
+  <hr />
+
+  <p>
+    An <code class="lang-html">&lt;input&gt;</code> element will display as an
+    input-box on a web page: <input />.
+  </p>
+  <p>
+    An <code class="lang-html">&lt;input&gt;</code> element may have id and
+    value attributes.
+  </p>
+  <ul>
+    <li>
+      <strong>id attribute</strong>: use getElementById() to get a reference to
+      the element.
+    </li>
+    <li>
+      <strong>value attribute</strong>: may be used to initialize the value of
+      the input element.
+    </li>
+  </ul>
+  <br />
+
+  <h4>index.html</h4>
+  <pre><code class="lang-html">
+&lt;p&gt;Enter your name: &lt;input id="name-in"&gt;&lt;/p&gt;
+&lt;p&gt;Enter the time of day: &lt;input id="time-in" value="Morning"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;button id="btn"&gt;Submit&lt;/button&gt;&lt;/p&gt;
+&lt;p id="output"&gt;-----&lt;/p&gt;
+    </code></pre>
+
+  <h4>Output of index.html</h4>
+  <p>Enter your name: <input id="name-in" /></p>
+  <p>Enter the time of day: <input id="time-in" value="Morning" /></p>
+  <p><button id="btn">Submit</button></p>
+  <p id="output">-----</p>
+
+  <!-- GET VALUE OF INPUT ELEMENT -->
+  <h2>
+    <i class="far fa-bookmark topic-heading"></i> Get Value of &lt;input&gt;
+    Element
+  </h2>
+  <hr />
+  <p>
+    To get the value of an <code class="lang-html">&lt;input&gt;</code> element:
+    use <code class="lang-js">getElementById()</code> to get a reference to the
+    <code class="lang-html">&lt;input&gt;</code> element and then access the
+    <strong>value</strong> property of the
+    <code class="lang-html">&lt;input&gt;</code> element to get the contents.
+  </p>
+
+  <h4>main.js</h4>
+  <pre><code class="lang-js">
+// Add Event Listener to button element
+document.getElementById("btn").addEventListener("click", encourage);
+
+function encourage() {
+  // Input 
+  let name = document.getElementById("name-in").value;
+  let timeOfDay =document.getElementById("time-in").value;
+
+  // Process
+  let msg = `Hello ${name}. Have a great ${timeOfDay}!`;
+
+  // Output
+  document.getElementById("output").innerHTML = msg;
+}
+    </code></pre>
+
+  <div class="attention-box">
+    <h4><i class="fas fa-exclamation-triangle attention"></i> Attention</h4>
+    <ul>
+      <li>
+        be sure to use an event listener to give the user time to type something
+        into the input element!
+      </li>
+      <li>
+        the value of the input element is always a String data type. Convert to
+        a Number data type if required.
+      </li>
+    </ul>
+  </div>
+
+  <!-- SUMMARY -->
+  <h2><i class="far fa-list-alt summary"></i> Summary</h2>
+  <hr />
+  <ul>
+    <li>JavaScript can get the value of &lt;input&gt; elements.</li>
+    <li>The value of an &lt;input&gt; element is always a String.</li>
+  </ul>
+</section>
+
+<script>
+  // HTML variables
+  let btnEl = document.getElementById("btnId");
+  let nameInEl = document.getElementById("nameId");
+  let timeOfDayEl = document.getElementById("timeId");
+
+  // Add Event Listener to button element
+  btnEl.addEventListener("click", encourage);
+
+  function encourage() {
+    // Input
+    let name = nameInEl.value;
+    let timeOfDay = timeOfDayEl.value;
+
+    // Output
+    alert("Hello " + name);
+    alert("Have a great " + timeOfDay + "!");
+  }
+</script>
