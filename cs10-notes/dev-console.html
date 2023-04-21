@@ -1,0 +1,130 @@
+<h1 class="main-heading">Developer Console</h1>
+
+<section class="page-content">
+  <!-- BACK LINK -->
+  <div class="page-nav">
+    <a class="back-link" href="./?js-notes">
+      <i class="fas fa-angle-double-left"></i> JS Notes
+    </a>
+    <a href="#" class="yt-link d-none" target="_blank">
+      <i class="fa-brands fa-youtube fa-lg"></i> Video Notes
+    </a>
+  </div>
+
+  <!-- WHAT IS THE DEVELOPER CONSOLE? -->
+  <h2>
+    <i class="far fa-bookmark topic-heading"></i> What is the Developer Console?
+  </h2>
+  <hr />
+
+  <p>
+    The developer console is a part of a web browser. The developer console is
+    useful for:
+  </p>
+  <ul>
+    <li>seeing errors</li>
+    <li>running commands</li>
+    <li>logging messages</li>
+  </ul>
+
+  <!-- OPEN THE DEVELOPER CONSOLE -->
+  <h2>
+    <i class="far fa-bookmark topic-heading"></i> Open the Developer Console
+  </h2>
+  <hr />
+
+  <p>
+    Most Developers lean towards Chrome or Firefox for development because those
+    browsers have the best developer tools.
+  </p>
+  <p>To open the developer tools in the Chrome browser:</p>
+  <ul>
+    <li>press <code class="lang-js">F12</code></li>
+    <li>or right click and select <code class="lang-js">Inspect</code></li>
+  </ul>
+  <p>Make sure to select the <em>Console</em> tab.</p>
+  <p><img class="img-fluid" src="img/console-tab.PNG" alt="Console Tab" /></p>
+
+  <!-- SEEING ERRORS -->
+  <h2><i class="far fa-bookmark topic-heading"></i> Seeing Errors</h2>
+  <hr />
+
+  <p>
+    When we make errors in our code, certain types of errors may have
+    information about the error displayed in the developer console. This is very
+    useful when trying to fix the errors.
+  </p>
+  <h4>script.js</h4>
+  <pre><code class="lang-js">
+// Test errors
+aler("Hello World");
+      </code></pre>
+
+  <p>
+    In the code above, I misspelled the name of the
+    <code class="lang-js">alert()</code> function. The error below informs me
+    that I have a reference error on line 3 of script.js. There is no JavaScript
+    command called "aler" and now I know what my mistake was and where in my
+    code I made the mistake.
+  </p>
+  <p>
+    <img class="img-fluid" src="img/console-error-eg.PNG" alt="Console Error" />
+  </p>
+
+  <!-- RUNNING COMMANDS -->
+  <h2><i class="far fa-bookmark topic-heading"></i> Running Commands</h2>
+  <hr />
+
+  <p>
+    It is possible to run JavaScript commands in the console. This is sometimes
+    useful when testing out different features of the JavaScript language.
+  </p>
+  <p>
+    To run a command in the console, simply type a command after the
+    <code class="lang-js">&gt;</code> sign and press
+    <code class="lang-js">Enter</code>.
+  </p>
+  <p>
+    <img
+      src="img/console-run-commands.PNG"
+      alt="Run Commands in Console"
+      class="img-fluid" />
+  </p>
+
+  <!-- LOGGING TO THE CONSOLE -->
+  <h2><i class="far fa-bookmark topic-heading"></i> Logging to the Console</h2>
+  <hr />
+
+  <p>
+    When testing code, it is sometimes useful to log information to the console.
+  </p>
+  <p>
+    To log to the console, use the
+    <code class="lang-js">console.log()</code> method.
+  </p>
+  <h4>script.js</h4>
+  <pre><code class="lang-js">
+console.log("Hello Console!");
+    </code></pre>
+  <p>
+    <img src="img/console-log.PNG" alt="Console Log" class="img-fluid" />
+  </p>
+
+  <h2><i class="far fa-list-alt summary"></i> Summary</h2>
+  <hr />
+
+  <ul>
+    <li>
+      Open the console by pressing <code class="lang-js">F12</code> or right
+      click and <code class="lang-js">Inspect</code>.
+    </li>
+    <li>
+      The console is useful for getting information about programming errors.
+    </li>
+    <li>The console may be used to run JavaScript commands.</li>
+    <li>
+      <code class="lang-js">console.log()</code> is a JavaScript command that
+      will log a message to the console.
+    </li>
+  </ul>
+</section>

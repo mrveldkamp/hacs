@@ -1,0 +1,119 @@
+<h1 class="main-heading">JS Introduction</h1>
+
+<section class="page-content">
+  <!-- BACK LINK -->
+  <div class="page-nav">
+    <a class="back-link" href="./?js-notes">
+      <i class="fas fa-angle-double-left"></i> JS Notes
+    </a>
+    <a href="#" class="yt-link d-none" target="_blank">
+      <i class="fa-brands fa-youtube fa-lg"></i> Video Notes
+    </a>
+  </div>
+
+  <!-- WHAT IS JAVASCRIPT? -->
+  <h2><i class="far fa-bookmark topic-heading"></i>What is JavaScript?</h2>
+  <hr />
+  <p>JavaScript is a programming language.</p>
+  <p>
+    Programming involves using a programming language to instruct a computer to
+    complete a task.
+  </p>
+  <p>
+    <img
+      class="img-fluid"
+      src="./img/programming-definition.png"
+      alt="Programming Definition" />
+  </p>
+
+  <p>JavaScript may be used to make web pages "come alive".</p>
+
+  <h2><i class="far fa-bookmark topic-heading"></i> JavaScript How To</h2>
+  <hr />
+
+  <p>
+    The recommended way to run JavaScript code is to load an
+    <strong>external JavaScript file</strong> into your html document using a
+    <code class="lang-html">&lt;script&gt;</code> element.
+  </p>
+
+  <h3>Step 1: Create an External JavaScript File</h3>
+  <p>
+    Create an external JavaScript file by making a file with a .js extension
+    <em>(It is common to name this file "script.js" or "main.js")</em> This
+    document is where you will write your JavaScript code.
+  </p>
+  <p>
+    The first JavaScript command we will use is the
+    <code class="lang-js">alert()</code> function. The
+    <code class="lang-js">alert()</code> function instructs the browser to
+    display a provided message in an alert-box.
+  </p>
+
+  <h4>main.js</h4>
+  <pre><code class="lang-js">
+alert("Hello World!");
+alert("Welcome to JavaScript.");  
+    </code></pre>
+  <p>
+    Note that each alert command ends with a semi-colon (;). These semi-colons
+    are optional in JavaScript, but I recommend using them.
+  </p>
+
+  <h3>Step 2: Run JavaScript in HTML document</h3>
+  <p>
+    Put a <code class="lang-html">&lt;script&gt;</code> element in the head of
+    your html document. This will run the JavaScript code specificed in the
+    script's <code class="lang-js">src</code> attribute.
+  </p>
+
+  <h4>index.html</h4>
+  <pre><code class="lang-html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  ...
+  &lt;!-- Run External JavaScript File --&gt;
+  &lt;script src="main.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;h1&gt;JavaScript How To&lt;/h1&gt;
+  ...
+&lt;/body&gt;
+&lt;/html&gt;
+    </code></pre>
+
+  <h2><i class="far fa-list-alt summary"></i> Summary</h2>
+  <hr />
+  <ul>
+    <li>
+      An algorithm is a step by step set of instructions to complete a task.
+    </li>
+    <li>
+      Programming involves using programming languages to implement algorithms.
+    </li>
+    <li>JavaScript is a programming language for web applications.</li>
+    <li>
+      Run JavaScript using an external js file and the
+      <code class="lang-js">&lt;script&gt;</code> element.
+    </li>
+    <li>
+      The <code class="lang-js">alert()</code> function will display a provided
+      message in an alert-box.
+    </li>
+  </ul>
+
+  <h2><i class="far fa-check-square check"></i> Check Your Understanding</h2>
+  <hr />
+  <p>
+    Try to do the following task(s) to check your understanding. Ask for help if
+    needed.
+  </p>
+  <ul>
+    <li>
+      Use the <code class="lang-js">alert()</code> function to display some
+      messages of your own.
+    </li>
+  </ul>
+</section>
