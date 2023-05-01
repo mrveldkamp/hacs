@@ -1,0 +1,126 @@
+<h1 class="main-heading">Modify Style</h1>
+
+<section class="page-content">
+  <!-- BACK LINK -->
+  <div class="page-nav">
+    <a class="back-link" href="./?js-notes">
+      <i class="fas fa-angle-double-left"></i> JS Notes
+    </a>
+    <a href="#" class="yt-link d-none" target="_blank">
+      <i class="fa-brands fa-youtube fa-lg"></i> Video Notes
+    </a>
+  </div>
+
+  <!-- MODIFY STYLE WITH JAVASCRIPT -->
+  <h2>
+    <i class="far fa-bookmark topic-heading"></i> Modify Style with JavaScript
+  </h2>
+  <hr />
+  <p>JavaScript may be used to select an element and modify its style.</p>
+  <p>Modify an element with the <code class="lang-js">style</code> property:</p>
+  <p>
+    <code class="lang-js"
+      >document.getElementById("id").style.cssProperty = "cssValue";</code
+    >
+  </p>
+  <p>
+    CSS properties with hyphens need to be changed to camelCasing.<br />
+    <em>(eg. font-size -> fontSize, font-family -> fontFamily)</em>
+  </p>
+
+  <h4>index.html</h4>
+  <pre><code class="lang-html">
+&lt;body&gt;
+  &lt;h1 id="headingId"&gt;This is a Heading&lt;/h1&gt;
+  &lt;p id="paraId"&gt;This is a paragraph.&lt;/p&gt;
+  &lt;p&gt;&lt;button id="btnId"&gt;Click Me&lt;/button&gt;&lt;/p&gt;
+&lt;/body&gt;
+    </code></pre>
+
+  <h4>main.js</h4>
+  <pre><code class="lang-js">
+// Variables to store reference to HTML Elements
+let btnEl = document.getElementById("btnId");
+let headingEl = document.getElementById("headingId");
+let paragraphEl = document.getElementById("paraId");
+
+// Run modifyStyle function when button is clicked 
+btnEl.addEventListener("click", modifyStyle);
+
+function modifyStyle() {
+  // Use the style property to modify element styles
+  headingEl.style.color = "red";
+  headingEl.style.fontFamily = "Comic Sans MS";
+  paragraphEl.style.textDecoration = "underline";
+  paragraphEl.style.textAlign = "center";
+}
+  </code></pre>
+
+  <!-- MODIFY CLASS ATTRIBUTE -->
+  <h2>
+    <i class="far fa-bookmark topic-heading"></i> Modify Class with JavaScript
+  </h2>
+  <hr />
+  <p>
+    JavaScript may be used to select an element and access its class attribute.
+  </p>
+  <p>
+    Access the class of an element with the
+    <code class="lang-js">className</code> property:
+  </p>
+  <p>
+    <code class="lang-js"
+      >document.getElementById("id").className = "newCssClass";</code
+    >
+  </p>
+
+  <h4>index.html</h4>
+  <pre><code class="lang-html">
+&lt;body&gt;
+  &lt;p&gt;&lt;button id="btnId" class="active"&gt;Click Me&lt;/button&gt;&lt;/p&gt;
+&lt;/body&gt;
+    </code></pre>
+
+  <h4>style.css</h4>
+  <pre><code class="lang-css">
+.active {
+  text-decoration: underline red;
+}
+  </code></pre>
+
+  <h4>main.js</h4>
+  <pre><code class="lang-js">
+// Variables to store reference to HTML Elements
+let btnEl = document.getElementById("btnId");
+
+// Run modifyStyle function when button is clicked 
+btnEl.addEventListener("click", toggleActive);
+
+function toggleActive() {
+  // Toggle Button Active Class when Button Clicked
+  if (btnEl.className === "active") {
+    btnEl.className = "";
+  } else {
+    btnEl.className = "active";
+  }
+}
+  </code></pre>
+
+  <!-- SUMMARY -->
+  <h2><i class="far fa-list-alt summary"></i> Summary</h2>
+  <hr />
+  <ul>
+    <li>
+      Use the <code class="lang-js">style</code> property to modify the style of
+      an element.
+    </li>
+    <li>
+      JavaScript does not support hyphens, so CSS properties with hyphens need
+      to be changed to camelCasing.
+    </li>
+    <li>
+      Use the <code class="lang-js">className</code> property to access the
+      class of an element.
+    </li>
+  </ul>
+</section>

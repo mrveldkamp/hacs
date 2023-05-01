@@ -1,0 +1,128 @@
+<h1 class="main-heading">Boolean Expressions</h1>
+
+<section class="page-content">
+  <!-- BACK LINK -->
+  <div class="page-nav">
+    <a class="back-link" href="./?js-notes">
+      <i class="fas fa-angle-double-left"></i> JS Notes
+    </a>
+    <a href="#" class="yt-link d-none" target="_blank">
+      <i class="fa-brands fa-youtube fa-lg"></i> Video Notes
+    </a>
+  </div>
+
+  <!-- BOOLEAN DATA TYPE -->
+  <h2><i class="far fa-bookmark topic-heading"></i> Boolean Data Type</h2>
+  <hr />
+  <p>
+    JavaScript has a <strong>Boolean Data Type</strong> that can be one of two
+    possible values: <strong>true</strong> or <strong>false</strong>.
+  </p>
+  <pre><code class="lang-js">
+let validInput = true;
+let found = false;
+    </code></pre>
+
+  <!-- BOOLEAN EXPRESSIONS -->
+  <h2><i class="far fa-bookmark topic-heading"></i> Boolean Expressions</h2>
+  <hr />
+  <p>Boolean expressions evaluate to a Boolean data type...</p>
+  <p>
+    <strong>Boolean Expressions</strong> are expressions that evaluate to
+    <strong>true</strong> or <strong>false</strong>.
+  </p>
+  <pre><code class="lang-js">
+let age = 15;
+age < 18; // Result => true
+age < 10; // Result => false
+    </code></pre>
+
+  <!-- COMPARISON OPERATORS -->
+  <h2><i class="far fa-bookmark topic-heading"></i> Comparison Operators</h2>
+  <hr />
+  <p>Comparison operators are used to build boolean expressions:</p>
+  <ul>
+    <li>Equal To: <code class="lang-js">===</code></li>
+    <li>Not Equal To: <code class="lang-js">!==</code></li>
+    <li>Greater Than: <code class="lang-js">&gt;</code></li>
+    <li>Greater Than or Equal To: <code class="lang-js">&gt;=</code></li>
+    <li>Less Than: <code class="lang-js">&lt;</code></li>
+    <li>Less Than or Equal To: <code class="lang-js">&lt;=</code></li>
+  </ul>
+  <br />
+
+  <h4>Examples of Comparison Operators</h4>
+  <pre><code class="lang-js">
+let age = 15;
+
+// Equal To (===)
+age === 15; // Result => true
+age === 18; // Result => false
+
+// Not Equal To (!==)
+age !== 15; // Result => false
+age !== 13; // Result => true
+
+// Greater Than (>)
+age > 15; // Result => false
+age > 10; // Result => true
+
+// Greater Than or Equal To (>=)
+age >= 15; // Result => true
+age >= 17; // Result => false
+
+// Less Than (<)
+age < 20; // Result => true
+age < 15; // Result => false
+
+// Less Than or Equal To (<=)
+age <= 20; // Result => true
+age <= 15; // Result => true
+    </code></pre>
+
+  <!-- LOGICAL OPERATORS -->
+  <h2><i class="far fa-bookmark topic-heading"></i> Logical Operators</h2>
+  <hr />
+  <p>
+    Logical Operators allow you to build more complex boolean expressions by
+    connecting simple boolean expressions:
+  </p>
+  <ul>
+    <li>Logical And: <code class="lang-js">&&</code></li>
+    <li>Logical Or: <code class="lang-js">||</code></li>
+    <li>Logical Not: <code class="lang-js">!</code></li>
+  </ul>
+  <br />
+
+  <h4>Examples of Logical Operators</h4>
+  <pre><code class="lang-js">
+let age = 15;
+
+// And (&&) is true if all connected boolean expressions are true
+age > 10 && age < 20; // Result => true
+age > 10 && age < 14; // Result => false
+
+// Or (||) is true if at least one of the connected boolean expressions is true
+age < 10 || age > 20; // Result => false
+age < 10 || age > 13; // Result => true
+age > 10 || age < 18; // Result => true
+
+// Not (!) changes true to false and false to true
+let found = true;
+!found; // Result => false
+
+found = false;
+!found; // Result => true
+    </code></pre>
+
+  <!-- SUMMARY -->
+  <h2><i class="far fa-list-alt summary"></i> Summary</h2>
+  <hr />
+  <ul>
+    <li>Boolean data type is true or false.</li>
+    <li>Boolean expressions evaluate to true or false.</li>
+    <li>
+      Boolean expressions are made up of comparison and logical operators.
+    </li>
+  </ul>
+</section>

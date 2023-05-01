@@ -1,0 +1,99 @@
+<h1 class="main-heading">Update Variables</h1>
+
+<section class="page-content">
+  <!-- BACK LINK -->
+  <div class="page-nav">
+    <a class="back-link" href="./?js-notes">
+      <i class="fas fa-angle-double-left"></i> JS Notes
+    </a>
+    <a href="#" class="yt-link d-none" target="_blank">
+      <i class="fa-brands fa-youtube fa-lg"></i> Video Notes
+    </a>
+  </div>
+
+  <!-- MODIFY & ASSIGN VARIABLES -->
+  <h2><i class="far fa-bookmark topic-heading"></i> Modify & Assign Variables</h2>
+  <hr>
+  <p>It is common to apply an operation to a variable and store the new result in the same variable.</p>
+
+    <p>
+      <pre><code class="lang-js">
+let n = 1;
+
+// Increase n by 5
+n = n + 5;
+
+// Decrease n by 3
+n = n - 3;
+
+// Multiply n by 2
+n = n * 2;
+
+// Divide n by 3
+n = n / 3;
+
+let greeting = "Hi";
+
+// Append "!" to greeting
+greeting = greeting + "!";
+      </code></pre>
+    </p>
+
+    <!-- SHORTHAND OPERATORS -->
+    <h2><i class="far fa-bookmark topic-heading"></i> Shorthand Operators</h2>
+    <hr>
+    <p>Shorthand operators exist to accomplish the same "modify & assign" tasks as above.</p>
+
+    <p>
+      <pre><code class="lang-js">
+let n = 1;
+
+// Increase n by 5
+n += 5; // Same as n = n + 5;
+
+// Decrease n by 3
+n -= 3; // Same as n = n - 3;
+
+// Multiply n by 2
+n *= 2; // Same as n = n * 2;
+
+// Divide n by 3
+n /= 3; // Same as n = n / 3;
+
+let greeting = "Hi";
+
+// Append "!" to greeting
+greeting += "!"; // Same as greeting = greeting + "!";
+      </code></pre>
+    </p>
+
+    <!-- INCREMENT AND DECREMENT -->
+    <h2><i class="far fa-bookmark topic-heading"></i> Increment and Decrement</h2>
+    <hr>
+    <p>Since it is very common to increase or decrease a variable by one, special operators exist to do this:</p>
+    <ul>
+      <li>Increment Operator (increase by 1): <code class="lang-js">++</code></li>
+      <li>Decrement Operator (decrease by 1): <code class="lang-js">--</code></li>
+    </ul>
+
+    <p>
+      <pre><code class="lang-js">
+let counter = 1;
+
+// Increment: increase variable by 1
+counter++; // Same as counter = counter + 1 or counter += 1
+console.log(counter); // Output => 2
+
+// Decrement: decrease variable by 1
+counter--; // Same as counter = counter - 1 or counter -= 1
+console.log(counter); // Output => 1
+      </code></pre>
+    </p>
+
+    <h2><i class="far fa-list-alt summary"></i> Summary</h2>
+    <hr>
+    <ul>
+      <li>It is common to apply an operation to a variable and store the new result in the same variable.</li>
+      <li>Shorthand operators exist that may be used to update variables concisely.</li>
+    </ul>
+</section>
