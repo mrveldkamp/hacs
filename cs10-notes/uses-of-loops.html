@@ -1,0 +1,93 @@
+<h1 class="main-heading">Uses of Loops</h1>
+
+<section class="page-content">
+  <!-- BACK LINK -->
+  <div class="page-nav">
+    <a class="back-link" href="./?js-notes">
+      <i class="fas fa-angle-double-left"></i> JS Notes
+    </a>
+    <a href="#" class="yt-link d-none" target="_blank">
+      <i class="fa-brands fa-youtube fa-lg"></i> Video Notes
+    </a>
+  </div>
+
+  <!-- USES OF LOOPS -->
+  <p>Loops are commonly used to accomplish the following:</p>
+  <ul>
+    <li>Repeat code a <strong>set</strong> number of times.</li>
+    <li>Repeat code an <strong>unknown</strong> number of times.</li>
+  </ul>
+
+  <!-- REPEAT SET # OF TIMES -->
+  <h2><i class="far fa-bookmark topic-heading"></i> Repeat Set # of Times</h2>
+  <hr />
+  <p>For loops often work best when repeating code a set number of times.</p>
+  <p>
+    In the example below, a for loop is used to simulate flipping a coin 500
+    times.
+  </p>
+
+  <pre><code class="lang-js">
+// Coin Flip Simulator
+let numHeads = 0;
+let numTails = 0
+
+// Loop 500 times
+for (let n = 1; n <= 500; n++) {
+  // Simulate Coin Flip 50/50 chance
+  if (Math.random() < 0.5) {
+    numHeads++;
+  } else {
+    numTails++;
+  }
+}
+
+// Output Final Results
+console.log(`Heads: ${numHeads} Tails: ${numTails}`);
+</code></pre>
+
+  <!-- REPEAT UKNOWN # OF TIMES -->
+  <h2>
+    <i class="far fa-bookmark topic-heading"></i> Repeat Unknown # of Times
+  </h2>
+  <hr />
+  <p>
+    While loops often work best when repeating code an unknown number of times.
+  </p>
+  <p>
+    In the example below, a while loop is used to simulate flipping a coin until
+    100 heads have been flipped.
+  </p>
+
+  <pre><code class="lang-js">
+// Coin Flip Simulator
+let numHeads = 0;
+let numTails = 0
+let numFlips = 0;
+
+// Loop until 100 heads
+while (numHeads < 100) {
+  // Simulate Coin Flip 50/50 chance
+  if (Math.random() < 0.5) {
+    numHeads++;
+  } else {
+    numTails++;
+  }
+  // Increment numFlips
+  numFlips++;
+}
+
+// Output Final Results
+console.log(`Number of Coin Flips: ${numFlips}`);
+console.log(`Heads: ${numHeads} Tails: ${numTails}`);
+</code></pre>
+
+  <h2><i class="far fa-list-alt summary"></i> Summary</h2>
+  <hr />
+  <ul>
+    <li>For loops are commonly used to repeat code a set number of times.</li>
+    <li>
+      While loops are commonly used to repeat code an unknown number of times.
+    </li>
+  </ul>
+</section>

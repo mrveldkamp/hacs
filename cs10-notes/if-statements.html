@@ -1,0 +1,140 @@
+<h1 class="main-heading">If Statements</h1>
+
+<section class="page-content">
+  <!-- BACK LINK -->
+  <div class="page-nav">
+    <a class="back-link" href="./?js-notes">
+      <i class="fas fa-angle-double-left"></i> JS Notes
+    </a>
+    <a href="#" class="yt-link d-none" target="_blank">
+      <i class="fa-brands fa-youtube fa-lg"></i> Video Notes
+    </a>
+  </div>
+
+  <!-- TOPIC TITLE -->
+  <p>
+    If statements are a type of <strong>selection control structure</strong>.
+    They allow you to control / select what code to execute.
+  </p>
+
+  <h2><i class="far fa-bookmark topic-heading"></i> Binary Selection</h2>
+  <hr />
+  <p>Select one of two paths...</p>
+  <pre><code class='lang-js'>
+if (boolean_expression) {
+  console.log("boolean_expression is true");
+} else {
+  console.log("boolean_expression is false");
+}
+  </code></pre>
+  <p>
+    <img
+      class="img-fluid-max"
+      src="img/if-binary-diagram.PNG"
+      alt="Binary Selection"
+    />
+  </p>
+
+  <h2><i class="far fa-bookmark topic-heading"></i> Unary Selection</h2>
+  <hr />
+  <p>Select path or not...</p>
+  <pre><code class='lang-js'>
+if (boolean_expression) {
+  console.log("boolean_expression is true");
+} 
+  </code></pre>
+  <p>
+    <img
+      class="img-fluid-max"
+      src="img/if-unary-diagram.PNG"
+      alt="Unary Selection"
+    />
+  </p>
+  <p>
+    A unary selection statement is like a binary selection statement without the
+    else.
+  </p>
+
+  <h2><i class="far fa-bookmark topic-heading"></i> Chained Selection</h2>
+  <hr />
+  <p>Select one of multiple paths...</p>
+  <pre><code class='lang-js'>
+if (boolean_expression_1) {
+  console.log('boolean_expression_1 is true');
+} else if (boolean_expression_2) {
+  console.log('boolean_expression_2 is true');
+} else if (boolean_expression_3) {
+  console.log('boolean_expression_3 is true');
+} else {
+  console.log('All boolean_expressions are false');
+}
+
+// Note: insert as many else if conditions as needed.
+  </code></pre>
+  <p>
+    <img
+      class="img-fluid-max"
+      src="img/if-chained-diagram.PNG"
+      alt="Chained Selection"
+    />
+  </p>
+
+  <h2>Chained Selection without Else</h2>
+  <hr />
+  <p>Select one or none of multiple paths...</p>
+  <pre><code class='lang-js'>
+if (boolean_expression_1) {
+  console.log('boolean_expression_1 is true');
+} else if (boolean_expression_2) {
+  console.log('boolean_expression_2 is true');
+} else if (boolean_expression_3) {
+  console.log('boolean_expression_3 is true');
+} 
+
+// Note: insert as many else if conditions as needed.
+  </code></pre>
+  <p>
+    <img
+      class="img-fluid-max"
+      src="img/if-chained-no-else-diagram.PNG"
+      alt="Chained No Else Selection"
+    />
+  </p>
+
+  <h2><i class="far fa-bookmark topic-heading"></i> Nested If Statements</h2>
+  <hr />
+  <p>If statements may be nested inside of other if statements.</p>
+  <pre><code class='lang-js'>
+// Outer Binary If Statement
+if (boolean_expression_1) {
+  // Inner Binary If Statement
+  if (boolean_expression_2) {
+    console.log('1 true, 2 true');
+  } else {
+    console.log('1 true, 2 false');
+  }
+} else {
+  // Inner Chained If Statement
+  if (boolean_expression_3) {
+    console.log('1 false, 3 true');
+  } else if (boolean_expression_4) {
+    console.log('1 false, 3 false, 4 true');
+  } else {
+    console.log('1 false, 3 false, 4 false');
+  }
+}
+  </code></pre>
+
+  <h2><i class="far fa-list-alt summary"></i> Summary</h2>
+  <hr />
+  <ul>
+    <li>If statements are a type of selection control structure.</li>
+    <li>A Binary If statement selects one of two paths.</li>
+    <li>A Unary If statement selects one path or not.</li>
+    <li>
+      A Chained If statement selects one of multiple paths (or no path if the
+      else is excluded).
+    </li>
+    <li>If statements may be nested inside of other if statements.</li>
+  </ul>
+</section>
