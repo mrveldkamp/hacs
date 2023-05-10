@@ -12,11 +12,18 @@
   </div>
 
   <!-- TOPIC TITLE -->
-  <h2><i class="far fa-bookmark topic-heading"></i>Access Each Element in an Array</h2>
+  <h2>
+    <i class="far fa-bookmark topic-heading"></i>Access Each Element in an Array
+  </h2>
   <hr />
-  <p>To <strong>traverse</strong> an array means to travel over all the elements in an array.</p>
-  <p>A loop may be used to generate all of the index values of an array. Then those index values can be used to
-    access each of the array elements.</p>
+  <p>
+    To <strong>traverse</strong> an array means to travel over all the elements
+    in an array.
+  </p>
+  <p>
+    A loop may be used to generate all of the index values of an array. Then
+    those index values can be used to access each of the array elements.
+  </p>
 
   <pre><code class="lang-js">
 let fibonacci = [1, 2, 3, 5, 8, 13, 21];
@@ -38,8 +45,7 @@ for (let i = 0; i < 7; i++) {
     </code></pre>
 
   <h2><i class="far fa-bookmark topic-heading"></i> Traverse - General Case</h2>
-  <hr>
-  <p>Using the <strong>length of the array</strong> will allow the for loop to traverse an array of any size.</p>
+  <hr />
 
   <p>The length of an array may be determined using the length property.</p>
   <pre><code class="lang-js">
@@ -47,6 +53,11 @@ let vowels = ['a', 'e', 'i', 'o', 'u'];
 //   index ->  0    1    2    3    4 
 vowels.length; // -> 5
     </code></pre>
+
+  <p>
+    Using the <strong>length of the array</strong> will allow the for loop to
+    traverse an array of any size.
+  </p>
 
   <pre><code class="lang-js">
 // GENERAL CASE - Traverse all elements 
@@ -59,5 +70,4 @@ for (let i = 0; i < myArray.length; i++) {
   console.log(myArray[i]);
 }
     </code></pre>
-  <hr />
 </section>
