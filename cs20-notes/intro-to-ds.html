@@ -1,4 +1,4 @@
-<h1 class="main-heading">Types of Data Structures</h1>
+<h1 class="main-heading">Intro to Data Structures</h1>
 
 <section class="page-content">
   <!-- BACK LINK -->
@@ -15,19 +15,27 @@
   <h2><i class="far fa-bookmark topic-heading"></i>Data Structures</h2>
   <hr />
   <p>A data structure is a structure for storing data.</p>
-  <p>The following notes introduce a few common data structures...</p>
+  <p>Some common data structures are:</p>
+  <ul>
+    <li>Arrays</li>
+    <li>Objects</li>
+    <li>Arrays of Objects</li>
+    <li>Arrays of Arrays</li>
+  </ul>
 
   <!-- ARRAYS -->
-  <h2><i class="far fa-bookmark topic-heading"></i>Arrays</h2>
-  <hr>
+  <h2><i class="far fa-bookmark topic-heading"></i> Intro to Arrays</h2>
+  <hr />
   <p>An Array is an ordered collection of values.</p>
   <pre><code class="lang-js">
 let vowels = ["a", "e", "i", "o", "u"];
 //   index ->  0    1    2    3    4
   </code></pre>
 
-  <p>You can look up the values in the array using brackets, [ ], and the position or index of the value you're looking
-    for.</p>
+  <p>
+    You can look up the values in the array using brackets, [ ], and the
+    position or index of the value you're looking for.
+  </p>
 
   <pre><code class="lang-js">
 vowels[0]; // -> "a"
@@ -38,9 +46,9 @@ vowels[4]; // -> "u"
   </code></pre>
 
   <!-- OBJECTS -->
-  <h2><i class="far fa-bookmark topic-heading"></i> Objects</h2>
-  <hr>
-  <p>An Object is a collection key-value pairs, called properties.</p>
+  <h2><i class="far fa-bookmark topic-heading"></i> Intro to Objects</h2>
+  <hr />
+  <p>An Object is a collection of key-value pairs, called properties.</p>
   <pre><code class="lang-js">
 // One line definition of object
 let point = { x: 2, y: 3, label: "A"};
@@ -54,7 +62,7 @@ let point = {
 };
 </code></pre>
 
-  <p>You can look up the values in the object by their key. </p>
+  <p>You can look up the values in the object by their key.</p>
 
   <pre><code class="lang-js">
 // Dot Notation
@@ -69,9 +77,14 @@ point["label"]; // -> "A"
   </code></pre>
 
   <!-- ARRAYS OF OBJECTS -->
-  <h2><i class="far fa-bookmark topic-heading"></i> Arrays of Objects</h2>
-  <hr>
-  <p>An Array of Objects is a common data structure for storing lists of related data.</p>
+  <h2>
+    <i class="far fa-bookmark topic-heading"></i> Intro to Arrays of Objects
+  </h2>
+  <hr />
+  <p>
+    An Array of Objects is a common data structure for storing lists of related
+    data.
+  </p>
   <pre><code class="lang-js">
 // Array of Point Objects
 let points = [
@@ -92,12 +105,16 @@ let points = [
   } 
 ];
 
+points[0].x; // -> 2
 points[1].label; // -> "B"
+points[2].y; // -> 5
   </code></pre>
 
   <!-- ARRAYS OF ARRAYS -->
-  <h2><i class="far fa-bookmark topic-heading"></i> Arrays of Arrays</h2>
-  <hr>
+  <h2>
+    <i class="far fa-bookmark topic-heading"></i> Intro to Arrays of Arrays
+  </h2>
+  <hr />
   <p>An Array of Arrays is useful for grid-based data with rows and columns.</p>
   <pre><code class="lang-js">
 // One line definition of grid
@@ -111,7 +128,9 @@ let grid = [
   [7, 8, 9] 
 ];
 
+grid[0][0]; // -> 1
 grid[2][0]; // -> 7
+grid[1][2]; // -> 6
   </code></pre>
   <hr />
 </section>
