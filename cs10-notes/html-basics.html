@@ -1,0 +1,206 @@
+<h1 class="main-heading">HTML Basics</h1>
+
+<section class="page-content">
+  <!-- BACK LINK -->
+  <div class="page-nav">
+    <a class="back-link" href="./?js-notes">
+      <i class="fas fa-angle-double-left"></i> JS Notes
+    </a>
+    <a href="#" class="yt-link d-none" target="_blank">
+      <i class="fa-brands fa-youtube fa-lg"></i> Video Notes
+    </a>
+  </div>
+
+  <!-- INTRO TO HTML -->
+  <h2><i class="far fa-bookmark topic-heading"></i>Intro to HTML</h2>
+  <hr />
+  <p>
+    <strong>HTML</strong> stands for <strong>H</strong>yper<strong>T</strong>ext
+    <strong>M</strong>arkup <strong>L</strong>anguage.
+  </p>
+  <p>HTML tells web browsers the content and structure of a web page.</p>
+  <p>
+    Below is an example of some HTML code and how a web browser displays the
+    code.
+  </p>
+
+  <h4 class="code-title">HTML Code (index.html)</h4>
+  <pre><code class="lang-html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Main Heading&lt;/h1&gt;
+    &lt;p&gt;
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+      veritatis repellat modi dolorem officiis accusantium.
+    &lt;/p&gt;
+
+    &lt;h2&gt;Sub Heading&lt;/h2&gt;
+    &lt;p&gt;
+      &lt;img src="https://picsum.photos/id/0/400/250" alt="Laptop" /&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat ullam
+      tempora &lt;a href="https://picsum.photos/"&gt;perferendis&lt;/a&gt; impedit.
+    &lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;List item 1&lt;/li&gt;
+      &lt;li&gt;List item 2&lt;/li&gt;
+      &lt;li&gt;List item 3&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/body&gt;
+&lt;/html&gt;   
+  </code></pre>
+
+  <h4 class="code-title">Web Browser Display of above HTML Code</h4>
+  <img
+    style="border: 1px solid grey"
+    src="../img/html-result.PNG"
+    alt="Web Browser Display"
+    class="img-fluid"
+  />
+
+  <p>
+    HTML Code is written in a text editor and saved to a file with a ".html"
+    extension.
+  </p>
+  <p>
+    The home page of a web site should be named: <strong>index.html</strong>.
+  </p>
+
+  <!-- HTML ELEMENTS -->
+  <h2><i class="far fa-bookmark topic-heading"></i>HTML Elements</h2>
+  <hr />
+  <p>HTML uses html elements to describe the content of a web page.</p>
+  <p>Common HTML elements are:</p>
+  <ul style="line-height: 2">
+    <li>
+      heading elements:
+      <code class="lang-html">&lt;h1&gt;</code>,
+      <code class="lang-html">&lt;h2&gt;</code>, ... ,<code class="lang-html"
+        >&lt;h6&gt;</code
+      >
+    </li>
+    <li>paragraph elements: <code class="lang-html">&lt;p&gt;</code></li>
+    <li>image elements: <code class="lang-html">&lt;img&gt;</code></li>
+    <li>link elements: <code class="lang-html">&lt;a&gt;</code></li>
+    <li>
+      list elements: <code class="lang-html">&lt;ol&gt;</code>,
+      <code class="lang-html">&lt;ul&gt;</code>,
+      <code class="lang-html">&lt;li&gt;</code>
+    </li>
+  </ul>
+
+  <h3 style="margin-block: 1.5rem">Basic HTML Elements</h3>
+  <p>
+    Basic HTML elements consist of an opening tag, content and a closing tag.
+  </p>
+  <p>
+    <img class="img-fluid" src="../img/html-element.PNG" alt="HTML Element" />
+  </p>
+
+  <h3 style="margin-block: 1.5rem">HTML Attributes</h3>
+  <p>
+    HTML elements may have attributes that provide additional information about
+    the element.
+  </p>
+  <p>
+    Attributes go in the opening tag and usually come in name/value pairs:
+    <code style="font-size: 1.15rem">name="value"</code>.
+  </p>
+  <p>
+    A link element uses an <strong>href</strong> attribute to specify where the
+    link should take you when clicked.
+  </p>
+  <pre><code class="lang-html">
+&lt;a href="https://www.google.ca/"&gt;Visit Google&lt;/a&gt;
+  </code></pre>
+
+  <h3 style="margin-block: 1.5rem">Void HTML Elements</h3>
+  <p>
+    Void HTML elements consist of a single tag and do not follow the pattern of
+    an opening tag, content and a closing tag.
+  </p>
+  <p>
+    Void elements are typically used to insert/embed something in the web page.
+  </p>
+  <p>An image element is an example of a void element.</p>
+  <pre><code class="lang-html">
+&lt;img src="picture.jpg" /&gt;
+  </code></pre>
+  <p>
+    The image element doesn't have a closing tag or any content. Instead it uses
+    a <strong>src</strong> attribute to tell the browser the
+    <strong>source</strong> of the image to embed in the web page.
+  </p>
+
+  <!-- ANATOMY OF AN HTML DOCUMENT -->
+  <h2>
+    <i class="far fa-bookmark topic-heading"></i>Anatomy of an HTML Document
+  </h2>
+  <hr />
+
+  <h3 style="margin-block: 1.5rem">HTML Page Structure</h3>
+  <p>A simple html document has the following structure:</p>
+  <pre><code class="lang-html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h2&gt;Level 2 Heading&lt;/h2&gt;
+    &lt;p&gt;A paragraph.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;   
+  </code></pre>
+
+  <ul>
+    <li>&lt;!DOCTYPE html&gt; declares that this is an HTML5 document.</li>
+    <li>
+      The <strong>html</strong> element is the root element of the HTML page.
+      This element wraps all the content of the entire page.
+    </li>
+    <li>
+      The <strong>head</strong> element contains metadata
+      <em>(descriptive informaiton)</em> about the HTML page.
+    </li>
+    <li>
+      The <strong>title</strong> element specifies a title for the HTML page
+      that is used in the web browser's tab.
+    </li>
+    <li>
+      The <strong>body</strong> element is a container for all of the visible
+      content of the HTML page.
+    </li>
+  </ul>
+
+  <h3 style="margin-block: 1.5rem">HTML DOM</h3>
+  <p>
+    HTML code uses a <strong>D</strong>ocument <strong>O</strong>bject
+    <strong>M</strong>odel (DOM) to structure HTML elements in parent, child and
+    sibling relationships.
+  </p>
+  <ul>
+    <li>Child elements are nested inside parent elements.</li>
+    <li>Sibling elements have the same parent.</li>
+  </ul>
+
+  <p>The HTML Dom for the Page Structure code above.</p>
+  <p>
+    <img class="img-fluid" src="../img/html-dom.PNG" alt="HTML Dom" />
+  </p>
+
+  <p>
+    Some examples of parent, child, sibling relationships from the HTML Dom
+    above:
+  </p>
+  <ul>
+    <li>The title element is a child of the head element</li>
+    <li>The h2 and p elements are children of the body element.</li>
+    <li>The h2 and p elements are sibling.</li>
+  </ul>
+</section>
